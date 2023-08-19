@@ -537,6 +537,15 @@ Section Code
         order: 2;
         align-self: center;
     }
+    .pageHome-section-faq-list-question {
+        width: 100%;
+    }
+    .pageHome-section-faq-list-question-title {
+        padding-left: 0;
+    }
+    .pageHome-section-faq-list-question p {
+        margin: 0 0 5px 0
+    }
 }
 @media (max-width: 600px) {
     .pageHome-section-faq-images {
