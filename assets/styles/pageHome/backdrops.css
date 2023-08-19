@@ -1,0 +1,52 @@
+.pageHome {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    width: 100%;
+}
+.pageHome-backdrop-billboard,
+.pageHome-backdrop-local_groups,
+.pageHome-backdrop-tickets,
+.pageHome-backdrop-join,
+.pageHome-backdrop-void,
+.pageHome-backdrop-crew {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateZ(-5px) scale(1.5);
+    position: absolute;
+    width: calc(100% + 10px);
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Backdrop Images*/
+.pageHome-backdrop-billboard {
+    background-image: url("/assets/images/backdrops/billboard.jpg");
+    filter: brightness(75%);
+}
+.pageHome-backdrop-local_groups {
+    background-image: url("/assets/images/backdrops/local_groups.jpg");
+    filter: blur(1px);
+}
+.pageHome-backdrop-tickets {
+    background-image: url("/assets/images/backdrops/tickets.png");
+    filter: blur(1px);
+}
+.pageHome-backdrop-join {
+    background-image: url("/assets/images/backdrops/join.jpg");
+    filter: blur(1px);
+}
+.pageHome-backdrop-void {
+    background-image: url("/assets/images/backdrops/void.jpg");
+}
+.pageHome-backdrop-crew {
+    background-image: url("/assets/images/backdrops/crew.jpg");
+    filter: blur(1px);
+}

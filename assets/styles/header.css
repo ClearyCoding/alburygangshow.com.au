@@ -1,0 +1,204 @@
+.header {
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    padding: 0 20px;
+    position: fixed;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(11, 11, 11, 0.75);
+    margin-right: 10px;
+}
+.header-extension {
+    /* Usually the header blocks the scrollbar, not allowing the user to interact with it.
+    This allows the header to visually continue along the page, whilst allowing interaction
+    with the scrollbar beneath*/
+    height: 70px;
+    width: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(11, 11, 11, 0.75);
+    pointer-events: none;
+}
+.header-screen_limit {
+    display: none;
+}
+.pageHome-title {
+    padding-top: 70px;
+}
+.header-branding {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.header-branding-logo {
+    height: 60px;
+    padding: 5px;
+}
+.header-branding-title {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0 20px;
+    color: red;
+}
+.header-navbar {
+    list-style: none;
+    display: flex;
+    transition: width 0.2s;
+}
+.header-navbar-button {
+    color: red;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    transition: font-size 0.2s;
+}
+.header-navbar-button:hover {
+    text-decoration: underline;
+    font-size: 18px;
+}
+.header-cascade-toggle {
+    display: none;
+}
+
+/* Mobile Mode */
+@media (min-width: 325px) and (max-width: 750px) {
+    .header {
+        flex-direction: column;
+    }
+    .header-navbar {
+        position: absolute;
+        top: 70px;
+        flex-direction: column;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s;
+        background-color: rgba(11, 11, 11, 0.80);
+        height: 360px;
+        justify-content: space-between;
+    }
+    .header-cascade-toggle:checked ~ .header-navbar {
+        max-height: 1000px;
+    }
+    .header-navbar-button {
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .header-cascade-graphic {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        padding: 33px 23px;
+        top: 0;
+        right: 0;
+        position: absolute;
+    }
+    .header-cascade-graphic-section, .header-cascade-graphic-section:before, .header-cascade-graphic-section:after {
+        background: #af2d24;
+        display: block;
+        height: 3px;
+        width: 24px;
+    }
+
+    .header-cascade-graphic-section {
+        position: relative;
+        transition: background 0.2s ease-out;
+    }
+
+    .header-cascade-graphic-section:before, .header-cascade-graphic-section:after {
+        content: "";
+        position: absolute;
+        transition: all 0.2s ease-out;
+    }
+
+    .header-cascade-graphic-section:before {
+        top: 8px;
+    }
+
+    .header-cascade-graphic-section:after {
+        top: -8px;
+    }
+
+    .header-cascade-toggle:checked ~ .header-cascade-graphic .header-cascade-graphic-section {
+        background: transparent;
+    }
+
+    .header-cascade-toggle:checked ~ .header-cascade-graphic .header-cascade-graphic-section:before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .header-cascade-toggle:checked ~ .header-cascade-graphic .header-cascade-graphic-section:after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+    @media (max-width: 375px) {
+        .header-branding-title {
+            display: none;
+        }
+    }
+}
+/* Desktop Mode */
+@media (min-width: 750px) {
+    .header-navbar {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-navbar-button {
+        padding: 20px;
+    }
+    .header-cascade-graphic {
+        display: none;
+    }
+
+    /* Header Spacing Adjustments */
+    @media (max-width: 860px) {
+        .header-branding-title {
+            display: none;
+        }
+        .header-navbar {
+            width: 90%;
+        }
+    }
+    @media (min-width: 855px) {
+        .header-navbar {
+            width: 70%;
+        }
+    }
+    @media (max-width: 1125px) {
+        .header-branding-title {
+            font-size: 18px;
+        }
+    }
+}
+/* Too Small */
+@media (max-width: 325px) {
+    .header-screen_limit {
+        display: flex;
+        position: fixed;
+        z-index: 254;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding-top: 70px;
+        justify-items: center;
+        background: #212123;
+        color: white;
+    }
+    .header-branding-logo {
+        z-index: 255;
+        height: 40px;
+    }
+    .header-branding-title {
+        z-index: 255;
+    }
+}
