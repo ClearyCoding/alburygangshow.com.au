@@ -515,7 +515,7 @@ Section Code
     color: white;
 }
 .pageHome-section-faq-list-question-toggle:checked ~ p {
-    max-height: 100px;
+    max-height: 1000px;
 }
 .pageHome-section-faq h3 {
     font-size: 20px;
@@ -527,10 +527,15 @@ Section Code
 @media (max-width: 1000px) {
     .pageHome-section-faq {
         flex-direction: column;
+        align-items: start;
+    }
+    .pageHome-section-faq-text {
+        width: 100%;
     }
     .pageHome-section-faq-images {
         padding-top: 10px;
         order: 2;
+        align-self: center;
     }
 }
 @media (max-width: 600px) {
