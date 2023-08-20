@@ -584,6 +584,9 @@ Section Code
     font-size: 20px;
     color: darkgray;
 }
+.pageHome-section-join-container-text p a {
+    color: darkgray;
+}
 .pageHome-section-join-container-images {
     width: 45%;
     height: 90%;
@@ -765,6 +768,7 @@ Section Code
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 450px;
 }
 .pageHome-section-sponsors h2 {
     color: red;
@@ -950,24 +954,21 @@ Section Code
     font-weight: 900;
     margin: 0 0 30px 0;
 }
-.pageHome-section-contact-text-emails h3 {
+.pageHome-section-contact-text-emails h3,
+.pageHome-section-contact-text-socials h3 {
     color: darkgray;
     font-size: 24px;
     margin: 30px 0 15px 0;
 }
-.pageHome-section-contact-text-emails a {
+.pageHome-section-contact-text-emails a,
+.pageHome-section-contact-text-socials a {
     color: white;
     font-size: 18px;
     margin: 0;
 }
 .pageHome-section-contact-text-socials {
-    width: 50%;
-    padding-top: 45px;
-}
-.pageHome-section-contact-text-socials h3 {
-    color: darkgray;
-    font-size: 24px;
-    text-align: center;
+    width: 45%;
+    padding-top: 39px;
 }
 .pageHome-section-contact-text-socials figure {
     display: flex;
@@ -979,7 +980,7 @@ Section Code
     padding: 0 15px;
 }
 .pageHome-section-contact-images {
-    width: 40%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -1007,6 +1008,9 @@ Section Code
     .pageHome-section-contact-text-socials{
         width: 100%;
     }
+    .pageHome-section-contact-text-socials {
+        padding-top: 44px;
+    }
     .pageHome-section-contact-images {
         width: 80%;
         margin-top: 20px
@@ -1015,6 +1019,9 @@ Section Code
         .pageHome-section-contact-text {
             flex-direction: column;
             align-items: start;
+        }
+        .pageHome-section-contact-text-socials {
+            padding-top: 0;
         }
         .pageHome-section-contact-images-img1 {
             width: 50%;

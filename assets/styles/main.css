@@ -4,7 +4,12 @@
 html {
     height: 100%;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+}
+h1, h2, a, time {
+    font-family: 'Fira Sans', Arial, sans-serif;
+}
+p, h3, h4, label, figcaption {
+    font-family: 'Heebo', Arial, sans-serif;
 }
 body {
     position: relative;
