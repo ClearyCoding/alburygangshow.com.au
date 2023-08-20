@@ -36,8 +36,8 @@
     filter: blur(1px);
 }
 .pageHome-backdrop-tickets {
-    background-image: url("/assets/images/backdrops/tickets.png");
-    filter: blur(1px);
+    background-image: url("/assets/images/backdrops/tickets.jpeg");
+    filter: blur(1px) brightness(75%);
 }
 .pageHome-backdrop-join {
     background-image: url("/assets/images/backdrops/join.jpg");
