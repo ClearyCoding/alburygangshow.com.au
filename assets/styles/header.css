@@ -72,6 +72,9 @@
     .header {
         flex-direction: column;
     }
+    .header-branding {
+        z-index: 100;
+    }
     .header-navbar {
         position: absolute;
         top: 70px;
@@ -91,6 +94,7 @@
         width: 100%;
         padding: 20px 0;
         text-align: center;
+        z-index: 100;
     }
     .header-cascade-graphic {
         cursor: pointer;
@@ -139,6 +143,15 @@
     .header-cascade-toggle:checked ~ .header-cascade-graphic .header-cascade-graphic-section:after {
         transform: rotate(45deg);
         top: 0;
+    }
+    .header-cascade-outside {
+        display: none;
+    }
+    .header-cascade-toggle:checked ~ .header-cascade-outside {
+        display: block;
+        position: fixed;
+        inset: 0;
+        z-index: 1;
     }
     @media (max-width: 375px) {
         .header-branding-title {
