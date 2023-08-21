@@ -66,6 +66,9 @@
 .header-cascade-toggle {
     display: none;
 }
+.header-cascade-outside {
+    display: none;
+}
 
 /* Mobile Mode */
 @media (min-width: 325px) and (max-width: 750px) {
@@ -143,9 +146,6 @@
     .header-cascade-toggle:checked ~ .header-cascade-graphic .header-cascade-graphic-section:after {
         transform: rotate(45deg);
         top: 0;
-    }
-    .header-cascade-outside {
-        display: none;
     }
     .header-cascade-toggle:checked ~ .header-cascade-outside {
         display: block;
