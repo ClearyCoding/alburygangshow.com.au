@@ -44,6 +44,24 @@ Section Sizing
     margin-top: 90vh;
     height: auto;
 }
+@media (max-width: 600px) {
+    .pageHome-section-billboard {
+        height: 95vh;
+        top: -95vh;
+    }
+    .pageHome-section-about {
+        margin-top: 95vh;
+    }
+    @media (max-width: 475px) {
+        .pageHome-section-billboard {
+            height: 100vh;
+            top: -100vh;
+        }
+        .pageHome-section-about {
+            margin-top: 100vh;
+        }
+    }
+}
 
 /* Group 2 */
 .pageHome-backdrop-local_groups {
