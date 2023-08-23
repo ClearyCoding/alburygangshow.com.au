@@ -702,7 +702,7 @@ Section Code
 }
 .pageHome-section-links-grid {
     display: grid;
-    grid-template-columns: 220px 220px 220px 220px 220px 220px;
+    grid-template-columns: 180px 180px 180px 180px 180px 180px 180px 180px;
 }
 .pageHome-section-links-grid-item {
     text-decoration: none;
@@ -711,17 +711,17 @@ Section Code
     align-items: center;
     flex-direction: column;
     max-height: 120px;
-    width: 220px;
+    width: 180px;
     margin: 10px 10px;
 }
 .pageHome-section-links-grid-item h4 {
     color: darkgray;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
     text-align: center;
 }
 .pageHome-section-links-grid-item img {
-    height: 100px;
+    height: 80px;
 }
 .pageHome-section-links-toggle {
     display: none;
@@ -745,15 +745,15 @@ Section Code
 }
 @media (max-width: 1380px) {
     .pageHome-section-links-grid {
-        grid-template-columns: 220px 220px 220px 220px 220px;
+        grid-template-columns: 180px 180px 180px 180px 180px 180px 180px;
     }
-    @media (max-width: 1160px) {
+    @media (max-width: 1270px) {
         .pageHome-section-links-grid {
-            grid-template-columns: 220px 220px 220px 220px;
+            grid-template-columns: 180px 180px 180px 180px 180px 180px;
         }
-        @media (max-width: 940px) {
+        @media (max-width: 1110px) {
             .pageHome-section-links-grid {
-                grid-template-columns: 220px 220px 220px;
+                grid-template-columns: 180px 180px 180px 180px 180px;
                 max-height: 0;
                 overflow: hidden;
                 transition: max-height 0.2s;
@@ -764,13 +764,18 @@ Section Code
             .pageHome-section-links-toggle-title {
                 display: inline-block;
             }
-            @media (max-width: 720px) {
+            @media (max-width: 925px) {
                 .pageHome-section-links-grid {
-                    grid-template-columns: 220px 220px;
+                    grid-template-columns: 180px 180px 180px 180px;
                 }
-                @media (max-width: 500px) {
+                @media (max-width: 750px) {
                     .pageHome-section-links-grid {
-                        grid-template-columns: 220px;
+                        grid-template-columns: 180px 180px 180px;
+                    }
+                    @media (max-width: 575px) {
+                        .pageHome-section-links-grid {
+                            grid-template-columns: 180px 180px;
+                        }
                     }
                 }
             }

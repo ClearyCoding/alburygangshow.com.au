@@ -71,7 +71,7 @@
 }
 
 /* Mobile Mode */
-@media (min-width: 325px) and (max-width: 750px) {
+@media (min-width: 350px) and (max-width: 750px) {
     .header {
         flex-direction: column;
     }
@@ -193,7 +193,7 @@
     }
 }
 /* Too Small */
-@media (max-width: 325px) {
+@media (max-width: 350px) {
     .header-screen_limit {
         display: flex;
         position: fixed;
@@ -210,8 +210,11 @@
     .header-branding-logo {
         z-index: 255;
         height: 40px;
+        position: absolute;
     }
     .header-branding-title {
         z-index: 255;
+        position: absolute;
+        left: 50px;
     }
 }
