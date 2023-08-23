@@ -702,7 +702,7 @@ Section Code
 }
 .pageHome-section-links-grid {
     display: grid;
-    grid-template-columns: 180px 180px 180px 180px 180px 180px 180px 180px;
+    grid-template-columns: 170px 170px 170px 170px 170px 170px 170px 170px;
 }
 .pageHome-section-links-grid-item {
     text-decoration: none;
@@ -711,7 +711,7 @@ Section Code
     align-items: center;
     flex-direction: column;
     max-height: 120px;
-    width: 180px;
+    width: 165px;
     margin: 10px 10px;
 }
 .pageHome-section-links-grid-item h4 {
@@ -743,15 +743,15 @@ Section Code
 .pageHome-section-links-toggle:checked ~ .pageHome-section-links-toggle-title .pageHome-section-links-toggle-title-arrow {
     transform: rotate(0deg);
 }
-@media (max-width: 1380px) {
+@media (max-width: 1300px) {
     .pageHome-section-links-grid {
         grid-template-columns: 180px 180px 180px 180px 180px 180px 180px;
     }
-    @media (max-width: 1270px) {
+    @media (max-width: 1190px) {
         .pageHome-section-links-grid {
             grid-template-columns: 180px 180px 180px 180px 180px 180px;
         }
-        @media (max-width: 1110px) {
+        @media (max-width: 1030px) {
             .pageHome-section-links-grid {
                 grid-template-columns: 180px 180px 180px 180px 180px;
                 max-height: 0;
@@ -764,15 +764,15 @@ Section Code
             .pageHome-section-links-toggle-title {
                 display: inline-block;
             }
-            @media (max-width: 925px) {
+            @media (max-width: 845px) {
                 .pageHome-section-links-grid {
                     grid-template-columns: 180px 180px 180px 180px;
                 }
-                @media (max-width: 750px) {
+                @media (max-width: 670px) {
                     .pageHome-section-links-grid {
                         grid-template-columns: 180px 180px 180px;
                     }
-                    @media (max-width: 575px) {
+                    @media (max-width: 495px) {
                         .pageHome-section-links-grid {
                             grid-template-columns: 180px 180px;
                         }
