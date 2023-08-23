@@ -747,9 +747,6 @@ Section Code
     .pageHome-section-links-grid {
         grid-template-columns: 220px 220px 220px 220px 220px;
     }
-    .pageHome-section-links-grid-block1 {
-        display: none;
-    }
     @media (max-width: 1160px) {
         .pageHome-section-links-grid {
             grid-template-columns: 220px 220px 220px 220px;
