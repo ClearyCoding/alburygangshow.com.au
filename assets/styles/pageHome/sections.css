@@ -743,15 +743,15 @@ Section Code
 .pageHome-section-links-toggle:checked ~ .pageHome-section-links-toggle-title .pageHome-section-links-toggle-title-arrow {
     transform: rotate(0deg);
 }
-@media (max-width: 1300px) {
+@media (max-width: 1320px) {
     .pageHome-section-links-grid {
         grid-template-columns: 180px 180px 180px 180px 180px 180px 180px;
     }
-    @media (max-width: 1190px) {
+    @media (max-width: 1210px) {
         .pageHome-section-links-grid {
             grid-template-columns: 180px 180px 180px 180px 180px 180px;
         }
-        @media (max-width: 1030px) {
+        @media (max-width: 1050px) {
             .pageHome-section-links-grid {
                 grid-template-columns: 180px 180px 180px 180px 180px;
                 max-height: 0;
@@ -764,15 +764,15 @@ Section Code
             .pageHome-section-links-toggle-title {
                 display: inline-block;
             }
-            @media (max-width: 845px) {
+            @media (max-width: 865px) {
                 .pageHome-section-links-grid {
                     grid-template-columns: 180px 180px 180px 180px;
                 }
-                @media (max-width: 670px) {
+                @media (max-width: 690px) {
                     .pageHome-section-links-grid {
                         grid-template-columns: 180px 180px 180px;
                     }
-                    @media (max-width: 495px) {
+                    @media (max-width: 515px) {
                         .pageHome-section-links-grid {
                             grid-template-columns: 180px 180px;
                         }
@@ -782,6 +782,7 @@ Section Code
         }
     }
 }
+
 /* Sponsors */
 .pageHome-section-sponsors {
     padding: 30px;
