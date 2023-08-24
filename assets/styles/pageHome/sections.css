@@ -129,6 +129,58 @@ Section Sizing
 }
 
 /*-------------------------------------
+Text Presets
+---------------------------------------*/
+
+h2 {
+    color: red;
+    font-size: 32px;
+
+    font-weight: 900;
+    margin: 0;
+
+    align-self: start;
+}
+h3 {
+    color: darkgray;
+    font-size: 24px;
+
+    font-weight: 900;
+    margin: 0;
+
+    align-self: start;
+}
+h4 {
+    color: darkgray;
+    font-size: 18px;
+}
+p {
+    color: darkgray;
+    font-size: 20px;
+}
+figcaption {
+    color: darkgray;
+    font-size: 16px;
+}
+@media (max-width: 1100px) {
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 16px;
+    }
+    figcaption {
+        font-size: 14px;
+    }
+}
+
+/*-------------------------------------
 Section Code
 ---------------------------------------*/
 
@@ -145,18 +197,21 @@ Section Code
     color: darkgray;
     font-size: 32px;
     margin: 25px 0 0 0;
+    align-self: center;
 }
 .pageHome-section-billboard-notice-title {
     color: white;
     font-size: 48px;
     margin: 10px 0 20px 0;
     text-align: center;
+    align-self: center;
 }
 .pageHome-section-billboard-notice-subtitle {
     color: white;
     text-align: center;
     font-size: 36px;
     margin: 5px;
+    align-self: center;
 }
 .pageHome-section-billboard-notice-title a,
 .pageHome-section-billboard-notice-subtitle a {
@@ -231,15 +286,6 @@ Section Code
 .pageHome-section-about-text {
     width: 55%;
 }
-.pageHome-section-about-text h2 {
-    color: red;
-    font-size: 32px;
-    font-weight: 900;
-}
-.pageHome-section-about-text p {
-    color: darkgrey;
-    font-size: 20px;
-}
 .pageHome-section-about-images {
     width: 40%;
     display: flex;
@@ -292,24 +338,12 @@ Section Code
     border-radius: 50px;
     padding: 30px;
 }
-.pageHome-section-local_groups-container h2 {
-    color: red;
-    font-size: 32px;
-    font-weight: 900;
-    margin: 0;
-}
-.pageHome-section-local_groups-container p {
-    font-size: 20px;
-    font-weight: 700;
-    color: darkgray;
-}
 .pageHome-section-local_groups-container-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
 }
-.pageHome-section-local_groups-container-grid h3 {
-    font-size: 20px;
+.pageHome-section-local_groups-container-grid h4 {
     font-weight: 700;
     color: white;
     text-align: center;
@@ -363,15 +397,6 @@ Section Code
     justify-content: center;
     flex-direction: column;
 }
-.pageHome-section-history h2 {
-    color: red;
-    font-size: 32px;
-    font-weight: 900;
-}
-.pageHome-section-history h3 {
-    font-size: 20px;
-    color: darkgray;
-}
 
 /* Tickets */
 .pageHome-section-tickets {
@@ -393,16 +418,6 @@ Section Code
     width: 50%;
     height: 90%;
 }
-.pageHome-section-tickets-container-text h2 {
-    color: red;
-    font-size: 32px;
-    font-weight: 900;
-    margin: 0;
-}
-.pageHome-section-tickets-container-text p {
-    font-size: 20px;
-    color: darkgray;
-}
 .pageHome-section-tickets-container-text time {
     font-size: 20px;
     font-weight: 700;
@@ -417,9 +432,6 @@ Section Code
     width: 100%;
     border-radius: 20px;
     border: #171717 3px solid;
-}
-.pageHome-section-tickets-container-images figcaption {
-    color: darkgray;
 }
 @media (max-width: 1100px) {
     .pageHome-section-tickets-container-text h2 {
@@ -485,12 +497,6 @@ Section Code
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-}
-.pageHome-section-faq h2 {
-    color: red;
-    align-self: start;
-    font-size: 32px;
-    font-weight: 900;
 }
 .pageHome-section-faq-list-question-toggle {
     display: none;
@@ -593,16 +599,6 @@ Section Code
     width: 50%;
     height: 90%;
 }
-.pageHome-section-join-container-text h2 {
-    color: red;
-    font-size: 32px;
-    font-weight: 900;
-    margin: 0;
-}
-.pageHome-section-join-container-text p {
-    font-size: 20px;
-    color: darkgray;
-}
 .pageHome-section-join-container-text p a {
     color: darkgray;
 }
@@ -614,9 +610,6 @@ Section Code
     width: 100%;
     border-radius: 20px;
     border: #171717 3px solid;
-}
-.pageHome-section-join-container-images figcaption {
-    color: darkgray;
 }
 .pageHome-section-join-container-text-buttons {
     display: flex;
@@ -686,20 +679,6 @@ Section Code
     flex-direction: column;
     padding: 30px;
 }
-.pageHome-section-links h2 {
-    color: red;
-    align-self: start;
-    font-size: 32px;
-    font-weight: 900;
-    margin: 0;
-}
-.pageHome-section-links h3 {
-    color: darkgray;
-    align-self: start;
-    font-size: 24px;
-    font-weight: 900;
-    margin: 0;
-}
 .pageHome-section-links-grid {
     display: grid;
     grid-template-columns: 170px 170px 170px 170px 170px 170px 170px 170px;
@@ -715,8 +694,6 @@ Section Code
     margin: 10px 10px;
 }
 .pageHome-section-links-grid-item h4 {
-    color: darkgray;
-    font-size: 16px;
     margin: 0;
     text-align: center;
 }
@@ -791,20 +768,6 @@ Section Code
     align-items: center;
     flex-direction: column;
     min-height: 450px;
-}
-.pageHome-section-sponsors h2 {
-    color: red;
-    font-size: 32px;
-    font-weight: 900;
-    margin: 0;
-    align-self: start;
-}
-.pageHome-section-sponsors h3 {
-    color: darkgray;
-    font-size: 24px;
-    font-weight: 900;
-    margin: 0 0 20px 0;
-    align-self: start;
 }
 .pageHome-section-sponsors-grid {
     display: grid;
@@ -901,27 +864,15 @@ Section Code
     border-radius: 50px;
     padding: 30px;
 }
-.pageHome-section-crew-container h2 {
-    color: red;
-    font-size: 32px;
-    font-weight: 900;
-    margin: 0;
-    align-self: start;
-}
 .pageHome-section-crew-container-grid {
     display: grid;
     grid-template-columns: 320px 320px 320px;
 }
 .pageHome-section-crew-container-grid-item h3 {
-    font-size: 24px;
-    color: white;
     text-align: center;
-    font-weight: 700;
-    margin: 5px 0;
+    color: white;
 }
 .pageHome-section-crew-container-grid-item h4 {
-    font-size: 18px;
-    color: darkgray;
     text-align: center;
     margin: 5px 0;
 }
@@ -971,15 +922,10 @@ Section Code
     width: 50%;
 }
 .pageHome-section-contact-text-emails h2 {
-    color: red;
-    font-size: 32px;
-    font-weight: 900;
     margin: 0 0 30px 0;
 }
 .pageHome-section-contact-text-emails h3,
 .pageHome-section-contact-text-socials h3 {
-    color: darkgray;
-    font-size: 24px;
     margin: 30px 0 15px 0;
 }
 .pageHome-section-contact-text-emails a,
