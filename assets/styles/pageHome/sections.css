@@ -397,6 +397,10 @@ Section Code
     justify-content: center;
     flex-direction: column;
 }
+.pageHome-section-history a {
+    font-size: 22px;
+    color: white;
+}
 
 /* Tickets */
 .pageHome-section-tickets {
