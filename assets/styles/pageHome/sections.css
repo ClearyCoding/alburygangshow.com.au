@@ -261,6 +261,28 @@ Section Code
         box-shadow: 0 0 0 0 rgba(11, 11, 11, 0);
     }
 }
+@media (max-width: 700px) {
+    .pageHome-section-billboard-container h3 {
+        font-size: 24px;
+    }
+    .pageHome-section-billboard-container h2 {
+        font-size: 60px;
+    }
+    .pageHome-section-billboard-container-units h4 {
+        font-size: 15px;
+    }
+    .pageHome-section-billboard-container-units {
+        width: 85%;
+    }
+    @media (max-width: 475px) {
+        .pageHome-section-billboard-container h2 {
+            font-size: 45px;
+        }
+        .pageHome-section-billboard-container-units {
+            width: 75%;
+        }
+    }
+}
 
 /* About */
 .pageHome-section-about {
