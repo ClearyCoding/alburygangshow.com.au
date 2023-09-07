@@ -9,7 +9,7 @@
 .pageHome-backdrop-local_groups,
 .pageHome-backdrop-tickets,
 .pageHome-backdrop-join,
-.pageHome-backdrop-void,
+.pageHome-backdrop-members,
 .pageHome-backdrop-crew {
     background-attachment: fixed;
     background-position: center;
@@ -43,7 +43,7 @@
     background-image: url("/assets/images/backdrops/join.jpg");
     filter: blur(1px);
 }
-.pageHome-backdrop-void {
+.pageHome-backdrop-members {
     background-image: url("/assets/images/backdrops/void.jpg");
 }
 .pageHome-backdrop-crew {

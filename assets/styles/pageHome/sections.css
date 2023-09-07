@@ -2,7 +2,7 @@
 .pageHome-section-local_groups,
 .pageHome-section-tickets,
 .pageHome-section-join,
-.pageHome-section-void,
+.pageHome-section-members,
 .pageHome-section-crew {
     width: 100%;
     position: absolute;
@@ -103,10 +103,10 @@ Section Sizing
 }
 
 /* Group 5 */
-.pageHome-backdrop-void {
+.pageHome-backdrop-members {
     height: 100%;
 }
-.pageHome-section-void {
+.pageHome-section-members {
     height: 400px;
     top: -400px;
 }
@@ -192,6 +192,7 @@ Section Code
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding-top: 40px;
 }
 .pageHome-section-billboard-container {
     display: flex;
@@ -221,6 +222,12 @@ Section Code
     justify-content: space-around;
     align-items: center;
     width: 100%;
+}
+.pageHome-section-billboard h4,
+.pageHome-section-billboard h4 a {
+    color: white;
+    font-size: 22px;
+    margin: 0;
 }
 .pageHome-section-billboard-container-units h4 {
     color: darkgray;
@@ -275,10 +282,7 @@ Section Code
     }
     @media (max-width: 475px) {
         .pageHome-section-billboard-container h2 {
-            font-size: 50px;
-        }
-        .pageHome-section-billboard-container h2 {
-            font-size: 45px;
+            font-size: 40px;
         }
     }
 }
@@ -552,7 +556,7 @@ Section Code
 .pageHome-section-faq-list-question-title {
     width: 100%;
     display: inline-block;
-    padding: 25px;
+    padding: 40px 25px 10px 25px;
     font-size: 24px;
     font-weight: 700;
     color: darkgray;
@@ -584,6 +588,7 @@ Section Code
     font-size: 20px;
     color: darkgray;
     font-weight: normal;
+    padding-top: 20px;
 }
 .pageHome-section-faq h3 a {
     color: darkgray;
@@ -921,6 +926,11 @@ Section Code
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.pageHome-section-crew-container h5 {
+    align-self: center;
+    color: darkgrey;
+    font-size: 20px;
 }
 .pageHome-section-crew-container {
     display: flex;
