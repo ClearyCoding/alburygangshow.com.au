@@ -128,57 +128,6 @@ Section Sizing
     margin-top: 800px;
 }
 
-/*-------------------------------------
-Text Presets
----------------------------------------*/
-
-h2 {
-    color: red;
-    font-size: 32px;
-
-    font-weight: 900;
-    margin: 0;
-
-    align-self: start;
-}
-h3 {
-    color: darkgray;
-    font-size: 24px;
-
-    font-weight: 900;
-    margin: 0;
-
-    align-self: start;
-}
-h4 {
-    color: darkgray;
-    font-size: 18px;
-}
-p {
-    color: darkgray;
-    font-size: 20px;
-}
-figcaption {
-    color: darkgray;
-    font-size: 16px;
-}
-@media (max-width: 1100px) {
-    h2 {
-        font-size: 28px;
-    }
-    h3 {
-        font-size: 20px;
-    }
-    h4 {
-        font-size: 16px;
-    }
-    p {
-        font-size: 16px;
-    }
-    figcaption {
-        font-size: 14px;
-    }
-}
 
 /*-------------------------------------
 Section Code
