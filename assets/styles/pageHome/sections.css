@@ -70,12 +70,12 @@ Section Sizing
     height: 100%;
 }
 .pageHome-section-posters {
-    height: 400px;
-    top: -400px;
+    height: 300px;
+    top: -300px;
 }
 .pageHome-section-history {
     height: auto;
-    margin-top: 400px;
+    margin-top: 300px;
 }
 
 /* Group 3 */
@@ -303,7 +303,7 @@ Section Code
 
 /* History */
 .pageHome-section-history {
-    padding: 30px;
+    padding: 30px 40px;
     background: linear-gradient(#171717, #212123, #171717);
     min-height: 450px;
 
@@ -318,6 +318,7 @@ Section Code
     width: 100%;
     border-radius: 15px;
     border: #171717 3px solid;
+    filter: brightness(120%);
 }
 .pageHome-section-history-text {
     display: flex;
@@ -666,13 +667,62 @@ Section Code
 /* Members */
 .pageHome-section-members {
     padding: 30px;
+    background: linear-gradient(#171717, #212123, #171717);
     min-height: 450px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.pageHome-section-members h2 {
-    align-self: center;
+.pageHome-section-members-images {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+.pageHome-section-members-images img {
+    width: 80%;
+    border-radius: 15px;
+    border: #171717 3px solid;
+    filter: brightness(120%);
+}
+.pageHome-section-members-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 45%;
+}
+.pageHome-section-members-text-button {
+    text-align: center;
+    display: inline;
+    text-decoration: none;
+    box-sizing: border-box;
+
+    font-size: 20px;
+    width: 220px;
+    height: 64px;
+    padding: 15px;
+    border-radius: 10px;
+
+    color: white;
+    border: solid #af2d24 5px;
+}
+.pageHome-section-members-text-button:hover {
+    text-decoration: underline;
+    background: linear-gradient(to right, #af2d24, #821e17, #af2d24);
+    border: solid #821e17 3px;
+    padding-top: 18px;
+}
+@media (max-width: 900px) {
+    .pageHome-section-members {
+        flex-direction: column;
+    }
+    .pageHome-section-members-images {
+        width: 60%;
+        padding-top: 20px;
+    }
+    .pageHome-section-members-text {
+        width: 70%;
+    }
 }
 
 /* Local Groups */

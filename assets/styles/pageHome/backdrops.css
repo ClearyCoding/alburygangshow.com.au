@@ -33,12 +33,12 @@
     filter: brightness(75%);
 }
 .pageHome-backdrop-posters {
-    background-image: url("/assets/images/backdrops/join.jpg");
-    filter: blur(1px) brightness(75%);
+    background-image: url("/assets/images/backdrops/posters.jpg");
+    filter: blur(1px) brightness(80%);
 }
 .pageHome-backdrop-tickets {
     background-image: url("/assets/images/backdrops/tickets.jpg");
-    filter: blur(1px) brightness(75%);
+    filter: blur(1px) brightness(80%);
 }
 .pageHome-backdrop-join {
     background-image: url("/assets/images/backdrops/join.jpg");
