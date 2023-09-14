@@ -675,7 +675,7 @@ Section Code
     justify-content: space-between;
 }
 .pageHome-section-members-images {
-    width: 45%;
+    width: 50%;
     display: flex;
     justify-content: center;
 }
