@@ -1,8 +1,9 @@
 .pageHome-section-billboard,
-.pageHome-section-local_groups,
+.pageHome-section-posters,
 .pageHome-section-tickets,
 .pageHome-section-join,
-.pageHome-section-members,
+.pageHome-section-local_groups,
+.pageHome-section-void,
 .pageHome-section-crew {
     width: 100%;
     position: absolute;
@@ -12,6 +13,7 @@
 .pageHome-section-about,
 .pageHome-section-history,
 .pageHome-section-faq,
+.pageHome-section-members,
 .pageHome-section-links,
 .pageHome-section-sponsors,
 .pageHome-section-contact {
@@ -64,16 +66,16 @@ Section Sizing
 }
 
 /* Group 2 */
-.pageHome-backdrop-local_groups {
+.pageHome-backdrop-posters {
     height: 100%;
 }
-.pageHome-section-local_groups {
-    height: 600px;
-    top: -600px;
+.pageHome-section-posters {
+    height: 400px;
+    top: -400px;
 }
 .pageHome-section-history {
     height: auto;
-    margin-top: 600px;
+    margin-top: 400px;
 }
 
 /* Group 3 */
@@ -97,16 +99,29 @@ Section Sizing
     height: 800px;
     top: -800px;
 }
-.pageHome-section-links {
+.pageHome-section-members {
     height: auto;
     margin-top: 800px;
 }
 
 /* Group 5 */
-.pageHome-backdrop-members {
+.pageHome-backdrop-local_groups {
     height: 100%;
 }
-.pageHome-section-members {
+.pageHome-section-local_groups {
+    height: 600px;
+    top: -600px;
+}
+.pageHome-section-links {
+    height: auto;
+    margin-top: 600px;
+}
+
+/* Group 6 */
+.pageHome-backdrop-void {
+    height: 100%;
+}
+.pageHome-section-void {
     height: 400px;
     top: -400px;
 }
@@ -115,7 +130,7 @@ Section Sizing
     margin-top: 400px;
 }
 
-/* Group 6*/
+/* Group 7*/
 .pageHome-backdrop-crew {
     height: 800px;
 }
@@ -283,70 +298,8 @@ Section Code
         display: none;
     }
 }
-/* Local Groups */
-.pageHome-section-local_groups {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.pageHome-section-local_groups-container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    background-color: rgba(21,21,23,0.9);
-    height: auto;
-    width: 75%;
-    border-radius: 50px;
-    padding: 30px;
-}
-.pageHome-section-local_groups-container-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-}
-.pageHome-section-local_groups-container-grid h4 {
-    font-weight: 700;
-    color: white;
-    text-align: center;
-    margin: 10px 0;
-}
-@media (max-width: 900px) {
 
-    .pageHome-section-local_groups-container-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-    .pageHome-section-local_groups-container-grid h3{
-        margin: 5px 0;
-    }
-    .pageHome-backdrop-local_groups {
-        height: 120%;
-    }
-    .pageHome-section-local_groups {
-        height: 800px;
-        top: -800px;
-    }
-    .pageHome-section-history {
-        margin-top: 800px;
-    }
-    @media (max-width: 650px) {
-        .pageHome-section-local_groups-container-grid {
-            grid-template-columns: 1fr;
-        }
-        .pageHome-section-local_groups-container-grid h3{
-            margin: 2px 0;
-        }
-        .pageHome-backdrop-local_groups {
-            height: 160%;
-        }
-        .pageHome-section-local_groups {
-            height: 1000px;
-            top: -1000px;
-        }
-        .pageHome-section-history {
-            margin-top: 1000px;
-        }
-    }
-}
+/* Posters */
 
 /* History */
 .pageHome-section-history {
@@ -360,6 +313,11 @@ Section Code
 }
 .pageHome-section-history-images {
     width: 40%;
+}
+.pageHome-section-history-images img {
+    width: 100%;
+    border-radius: 15px;
+    border: #171717 3px solid;
 }
 .pageHome-section-history-text {
     display: flex;
@@ -387,6 +345,18 @@ Section Code
     background: linear-gradient(to right, #af2d24, #821e17, #af2d24);
     border: solid #821e17 3px;
     padding-top: 18px;
+}
+@media (max-width: 900px) {
+    .pageHome-section-history {
+        flex-direction: column;
+    }
+    .pageHome-section-history-images {
+        width: 60%;
+        padding-top: 20px;
+    }
+    .pageHome-section-history-text {
+        width: 70%;
+    }
 }
 
 /* Tickets */
@@ -690,6 +660,83 @@ Section Code
     }
     .pageHome-section-join-container-text-buttons-button {
         width: 200px;
+    }
+}
+
+/* Members */
+.pageHome-section-members {
+    padding: 30px;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pageHome-section-members h2 {
+    align-self: center;
+}
+
+/* Local Groups */
+.pageHome-section-local_groups {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pageHome-section-local_groups-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: rgba(21,21,23,0.9);
+    height: auto;
+    width: 75%;
+    border-radius: 50px;
+    padding: 30px;
+}
+.pageHome-section-local_groups-container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+.pageHome-section-local_groups-container-grid h4 {
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+}
+@media (max-width: 900px) {
+
+    .pageHome-section-local_groups-container-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .pageHome-section-local_groups-container-grid h3{
+        margin: 5px 0;
+    }
+    .pageHome-backdrop-local_groups {
+        height: 120%;
+    }
+    .pageHome-section-local_groups {
+        height: 800px;
+        top: -800px;
+    }
+    .pageHome-section-links {
+        margin-top: 800px;
+    }
+    @media (max-width: 650px) {
+        .pageHome-section-local_groups-container-grid {
+            grid-template-columns: 1fr;
+        }
+        .pageHome-section-local_groups-container-grid h3{
+            margin: 2px 0;
+        }
+        .pageHome-backdrop-local_groups {
+            height: 160%;
+        }
+        .pageHome-section-local_groups {
+            height: 1000px;
+            top: -1000px;
+        }
+        .pageHome-section-links {
+            margin-top: 1000px;
+        }
     }
 }
 
