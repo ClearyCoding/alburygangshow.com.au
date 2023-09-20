@@ -203,13 +203,13 @@ Section Code
 }
 .pageHome-section-billboard h3 {
     color: white;
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
     align-self: center;
     margin: 12px;
 }
 .pageHome-section-billboard-container h2 {
-    font-size: 90px;
+    font-size: 5.625rem;
     align-self: center;
 }
 .pageHome-section-billboard-container-units {
@@ -221,12 +221,12 @@ Section Code
 .pageHome-section-billboard h4,
 .pageHome-section-billboard h4 a {
     color: white;
-    font-size: 22px;
+    font-size: 1.375rem;
     margin: 0;
 }
 .pageHome-section-billboard-container-units h4 {
     color: darkgray;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin: 0;
     width: 70px;
 }
@@ -266,18 +266,18 @@ Section Code
 }
 @media (max-width: 700px) {
     .pageHome-section-billboard h3 {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
     .pageHome-section-billboard-container h2 {
-        font-size: 60px;
+        font-size: 3.75rem;
     }
     .pageHome-section-billboard-container-units h4 {
-        font-size: 15px;
+        font-size: 0.9375rem;
         width: 60px;
     }
     @media (max-width: 475px) {
         .pageHome-section-billboard-container h2 {
-            font-size: 40px;
+            font-size: 2.5rem;
         }
     }
 }
@@ -368,7 +368,7 @@ Section Code
     text-decoration: none;
     box-sizing: border-box;
 
-    font-size: 20px;
+    font-size: 1.25rem;
     width: 200px;
     height: 64px;
     padding: 15px;
@@ -416,7 +416,7 @@ Section Code
     height: 90%;
 }
 .pageHome-section-tickets-container-text time {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     color: white;
     display: block;
@@ -432,16 +432,16 @@ Section Code
 }
 @media (max-width: 1100px) {
     .pageHome-section-tickets-container-text h2 {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
     .pageHome-section-tickets-container-text p {
-        font-size: 16px;
+        font-size: 1rem;
     }
     .pageHome-section-tickets-container-text time {
-        font-size: 16px;
+        font-size: 1rem;
     }
     .pageHome-section-tickets-container-images figcaption {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 @media (max-width: 850px) {
@@ -468,7 +468,7 @@ Section Code
         width: 70%;
     }
     .pageHome-section-tickets-container-images figcaption {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 }
 
@@ -512,7 +512,7 @@ Section Code
     width: 100%;
     display: inline-block;
     padding: 40px 25px 10px 25px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     color: darkgray;
     text-decoration: underline;
@@ -531,7 +531,7 @@ Section Code
     transition: max-height 0.2s;
     margin: 0 0 5px 75px;
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .pageHome-section-faq-list-question p a {
     color: white;
@@ -540,7 +540,7 @@ Section Code
     max-height: 1000px;
 }
 .pageHome-section-faq h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: darkgray;
     font-weight: normal;
     padding-top: 20px;
@@ -623,7 +623,7 @@ Section Code
     text-decoration: none;
     box-sizing: border-box;
 
-    font-size: 20px;
+    font-size: 1.25rem;
     width: 200px;
     min-height: 64px;
     padding: 15px;
@@ -647,7 +647,7 @@ Section Code
 }
 @media (max-width: 1175px) {
     .pageHome-section-join-container-text-buttons-button {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .pageHome-backdrop-join {
@@ -664,13 +664,13 @@ Section Code
 }
 @media (max-width: 1100px) {
     .pageHome-section-join-container-text h2 {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
     .pageHome-section-join-container-text p {
-        font-size: 16px;
+        font-size: 1rem;
     }
     .pageHome-section-join-container-images figcaption {
-        font-size: 16px;
+        font-size: 1rem;
     }
     .pageHome-section-join-container-text-buttons {
         padding: 0 25px;
@@ -713,7 +713,7 @@ Section Code
         width: 70%;
     }
     .pageHome-section-join-container-images figcaption {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
     .pageHome-section-join-container-text-buttons {
         flex-direction: column;
@@ -768,7 +768,7 @@ Section Code
     text-decoration: none;
     box-sizing: border-box;
 
-    font-size: 20px;
+    font-size: 1.25rem;
     width: 220px;
     height: 64px;
     padding: 15px;
@@ -897,7 +897,7 @@ Section Code
     width: 100%;
     display: none;
     padding: 30px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     color: darkgray;
     text-decoration: underline;
@@ -980,7 +980,7 @@ Section Code
     width: 100%;
     display: none;
     padding: 30px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     color: darkgray;
     text-decoration: underline;
@@ -1046,7 +1046,7 @@ Section Code
 .pageHome-section-crew-container h5 {
     align-self: center;
     color: darkgrey;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .pageHome-section-crew-container {
     display: flex;
@@ -1130,7 +1130,7 @@ Section Code
 .pageHome-section-contact-text-emails a,
 .pageHome-section-contact-text-socials a {
     color: white;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin: 0;
 }
 .pageHome-section-contact-text-socials {

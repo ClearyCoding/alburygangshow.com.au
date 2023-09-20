@@ -34,7 +34,7 @@
     bottom: 16px;
     right: 2px;
     margin: 0;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #676767;
 }
 .footer-credit {
@@ -43,7 +43,7 @@
     right: 2px;
     padding: 2px;
     margin: 0;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #676767;
 }
 @media (max-width: 1000px) {
