@@ -101,38 +101,38 @@ Section Sizing
     height: 100%;
 }
 .pageHome-section-posters {
-    height: 300px;
-    top: -300px;
+    height: 18.75rem;
+    top: -18.75rem;
 }
 .pageHome-section-history {
     height: auto;
-    margin-top: 300px;
+    margin-top: 18.75rem;
 }
 
 /* Group 3 */
 .pageHome-backdrop-tickets {
-    height: 800px;
+    height: 111%;
 }
 .pageHome-section-tickets {
-    height: 720px;
-    top: -720px;
+    height: 45rem;
+    top: -45rem;
 }
 .pageHome-section-faq {
     height: auto;
-    margin-top: 720px;
+    margin-top: 45rem;
 }
 
 /* Group 4 */
 .pageHome-backdrop-join {
-    height: 650px;
+    height: 100%;
 }
 .pageHome-section-join {
-    height: 650px;
-    top: -650px;
+    height: 40.625rem;
+    top: -40.625rem;
 }
 .pageHome-section-members {
     height: auto;
-    margin-top: 650px;
+    margin-top: 40.625rem;
 }
 
 /* Group 5 */
@@ -140,12 +140,12 @@ Section Sizing
     height: 100%;
 }
 .pageHome-section-local_groups {
-    height: 600px;
-    top: -600px;
+    height: 37.5rem;
+    top: -37.5rem;
 }
 .pageHome-section-links {
     height: auto;
-    margin-top: 600px;
+    margin-top: 37.5rem;
 }
 
 /* Group 6 */
@@ -153,25 +153,25 @@ Section Sizing
     height: 100%;
 }
 .pageHome-section-void {
-    height: 400px;
-    top: -400px;
+    height: 25rem;
+    top: -25rem;
 }
 .pageHome-section-sponsors {
     height: auto;
-    margin-top: 400px;
+    margin-top: 25rem;
 }
 
 /* Group 7*/
 .pageHome-backdrop-crew {
-    height: 800px;
+    height: 100%;
 }
 .pageHome-section-crew {
-    height: 800px;
-    top: -800px;
+    height: 50rem;
+    top: -50rem;
 }
 .pageHome-section-contact {
     height: auto;
-    margin-top: 800px;
+    margin-top: 50rem;
 }
 
 
@@ -223,6 +223,7 @@ Section Code
     color: white;
     font-size: 1.375rem;
     margin: 0;
+    text-align: center;
 }
 .pageHome-section-billboard-container-units h4 {
     color: darkgray;
@@ -230,12 +231,12 @@ Section Code
     margin: 0;
     width: 70px;
 }
-.pageHome-backdrop-billboard-scroll {
+.pageHome-section-billboard-scroll {
     background: black;
     border-radius: 50%;
     margin: 30px 10px;
-    height: 50px;
-    width: 50px;
+    height: 3.125rem;
+    width: 3.125rem;
 
     display: flex;
     justify-content: center;
@@ -245,8 +246,8 @@ Section Code
     transform: scale(1);
     animation: pulse 2s infinite;
 }
-.pageHome-backdrop-billboard-scroll img {
-    height: 30px;
+.pageHome-section-billboard-scroll img {
+    height: 1.875rem;
 }
 @keyframes pulse {
     0% {
@@ -369,9 +370,9 @@ Section Code
     box-sizing: border-box;
 
     font-size: 1.25rem;
-    width: 200px;
-    height: 64px;
-    padding: 15px;
+    width: 12.5rem;
+    height: 4rem;
+    padding: 0.9375rem;
     border-radius: 10px;
 
     color: white;
@@ -381,11 +382,12 @@ Section Code
     text-decoration: underline;
     background: linear-gradient(to right, #af2d24, #821e17, #af2d24);
     border: solid #821e17 3px;
-    padding-top: 18px;
+    padding-top: 1.125rem;
 }
 @media (max-width: 900px) {
     .pageHome-section-history {
         flex-direction: column;
+        justify-content: center;
     }
     .pageHome-section-history-images {
         width: 60%;
@@ -426,7 +428,7 @@ Section Code
     height: 90%;
 }
 .pageHome-section-tickets-container-images img {
-    width: 100%;
+    max-width: 100%;
     border-radius: 20px;
     border: #171717 3px solid;
 }
@@ -478,11 +480,12 @@ Section Code
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 450px;
 }
 .pageHome-section-faq-images {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     width: 40%;
 }
 .pageHome-section-faq-images img {
@@ -511,7 +514,7 @@ Section Code
 .pageHome-section-faq-list-question-title {
     width: 100%;
     display: inline-block;
-    padding: 40px 25px 10px 25px;
+    padding: 2.5rem 1.5625rem 0.625rem 1.5625rem;
     font-size: 1.5rem;
     font-weight: 700;
     color: darkgray;
@@ -624,9 +627,9 @@ Section Code
     box-sizing: border-box;
 
     font-size: 1.25rem;
-    width: 200px;
-    min-height: 64px;
-    padding: 15px;
+    width: 12.5rem;
+    min-height: 4rem;
+    padding: 0.9375rem;
     border-radius: 10px;
 
     color: white;
@@ -636,7 +639,7 @@ Section Code
     text-decoration: underline;
     background: linear-gradient(to right, #af2d24, #821e17, #af2d24);
     border: solid #821e17 3px;
-    padding-top: 18px;
+    padding-top: 1.125rem;;
 }
 .pageHome-section-join-container-text-contact {
     width: 100%;
@@ -651,15 +654,15 @@ Section Code
     }
 
     .pageHome-backdrop-join {
-        height: 700px;
+        height: 43.75rem;
     }
     .pageHome-section-join {
-        height: 700px;
-        top: -700px;
+        height: 43.75rem;
+        top: -43.75rem;
     }
     .pageHome-section-members {
         height: auto;
-        margin-top: 700px;
+        margin-top: 43.75rem;
     }
 }
 @media (max-width: 1100px) {
@@ -682,15 +685,15 @@ Section Code
     }
 
     .pageHome-backdrop-join {
-        height: 800px;
+        height: 50rem;
     }
     .pageHome-section-join {
-        height: 800px;
-        top: -800px;
+        height: 50rem;
+        top: -50rem;
     }
     .pageHome-section-members {
         height: auto;
-        margin-top: 800px;
+        margin-top: 50rem;
     }
 }
 @media (max-width: 700px) {
@@ -723,14 +726,14 @@ Section Code
     }
 
     .pageHome-backdrop-join {
-        height: 900px;
+        height: 56.25rem;
     }
     .pageHome-section-join {
-        height: 900px;
-        top: -900px;
+        height: 56.25rem;
+        top: -56.25rem;
     }
     .pageHome-section-members {
-        margin-top: 900px;
+        margin-top: 56.25rem;
     }
 }
 
@@ -769,9 +772,9 @@ Section Code
     box-sizing: border-box;
 
     font-size: 1.25rem;
-    width: 220px;
-    height: 64px;
-    padding: 15px;
+    width: 13.75rem;
+    height: 4rem;
+    padding: 0.9375rem;
     border-radius: 10px;
 
     color: white;
@@ -781,11 +784,12 @@ Section Code
     text-decoration: underline;
     background: linear-gradient(to right, #af2d24, #821e17, #af2d24);
     border: solid #821e17 3px;
-    padding-top: 18px;
+    padding-top: 1.125rem;;
 }
 @media (max-width: 900px) {
     .pageHome-section-members {
         flex-direction: column;
+        justify-content: center;
     }
     .pageHome-section-members-images {
         width: 60%;
@@ -834,11 +838,11 @@ Section Code
         height: 120%;
     }
     .pageHome-section-local_groups {
-        height: 800px;
-        top: -800px;
+        height: 50rem;
+        top: -50rem;
     }
     .pageHome-section-links {
-        margin-top: 800px;
+        margin-top: 50rem;
     }
     @media (max-width: 650px) {
         .pageHome-section-local_groups-container-grid {
@@ -851,11 +855,11 @@ Section Code
             height: 160%;
         }
         .pageHome-section-local_groups {
-            height: 1000px;
-            top: -1000px;
+            height: 62.5rem;
+            top: -62.5rem;
         }
         .pageHome-section-links {
-            margin-top: 1000px;
+            margin-top: 62.5rem;
         }
     }
 }
@@ -886,6 +890,7 @@ Section Code
 .pageHome-section-links-grid-item h4 {
     margin: 0;
     text-align: center;
+    font-weight: 500;
 }
 .pageHome-section-links-grid-item img {
     height: 80px;
@@ -1076,28 +1081,28 @@ Section Code
         grid-template-columns: 320px 320px;
     }
     .pageHome-backdrop-crew {
-        height: 1000px;
+        height: 62.5rem;
     }
     .pageHome-section-crew {
-        height: 1000px;
-        top: -1000px;
+        height: 62.5rem;
+        top: -62.5rem;
     }
     .pageHome-section-contact {
-        margin-top: 1000px;
+        margin-top: 62.5rem;
     }
     @media (max-width: 750px) {
         .pageHome-section-crew-container-grid {
             grid-template-columns: 320px;
         }
         .pageHome-backdrop-crew {
-            height: 1200px;
+            height: 75rem;
         }
         .pageHome-section-crew {
-            height: 1200px;
-            top: -1200px;
+            height: 75rem;
+            top: -75rem;
         }
         .pageHome-section-contact {
-            margin-top: 1200px;
+            margin-top: 75rem;
         }
     }
 }
@@ -1143,7 +1148,7 @@ Section Code
     justify-content: center;
 }
 .pageHome-section-contact-text-socials figure img {
-    height: 50px;
+    height: 3.125rem;
     padding: 0 15px;
 }
 .pageHome-section-contact-text-socials figure img:hover {
