@@ -21,6 +21,14 @@
     background: linear-gradient(#171717, #212123, #171717);
 }
 .pageHome-section-local_groups-container,
+.pageHome-section-tickets-container {
+    animation: pageHome-container-left ease-out 3s;
+}
+.pageHome-section-crew-container,
+.pageHome-section-join-container {
+    animation: pageHome-container-right ease-out 3s;
+}
+.pageHome-section-local_groups-container,
 .pageHome-section-tickets-container,
 .pageHome-section-join-container {
     position: relative;
@@ -28,6 +36,29 @@
 .pageHome-anchor {
     position: absolute;
     top: -80px;
+}
+
+@keyframes pageHome-container-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        translateX(0);
+    }
+}
+@keyframes pageHome-container-right {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    100% {
+        opacity: 1;
+    translateX(0);
+    }
 }
 
 /*-------------------------------------
@@ -70,12 +101,12 @@ Section Sizing
     height: 100%;
 }
 .pageHome-section-posters {
-    height: 400px;
-    top: -400px;
+    height: 300px;
+    top: -300px;
 }
 .pageHome-section-history {
     height: auto;
-    margin-top: 400px;
+    margin-top: 300px;
 }
 
 /* Group 3 */
@@ -93,15 +124,15 @@ Section Sizing
 
 /* Group 4 */
 .pageHome-backdrop-join {
-    height: 800px;
+    height: 650px;
 }
 .pageHome-section-join {
-    height: 800px;
-    top: -800px;
+    height: 650px;
+    top: -650px;
 }
 .pageHome-section-members {
     height: auto;
-    margin-top: 800px;
+    margin-top: 650px;
 }
 
 /* Group 5 */
@@ -358,7 +389,6 @@ Section Code
     }
     .pageHome-section-history-images {
         width: 60%;
-        padding-top: 20px;
     }
     .pageHome-section-history-text {
         width: 70%;
@@ -619,6 +649,18 @@ Section Code
     .pageHome-section-join-container-text-buttons-button {
         font-size: 18px;
     }
+
+    .pageHome-backdrop-join {
+        height: 700px;
+    }
+    .pageHome-section-join {
+        height: 700px;
+        top: -700px;
+    }
+    .pageHome-section-members {
+        height: auto;
+        margin-top: 700px;
+    }
 }
 @media (max-width: 1100px) {
     .pageHome-section-join-container-text h2 {
@@ -637,6 +679,18 @@ Section Code
     }
     .pageHome-section-join-container-text-buttons-button{
         width: 300px;
+    }
+
+    .pageHome-backdrop-join {
+        height: 800px;
+    }
+    .pageHome-section-join {
+        height: 800px;
+        top: -800px;
+    }
+    .pageHome-section-members {
+        height: auto;
+        margin-top: 800px;
     }
 }
 @media (max-width: 700px) {
@@ -662,10 +716,21 @@ Section Code
         font-size: 14px;
     }
     .pageHome-section-join-container-text-buttons {
-        flex-direction: row;
+        flex-direction: column;
     }
     .pageHome-section-join-container-text-buttons-button {
-        width: 200px;
+        width: 70%;
+    }
+
+    .pageHome-backdrop-join {
+        height: 900px;
+    }
+    .pageHome-section-join {
+        height: 900px;
+        top: -900px;
+    }
+    .pageHome-section-members {
+        margin-top: 900px;
     }
 }
 
@@ -674,6 +739,7 @@ Section Code
     padding: 30px;
     background: linear-gradient(#171717, #212123, #171717);
     min-height: 450px;
+    box-sizing: border-box;
 
     display: flex;
     align-items: center;
@@ -723,7 +789,6 @@ Section Code
     }
     .pageHome-section-members-images {
         width: 60%;
-        padding-top: 20px;
     }
     .pageHome-section-members-text {
         width: 70%;
