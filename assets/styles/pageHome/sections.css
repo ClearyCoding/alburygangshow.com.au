@@ -21,14 +21,6 @@
     background: linear-gradient(#171717, #212123, #171717);
 }
 .pageHome-section-local_groups-container,
-.pageHome-section-tickets-container {
-    animation: pageHome-container-left ease-out 3s;
-}
-.pageHome-section-crew-container,
-.pageHome-section-join-container {
-    animation: pageHome-container-right ease-out 3s;
-}
-.pageHome-section-local_groups-container,
 .pageHome-section-tickets-container,
 .pageHome-section-join-container {
     position: relative;
@@ -38,28 +30,6 @@
     top: -80px;
 }
 
-@keyframes pageHome-container-left {
-    0% {
-        opacity: 0;
-        transform: translateX(-200px);
-    }
-
-    100% {
-        opacity: 1;
-        translateX(0);
-    }
-}
-@keyframes pageHome-container-right {
-    0% {
-        opacity: 0;
-        transform: translateX(200px);
-    }
-
-    100% {
-        opacity: 1;
-    translateX(0);
-    }
-}
 
 /*-------------------------------------
 Section Sizing
