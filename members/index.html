@@ -17,14 +17,23 @@
   <link rel="stylesheet" href="/assets/styles/main.css">
   <link rel="stylesheet" href="/assets/styles/header.css">
   <link rel="stylesheet" href="/assets/styles/footer.css">
+    <link rel="stylesheet" href="/assets/styles/pageMembers/pageLogin.css">
 </head>
 <body>
     <iframe src="/assets/html/header.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
-    <main class="pageHistory">
-      <div style="height: 800px">
-        <h2 style="color: white; padding-top: 120px">Members Page Coming Soon! :)</h2>
-      </div>
+    <main class="pageLogin">
+        <figure class="pageLogin-backdrop"></figure>
+        <section class="pageLogin-container">
+            <h2>Members Portal:</h2>
+            <label for="pageLogin-container-input-password">Enter Cast/Crew Password:</label>
+            <form class="pageLogin-container-input">
+                <label for="pageLogin-container-input-password"></label>
+                <input type="password" id="pageLogin-container-input-password" placeholder="Password">
+                <input type="submit" class="pageLogin-container-input-submit">
+            </form>
+            <p class="pageLogin-container-incorrect">Incorrect Password, Try Again.</p>
+        </section>
     </main>
-    <iframe src="/assets/html/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+    <script src="/assets/scripts/login.js"></script>
 </body>
 </html>
