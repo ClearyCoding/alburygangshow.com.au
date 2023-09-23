@@ -5,18 +5,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    position: relative;
 }
 .pageLogin-backdrop {
-    background-image: url("/assets/images/backdrops/login.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    filter: blur(1px);
+    filter: blur(2px) brightness(80%);
 
     position: absolute;
-    inset: 0;
-
-    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    min-width: 100%;
 }
 .pageLogin-container {
     display: flex;
@@ -44,6 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 #pageLogin-container-input-password {
     background-color: #212123;
@@ -59,13 +60,38 @@
 }
 .pageLogin-container-input-submit {
     border-radius: 0 5px 5px 0;
-    height: 2.5rem;
     padding: 0 7px;
     border-width: 0 0 0 1px;
     box-sizing: border-box;
     color: darkgray;
     background-color: #212123;
-    font-size: 1rem;
+    height: 3rem;
+    font-size: 1.5rem;
+}
+@media (max-width: 630px) {
+    .pageLogin-container {
+        width: 90%;
+    }
+    #pageLogin-container-input-password {
+        width: 100%;
+        border-radius: 5px;
+    }
+    .pageLogin-container-input-submit {
+        border-radius: 5px;
+        border: solid #af2d24 5px;
+        margin-top: 10px;
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+    .pageLogin-container-input-submit:hover {
+        border: solid #821e17 3px;
+    }
+    .pageLogin-container-input {
+        flex-direction: column;
+    }
+}
+.pageLogin-container-input-submit {
+    
 }
 .pageLogin-container-input-submit:hover {
     color: white;
