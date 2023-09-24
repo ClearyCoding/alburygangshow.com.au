@@ -3,8 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>404 - Albury Gang Show</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/images/branding/AGS_transparent.png">
+
+    <meta name="author" content="Albury Gang Show">
+    <meta name="description" content="We are the Albury Gang Show, a two-and-a-half hour variety show created and presented by the Scouts and Guides of the Albury/Wodonga region.">
+    <meta name="keywords" content="Gang Show, Albury, Scouts, Guides, Theatre, Wodonga, Australia, Gang, Show">
+    <meta name="robots" content="noindex">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;700&family=Heebo:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="stylesheet" href="/assets/styles/header.css">
+    <link rel="stylesheet" href="/assets/styles/footer.css">
+    <link rel="stylesheet" href="/assets/styles/page404/page404.css">
 </head>
 <body>
-    <h1>404 Page Coming Soon</h1>
+    <iframe src="/assets/html/header.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+    <main class="page404">
+        <img alt="Sorry :(" src="/assets/images/backdrops/404.jpg" class="page404-backdrop">
+        <section class="page404-container">
+            <h2>404 :(</h2>
+            <h3>Page Not Found</h3>
+            <h4>Please Check That You Have The Correct URL</h4>
+            <a href="/" target="_self" class="page404-container-button">Back Home &#8594</a>
+        </section>
+    </main>
 </body>
 </html>
