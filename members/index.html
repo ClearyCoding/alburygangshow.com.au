@@ -17,22 +17,21 @@
   <link rel="stylesheet" href="/assets/styles/main.css">
   <link rel="stylesheet" href="/assets/styles/header.css">
   <link rel="stylesheet" href="/assets/styles/footer.css">
-    <link rel="stylesheet" href="/assets/styles/pageMembers/pageLogin.css">
+  <link rel="stylesheet" href="/assets/styles/pageMembers/pageLogin.css">
 </head>
 <body>
     <iframe src="/assets/html/header.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
     <main class="pageLogin">
         <img alt="Cast Script Reading Session" src="/assets/images/backdrops/login.jpg" class="pageLogin-backdrop">
-        <
-        <section class="pageLogin-container">
-            <h2>Members Portal:</h2>
+        <section id="pageLogin-container">
+            <h2>Members Portal</h2>
             <label for="pageLogin-container-input-password">Enter Cast/Crew Password:</label>
-            <form class="pageLogin-container-input">
+            <section class="pageLogin-container-input">
                 <label for="pageLogin-container-input-password"></label>
                 <input type="password" id="pageLogin-container-input-password" placeholder="Password">
-                <input type="submit" class="pageLogin-container-input-submit">
-            </form>
-            <p class="pageLogin-container-incorrect">Incorrect Password, Try Again.</p>
+                <input type="submit" class="pageLogin-container-input-submit" onclick="verify()">
+            </section>
+            <p id="pageLogin-container-incorrect">Incorrect Password, Try Again.</p>
         </section>
     </main>
     <script src="/assets/scripts/login.js"></script>
