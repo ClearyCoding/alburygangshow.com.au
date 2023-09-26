@@ -1,4 +1,5 @@
-.pageHome {
+.pageHome,
+.pageMembers {
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
@@ -11,7 +12,8 @@
 .pageHome-backdrop-join,
 .pageHome-backdrop-local_groups,
 .pageHome-backdrop-void,
-.pageHome-backdrop-crew {
+.pageHome-backdrop-crew,
+.pageMembers-backdrop-billboard {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -52,6 +54,10 @@
     background-image: url("/assets/images/backdrops/void.jpg");
 }
 .pageHome-backdrop-crew {
+    background-image: url("/assets/images/backdrops/crew.jpg");
+    filter: blur(1px);
+}
+.pageMembers-backdrop-billboard {
     background-image: url("/assets/images/backdrops/crew.jpg");
     filter: blur(1px);
 }
