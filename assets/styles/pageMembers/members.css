@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
 }
-.pageMembers-section-links {
+.pageMembers-section-socials {
     position: relative;
     background: linear-gradient(#171717, #212123, #171717);
     min-height: 450px;
@@ -31,7 +31,7 @@ Section Sizing
     height: 90vh;
     top: -90vh;
 }
-.pageMembers-section-links {
+.pageMembers-section-socials {
     height: auto;
     margin-top: 90vh;
 }
@@ -50,6 +50,7 @@ Section Code
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
     background-color: rgba(21,21,23,0.9);
     height: auto;
     border-radius: 50px;

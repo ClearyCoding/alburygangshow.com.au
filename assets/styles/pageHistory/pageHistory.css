@@ -1,0 +1,62 @@
+.pageHistory-section-title {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.pageHistory-section-early {
+    position: relative;
+    background: linear-gradient(#171717, #212123, #171717);
+    min-height: 450px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.pageHistory-section-title-container {
+    position: relative;
+}
+.pageHistory-anchor {
+    position: absolute;
+    top: -80px;
+}
+
+/*-------------------------------------
+Section Sizing
+---------------------------------------*/
+
+/* Group 1 */
+.pageHistory-backdrop-title {
+    height: 100%;
+}
+.pageHistory-section-title {
+    height: 90vh;
+    top: -90vh;
+}
+.pageHistory-section-early {
+    height: auto;
+    margin-top: 90vh;
+}
+
+/*-------------------------------------
+Section Code
+---------------------------------------*/
+
+/* Title */
+.pageHistory-section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pageHistory-section-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(21,21,23,0.9);
+    height: auto;
+    border-radius: 50px;
+    padding: 30px;
+}
+.pageHistory-section-title-container h2 {
+    align-self: center;
+    font-size: 3rem;
+}
