@@ -1,10 +1,14 @@
-.pageHistory-section-title {
+.pageHistory-section-title,
+.pageHistory-section-void1,
+.pageHistory-section-void2 {
     width: 100%;
     position: absolute;
     left: 0;
     right: 0;
 }
-.pageHistory-section-early {
+.pageHistory-section-early,
+.pageHistory-section-early2,
+.pageHistory-section-fire {
     position: relative;
     background: linear-gradient(#171717, #212123, #171717);
     min-height: 450px;
@@ -17,6 +21,23 @@
 .pageHistory-anchor {
     position: absolute;
     top: -80px;
+}
+.pageHistory-caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(21,21,23,0.7);
+    height: auto;
+    border-radius: 5px;
+
+    padding: 0.3rem;
+    font-size: 1rem;
+    color: darkgray;
+
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
 }
 
 /*-------------------------------------
@@ -36,6 +57,31 @@ Section Sizing
     margin-top: 90vh;
 }
 
+/* Group 2 */
+.pageHistory-backdrop-void1 {
+    height: 100%;
+}
+.pageHistory-section-void1 {
+    height: 25rem;
+    top: -25rem;
+}
+.pageHistory-section-early2 {
+    height: auto;
+    margin-top: 25rem;
+}
+/* Group 1 */
+.pageHistory-backdrop-void2 {
+    height: 100%;
+}
+.pageHistory-section-void2 {
+    height: 25rem;
+    top: -25rem;
+}
+.pageHistory-section-fire {
+    height: auto;
+    margin-top: 25rem;
+}
+
 /*-------------------------------------
 Section Code
 ---------------------------------------*/
@@ -51,12 +97,16 @@ Section Code
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(21,21,23,0.9);
+    background-color: rgba(21,21,23,0.7);
     height: auto;
     border-radius: 50px;
     padding: 30px;
+    width: 70%;
 }
 .pageHistory-section-title-container h2 {
     align-self: center;
     font-size: 3rem;
+}
+.pageHistory-section-title-container p {
+    text-align: center;
 }

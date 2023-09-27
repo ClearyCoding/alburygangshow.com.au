@@ -15,7 +15,9 @@
 .pageHome-backdrop-void,
 .pageHome-backdrop-crew,
 .pageMembers-backdrop-billboard,
-.pageHistory-backdrop-title {
+.pageHistory-backdrop-title,
+.pageHistory-backdrop-void1,
+.pageHistory-backdrop-void2 {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -64,6 +66,14 @@
     filter: blur(1px);
 }
 .pageHistory-backdrop-title {
+    background-image: url("/assets/images/backdrops/pageHistory-title.jpg");
+    filter: blur(1px);
+}
+.pageHistory-backdrop-void1 {
+    background-image: url("/assets/images/backdrops/pageHistory-void1.jpg");
+    filter: blur(1px);
+}
+.pageHistory-backdrop-void2 {
     background-image: url("/assets/images/backdrops/pageHistory-title.jpg");
     filter: blur(1px);
 }
