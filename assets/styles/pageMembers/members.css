@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
 }
-.pageMembers-section-socials {
+.pageMembers-section-links {
     position: relative;
     background: linear-gradient(#171717, #212123, #171717);
     min-height: 450px;
@@ -31,7 +31,7 @@ Section Sizing
     height: 90vh;
     top: -90vh;
 }
-.pageMembers-section-socials {
+.pageMembers-section-links {
     height: auto;
     margin-top: 90vh;
 }
@@ -59,4 +59,43 @@ Section Code
 .pageMembers-section-billboard-container h2 {
     align-self: center;
     font-size: 3rem;
+}
+.pageMembers-section-billboard-container h3 {
+    padding-top: 2rem;
+    align-self: center;
+}
+
+/* Links */
+.pageMembers-section-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.pageMembers-section-links-links {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-rows: repeat(auto-fit, 12rem);
+    padding-top: 3rem;
+}
+.pageMembers-section-links-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+.pageMembers-section-links-links a:hover {
+    filter: brightness(70%);
+    color: #c2c2c2;
+    text-decoration: underline;
+}
+.pageMembers-section-links-links a img {
+    height: 6rem;
+}
+.pageMembers-section-links-links a h3 {
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    align-self: center;
+    text-align: center;
 }
