@@ -178,9 +178,10 @@ Section Code
     align-self: center;
     margin: 12px;
 }
-.pageHome-section-billboard-container h2 {
+#pageHome-section-billboard-container-countdown {
     font-size: 5.625rem;
     align-self: center;
+    font-family: PowerRangers, 'Fira Sans', Arial, sans-serif;;
 }
 .pageHome-section-billboard-container-units {
     display: flex;
@@ -261,6 +262,9 @@ Section Code
     justify-content: space-between;
     align-items: center;
 }
+.pageHome-section-about h2 {
+    font-family: MurderousDesire, 'Fira Sans', Arial, sans-serif;;
+}
 .pageHome-section-about-text {
     width: 55%;
 }
@@ -317,6 +321,9 @@ Section Code
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.pageHome-section-history h2 {
+    font-family: Grinched, 'Fira Sans', Arial, sans-serif;
 }
 .pageHome-section-history-images {
     width: 40%;
@@ -451,6 +458,12 @@ Section Code
     justify-content: space-between;
     align-items: center;
     min-height: 450px;
+}
+.pageHome-section-faq h2 {
+    font-family: Secrets, 'Fira Sans', Arial, sans-serif;
+}
+.pageHome-section-tickets-container-text h2 { /*Tickets*/
+    font-family: YouMurderer, 'Fira Sans', Arial, sans-serif;;
 }
 .pageHome-section-faq-images {
     display: flex;
@@ -718,6 +731,13 @@ Section Code
     align-items: center;
     justify-content: space-between;
 }
+.pageHome-section-members h2 {
+    font-family: WhoopAss, 'Fira Sans', Arial, sans-serif;
+    font-weight: 500;
+}
+.pageHome-section-join-container-text h2 { /* Join */
+    font-family: Lovable, 'Fira Sans', Arial, sans-serif;;
+}
 .pageHome-section-members-images {
     width: 50%;
     display: flex;
@@ -843,6 +863,13 @@ Section Code
     padding: 30px;
     min-height: 450px;
 }
+.pageHome-section-links h2 {
+    font-family: Aurella, 'Fira Sans', Arial, sans-serif;
+}
+.pageHome-section-local_groups-container h2 { /* Local Groups */
+    font-family: Ficticcia, 'Fira Sans', Arial, sans-serif;
+    font-weight: 500;
+}
 .pageHome-section-links-grid {
     margin-top: 1.5rem;
     display: grid;
@@ -911,6 +938,9 @@ Section Code
     align-items: center;
     flex-direction: column;
     min-height: 450px;
+}
+.pageHome-section-sponsors h2 {
+    font-family: RockBoulder, 'Fira Sans', Arial, sans-serif;
 }
 .pageHome-section-sponsors-grid {
     display: grid;
@@ -1042,6 +1072,10 @@ Section Code
 }
 .pageHome-section-contact-text-emails h2 {
     margin: 0 0 30px 0;
+    font-family: Mistery, 'Fira Sans', Arial, sans-serif;
+}
+.pageHome-section-crew-container h2 { /* Crew */
+    font-family: Eraser, 'Fira Sans', Arial, sans-serif;
 }
 .pageHome-section-contact-text-emails h3,
 .pageHome-section-contact-text-socials h3 {

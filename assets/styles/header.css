@@ -41,10 +41,11 @@
     padding: 5px;
 }
 .header-branding-title {
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: 700;
     padding: 0 20px;
     color: red;
+    font-family: Grinched, 'Fira Sans', Arial, sans-serif;;
 }
 .header-navbar {
     list-style: none;
@@ -194,7 +195,7 @@
     }
     @media (max-width: 1125px) {
         .header-branding-title {
-            font-size: 1.125rem;
+            font-size: 1.25rem;
         }
     }
 }
