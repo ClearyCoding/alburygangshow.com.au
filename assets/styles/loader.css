@@ -8,6 +8,7 @@
     z-index: 255;
     height: 100%;
     width: 100%;
+    visibility: hidden;
 }
 .loader-logo {
     height: 90px;
