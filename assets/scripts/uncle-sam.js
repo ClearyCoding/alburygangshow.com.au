@@ -20,7 +20,7 @@ function updateSam() {
         document.body.style.backgroundColor = "darkgrey";
         document.body.innerHTML = "" +
             "<h2 style='color: black'>Uncle Sam grew so powerful, that this site had to be taken down in a military action to prevent his takeover of the free world.</h2>" +
-            "<p style='margin-top: 50px'>(If I were you I'd have probably just taken his advice)</p>";
+            "<p style='margin-top: 50px; color: black'>(If I were you, I'd have probably just taken his advice)</p>";
     }
 }
 
