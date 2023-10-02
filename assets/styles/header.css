@@ -59,7 +59,6 @@
     font-weight: 700;
     text-align: center;
     transition: font-size 0.2s;
-    font-family: PowerRangers, "Fira Sans", Arial, sans-serif;
 }
 .header-navbar-button:hover {
     text-decoration: underline;
