@@ -240,7 +240,7 @@ Section Code
     .pageHome-section-billboard h3 {
         font-size: 1.5rem;
     }
-    .pageHome-section-billboard-container h2 {
+    #pageHome-section-billboard-container-countdown {
         font-size: 3.75rem;
     }
     .pageHome-section-billboard-container-units h4 {
@@ -248,7 +248,7 @@ Section Code
         width: 60px;
     }
     @media (max-width: 475px) {
-        .pageHome-section-billboard-container h2 {
+        #pageHome-section-billboard-container-countdown {
             font-size: 2.5rem;
         }
     }
