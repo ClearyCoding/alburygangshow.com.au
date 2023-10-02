@@ -49,6 +49,10 @@
     font-family: Aurella;
     src: url(/assets/fonts/Aurella.ttf);
 }
+@font-face {
+    font-family: Digital7;
+    src: url(/assets/fonts/digital7.ttf);
+}
 
 * {
     scroll-behavior: smooth;

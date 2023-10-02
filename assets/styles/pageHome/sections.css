@@ -181,7 +181,7 @@ Section Code
 #pageHome-section-billboard-container-countdown {
     font-size: 5.625rem;
     align-self: center;
-    font-family: PowerRangers, 'Fira Sans', Arial, sans-serif;;
+    font-family: Digital7, 'Fira Sans', Arial, sans-serif;;
 }
 .pageHome-section-billboard-container-units {
     display: flex;
@@ -579,6 +579,13 @@ Section Code
     width: 75%;
     border-radius: 50px;
     padding: 30px;
+}
+.pageHome-section-join-container-sam {
+    height: 6rem;
+    width: 4rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 .pageHome-section-join-container-text {
     width: 50%;
