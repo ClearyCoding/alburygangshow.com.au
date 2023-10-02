@@ -27,6 +27,13 @@
     color: red;
     font-weight: bold;
 }
+#loader-notice {
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 10px;
+}
 #loader-wheel {
     border: 16px solid #821e17;
     border-top: 16px solid #af2d24;
