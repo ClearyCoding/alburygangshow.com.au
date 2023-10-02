@@ -196,7 +196,8 @@
             <article class="pageHome-section-join">
                 <section class="pageHome-section-join-container">
                     <div class="pageHome-anchor" id="join"></div>
-                    <img alt="I WANT YOU TO JOIN ALBURY GANG SHOW!" src="/assets/images/sections/join_sam.png" class="pageHome-section-join-container-sam">
+                    <img alt="I WANT YOU TO JOIN THE ALBURY GANG SHOW!" src="/assets/images/sections/join_sam.png"  id="pageHome-section-join-samImage" onclick="samPlay()">
+                    <audio src="/assets/audio/join_sam.mp3" id="pageHome-section-join-samAudio"></audio>
                     <section class="pageHome-section-join-container-text">
                         <h2>Join Albury Gang Show!</h2>
                         <p>
@@ -471,6 +472,7 @@
         </article>
         <iframe src="/assets/html/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
         <script src="/assets/scripts/billboard-countdown.js"></script>
+        <script src="/assets/scripts/uncle-sam.js"></script>
     </main>
 </body>
 </html>

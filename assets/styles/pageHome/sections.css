@@ -180,6 +180,7 @@ Section Code
 }
 #pageHome-section-billboard-container-countdown {
     font-size: 5.625rem;
+    font-weight: bold;
     align-self: center;
     font-family: Digital7, 'Fira Sans', Arial, sans-serif;;
 }
@@ -580,12 +581,13 @@ Section Code
     border-radius: 50px;
     padding: 30px;
 }
-.pageHome-section-join-container-sam {
+#pageHome-section-join-samImage {
     height: 6rem;
     width: 4rem;
     position: absolute;
     left: 0;
     bottom: 0;
+    cursor: pointer;
 }
 .pageHome-section-join-container-text {
     width: 50%;

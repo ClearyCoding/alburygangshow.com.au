@@ -19,8 +19,8 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result in the element with id="pageHome-section-billboard-container-countdown"
-    document.getElementById("pageHome-section-billboard-container-countdown").innerHTML = days + " : " + ('0' + hours).slice(-2) + " : "
-        + ('0' + minutes).slice(-2) + " : " + ('0' + seconds ).slice(-2);
+    document.getElementById("pageHome-section-billboard-container-countdown").innerHTML = days + ":" + ('0' + hours).slice(-2) + ":"
+        + ('0' + minutes).slice(-2) + ":" + ('0' + seconds ).slice(-2);
 
     // If the countdown is finished, write some text
     if (distance < 0) {
