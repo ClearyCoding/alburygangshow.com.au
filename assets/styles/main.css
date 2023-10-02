@@ -105,6 +105,9 @@ p {
     color: darkgray;
     font-size: 1.25rem;
 }
+p a {
+    color: darkgrey;
+}
 figcaption {
     color: darkgray;
     font-size: 1em;

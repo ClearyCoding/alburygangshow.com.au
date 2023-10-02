@@ -1001,6 +1001,7 @@ Section Code
     align-self: center;
     color: darkgrey;
     font-size: 1.25rem;
+    text-align: center;
 }
 .pageHome-section-crew-container {
     display: flex;
