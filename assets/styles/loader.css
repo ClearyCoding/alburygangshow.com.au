@@ -26,6 +26,7 @@
     font-family: Arial, sans-serif;
     color: red;
     font-weight: bold;
+    text-align: center;
 }
 #loader-notice {
     font-family: Arial, sans-serif;
@@ -33,6 +34,7 @@
     font-size: 1rem;
     position: absolute;
     bottom: 10px;
+    text-align: center;
 }
 #loader-wheel {
     border: 16px solid #821e17;
