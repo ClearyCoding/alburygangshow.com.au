@@ -891,7 +891,7 @@ Section Code
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 8.75rem;
+    width: 100%;
     margin: 10px 10px;
 }
 .pageHome-section-links-grid-item h4 {
@@ -935,6 +935,11 @@ Section Code
 
     .pageHome-section-links-toggle-title {
         display: inline-block;
+    }
+    @media (max-width: 400px) {
+        .pageHome-section-links-grid {
+            grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+        }
     }
 }
 
