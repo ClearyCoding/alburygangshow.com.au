@@ -53,10 +53,6 @@
     font-family: Digital7;
     src: url(/assets/fonts/digital7.ttf);
 }
-@font-face {
-    font-family: Mojangles;
-    src: url(/assets/fonts/mojangles.ttf);
-}
 
 * {
     scroll-behavior: smooth;

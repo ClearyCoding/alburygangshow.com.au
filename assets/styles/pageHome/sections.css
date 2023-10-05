@@ -201,7 +201,7 @@ Section Code
     bottom: 0;
     right: 0;
     color: gold;
-    font-family: Mojangles, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 1rem;
     transform: translateX(-50%) translateY(-50%);
     animation: infinite splashPulse 2s;
