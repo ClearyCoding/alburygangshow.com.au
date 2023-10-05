@@ -18,14 +18,15 @@
 #loader-title {
     font-size: 2rem;
     margin-top: 20px;
+    color: red;
 }
 #loader-subtitle {
     font-size: 4rem;
+    color: white;
 }
 #loader-title,
 #loader-subtitle {
     font-family: Arial, sans-serif;
-    color: red;
     font-weight: bold;
     text-align: center;
 }
