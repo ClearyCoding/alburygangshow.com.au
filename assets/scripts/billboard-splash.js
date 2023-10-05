@@ -36,4 +36,7 @@ const subtitleSplashes = [
     "TWO, THREE, FOUR!",
     'You were AMAZING!'
 ]
-document.querySelector('#pageHome-section-billboard-container-splash-text').innerText = subtitleSplashes[Math.floor(Math.random() * subtitleSplashes.length)]
+rollSplash()
+function rollSplash() {
+    document.querySelector('#pageHome-section-billboard-container-splash-text').innerText = subtitleSplashes[Math.floor(Math.random() * subtitleSplashes.length)]
+}
