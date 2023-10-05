@@ -164,6 +164,7 @@ Section Code
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    position: relative;
 
     background-color: rgba(21,21,23,0.7);
     height: auto;
@@ -183,6 +184,55 @@ Section Code
     font-weight: bold;
     align-self: center;
     font-family: Digital7, 'Fira Sans', Arial, sans-serif;;
+}
+#pageHome-section-billboard-container-splash{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transform: rotate(-20deg);
+    z-index: 100;
+}
+.pageHome-section-billboard-container-splash-container {
+    position: absolute;
+    white-space: nowrap;
+}
+#pageHome-section-billboard-container-splash-text {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    color: gold;
+    font-family: Pixel, Arial, sans-serif;
+    font-size: 1rem;
+    transform: translateX(-50%) translateY(-50%);
+    animation: infinite splashPulse 2s;
+    z-index: 100;
+}
+@keyframes splashPulse {
+    0% {
+        font-size: 1rem;
+    }
+    50% {
+        font-size: 1.25rem;
+    }
+    100% {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 475px) {
+    #pageHome-section-billboard-container-splash-text {
+        font-size: 0.5rem;
+    }
+    @keyframes splashPulse {
+        0% {
+            font-size: 0.5rem;
+        }
+        50% {
+            font-size: 0.75rem;
+        }
+        100% {
+            font-size: 0.5rem;
+        }
+    }
 }
 .pageHome-section-billboard-container-units {
     display: flex;

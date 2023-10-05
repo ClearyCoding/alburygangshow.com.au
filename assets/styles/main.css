@@ -53,6 +53,10 @@
     font-family: Digital7;
     src: url(/assets/fonts/digital7.ttf);
 }
+@font-face {
+    font-family: Pixel;
+    src: url(/assets/fonts/pixel.ttf);
+}
 
 * {
     scroll-behavior: smooth;
