@@ -34,9 +34,20 @@ const subtitleSplashes = [
     'Thx 2nd Albury!',
     '\"Albury Town Is Our Home!\"',
     "TWO, THREE, FOUR!",
-    'You were AMAZING!'
+    'You were AMAZING!',
+    'alburygangshow.com.au/old',
+    'Win an Oscar!.... the grouch',
+    'This is a splash text, reload the page!',
+    'A  Lizard forced me to add this...',
+    'The Show Must Go On!',
+    'Speak Louder!',
+    'The better \"AGS\"'
 ]
 rollSplash()
-function rollSplash() {
-    document.querySelector('#pageHome-section-billboard-container-splash-text').innerText = subtitleSplashes[Math.floor(Math.random() * subtitleSplashes.length)]
+function rollSplash(splash) {
+    if(splash === undefined) {
+        document.querySelector('#pageHome-section-billboard-container-splash-text').innerText = subtitleSplashes[Math.floor(Math.random() * subtitleSplashes.length)]
+    } else {
+        document.querySelector('#pageHome-section-billboard-container-splash-text').innerText = subtitleSplashes[splash]
+    }
 }
