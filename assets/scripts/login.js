@@ -4,6 +4,8 @@ const container = document.getElementById("pageLogin-container");
 // Yes, this is out in the open, but it's not like you cant just look at the redirect page in the GitHub anyway lol
 const pass24 = "FlyingMonkey";
 
+document.getElementById("pageLogin-container-javascript").style.display = "none";
+
 input.addEventListener("keypress", function (event) {
     if (event.key === 'Enter') {
         verify()
