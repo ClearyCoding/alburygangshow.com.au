@@ -9,7 +9,7 @@ const subtitleSplashes = [
     'Don\'t forget to SMILE',
     'Petition to burn the tight pants...',
     'Dehydrated Water!',
-    'Gangity Gangiest Gang Show Gang',
+    'Gangitty Gangiest Gang Show Gang',
     'Cool & Creamy',
     'Super-Trustworthy Steve & Drew Studios',
     'OH NO! I\'ve lost my Mojo!',
@@ -43,11 +43,17 @@ const subtitleSplashes = [
     'Speak Louder!',
     'The better \"AGS\"'
 ]
+const splashElement = document.querySelector('#pageHome-section-billboard-container-splash-text');
 rollSplash()
 function rollSplash(splash) {
-    if(splash === undefined) {
-        document.querySelector('#pageHome-section-billboard-container-splash-text').innerText = subtitleSplashes[Math.floor(Math.random() * subtitleSplashes.length)]
+    if (splash === undefined) {
+        splashElement.innerText = subtitleSplashes[Math.floor(Math.random() * subtitleSplashes.length)]
+        return `Random Splash \"${splashElement.innerText}\" Successfully Rolled`;
+    } else if(splash >= subtitleSplashes.length || splash < 0) {
+        splashElement.innerText = 'missingno'
+        return 'Illegal Splash ID, Backup Splash \"missingno\" Rolled';
     } else {
-        document.querySelector('#pageHome-section-billboard-container-splash-text').innerText = subtitleSplashes[splash]
+        splashElement.innerText = subtitleSplashes[splash]
+        return `Splash \"${splashElement.innerText}\" At Splash Id #${splash} Successfully Rolled.`;
     }
 }
