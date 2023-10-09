@@ -15,7 +15,7 @@ function verify() {
     let redirect;
     for (let i = 0; i < passList.length; i++) {
         if (input.value.match(passList[i])) {
-            redirect = passList[i];
+            redirect = passList[i].toLowerCase();
         }
     }
     if (redirect) {
