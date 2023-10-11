@@ -1009,10 +1009,10 @@ Section Code
     display: grid;
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(10.9375rem, 1fr));
-    grid-template-rows: repeat(auto-fit, 10.9375rem);
 }
 .pageHome-section-sponsors-grid a {
     width: 100%;
+    aspect-ratio: 1.25/1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1045,6 +1045,7 @@ Section Code
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s;
+        grid-template-columns: repeat(auto-fit, minmax(8.9375rem, 1fr));
     }
     .pageHome-section-sponsors-toggle:checked ~ .pageHome-section-sponsors-grid {
         max-height: 4000px;
