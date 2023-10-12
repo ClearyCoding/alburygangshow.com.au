@@ -1,7 +1,8 @@
 // CREDIT: https://www.w3schools.com/howto/howto_js_countdown.asp
 
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 14, 2023 18:59:00").getTime();
+var countDownDate = convertTZ("Nov 14, 2023 18:59:00", "Australia/Sydney");
+console.log(countDownDate)
 
 // Update the countdown every 1 second
 var x = setInterval(function() {
@@ -28,3 +29,7 @@ var x = setInterval(function() {
         document.getElementById("pageHome-section-billboard-container-countdown").innerHTML = "NOW";
     }
 }, 1000);
+
+function convertTZ(date, tzString) {
+    return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", {timeZone: tzString})).getTime();
+}
