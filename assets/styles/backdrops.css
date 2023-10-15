@@ -35,7 +35,7 @@
 
 /* Backdrop Images*/
 .pageHome-backdrop-billboard {
-    background-image: url("/assets/images/backdrops/pageHome-billboard.jpg");
+    background-image: url("/assets/images/backdrops/pageHome-billboard-cast.jpg");
     filter: brightness(75%);
 }
 .pageHome-backdrop-posters {
