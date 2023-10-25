@@ -35,7 +35,6 @@ const subtitleSplashes = [
     '\"Albury Town Is Our Home!\"',
     "TWO, THREE, FOUR!",
     'You were AMAZING!',
-    'alburygangshow.com.au/_old',
     'Win an Oscar!.... the grouch',
     'This is a splash text, reload the page!',
     'A  Lizard forced me to add this...',
