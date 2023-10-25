@@ -40,7 +40,8 @@ const subtitleSplashes = [
     'A  Lizard forced me to add this...',
     'The Show Must Go On!',
     'Speak Louder!',
-    'The better \"AGS\"'
+    'The better \"AGS\"',
+    'Shame Harley can\'t see the colour in this site!'
 ]
 const splashElement = document.querySelector('#pageHome-section-billboard-container-splash-text');
 rollSplash()
