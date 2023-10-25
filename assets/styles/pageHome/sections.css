@@ -656,7 +656,7 @@ Section Code
 }
 .pageHome-section-join-container-text-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     box-sizing: border-box;
     padding: 0 40px;
