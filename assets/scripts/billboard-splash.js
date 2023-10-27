@@ -1,4 +1,4 @@
-const subtitleSplashes = [
+const splashList = [
     'Est. 1965',
     '\"Harley here from First National Real Estate\"',
     'NOOOOOAH',
@@ -41,19 +41,34 @@ const subtitleSplashes = [
     'The Show Must Go On!',
     'Speak Louder!',
     'The better \"AGS\"',
-    'Shame Harley can\'t see the colour in this site!'
+    'Shame Harley can\'t see the colour in this site!',
+    'Chill\'n Like A Villain!'
 ]
 const splashElement = document.querySelector('#pageHome-section-billboard-container-splash-text');
+const currentDate = `${new Date().getDate()}/${new Date().getMonth()}`
+let specialSplash;
+
 rollSplash()
 function rollSplash(splash) {
-    if (splash === undefined) {
-        splashElement.innerText = subtitleSplashes[Math.floor(Math.random() * subtitleSplashes.length)]
+    specialSplashes()
+    if (specialSplash) {
+        splashElement.innerText = `${specialSplash}`;
+        console.log(`Special Splash Trigger Detected, Splash ${specialSplash} Rolled`);
+    } else if (splash === undefined) {
+        splashElement.innerText = splashList[Math.floor(Math.random() * splashList.length)];
         return `Random Splash \"${splashElement.innerText}\" Successfully Rolled`;
-    } else if(splash >= subtitleSplashes.length || splash < 0) {
-        splashElement.innerText = 'missingno'
+    } else if(splash >= splashList.length || splash < 0) {
+        splashElement.innerText = 'missingno';
         return 'Illegal Splash ID, Backup Splash \"missingno\" Rolled';
     } else {
-        splashElement.innerText = subtitleSplashes[splash]
+        splashElement.innerText = splashList[splash];
         return `Splash \"${splashElement.innerText}\" At Splash Id #${splash} Successfully Rolled.`;
+    }
+}
+function specialSplashes() {
+    if (currentDate === "25/11") {
+        specialSplash = 'Merry Christmas!';
+    } else if (currentDate === "1/0") {
+        specialSplash = 'Happy New Year!';
     }
 }
