@@ -19,6 +19,11 @@ var x = setInterval(function() {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+    // Append 0 to front of Day counter if the day counter reaches the single-digits
+    if (days < 10) {
+        days = ('0' + days).slice(-2)
+    }
+
     // Display the result in the element with id="pageHome-section-billboard-container-countdown"
     document.getElementById("pageHome-section-billboard-container-countdown").innerHTML = days + ":" + ('0' + hours).slice(-2) + ":"
         + ('0' + minutes).slice(-2) + ":" + ('0' + seconds ).slice(-2);
