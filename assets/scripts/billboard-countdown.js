@@ -1,7 +1,7 @@
 // CREDIT: https://www.w3schools.com/howto/howto_js_countdown.asp
 
 // Set the date we're counting down to
-var countDownDate = convertTZ("Nov 14, 2023 18:59:00", "Australia/Sydney");
+var countDownDate = convertTZ("Feb 13, 2024 18:59:00", "Australia/Sydney");
 console.log(countDownDate)
 
 // Update the countdown every 1 second
