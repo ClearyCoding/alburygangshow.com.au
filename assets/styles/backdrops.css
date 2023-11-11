@@ -17,7 +17,8 @@
 .pageMembers-backdrop-billboard,
 .pageHistory-backdrop-title,
 .pageHistory-backdrop-void1,
-.pageHistory-backdrop-void2 {
+.pageHistory-backdrop-void2,
+.pageHistory-backdrop-void3 {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -75,5 +76,9 @@
 }
 .pageHistory-backdrop-void2 {
     background-image: url("/assets/images/backdrops/pageHistory-void2.jpg");
+    filter: blur(1px);
+}
+.pageHistory-backdrop-void3 {
+    background-image: url("/assets/images/backdrops/pageHistory-void3.jpg");
     filter: blur(1px);
 }
