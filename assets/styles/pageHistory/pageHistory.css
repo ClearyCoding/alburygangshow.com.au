@@ -126,3 +126,59 @@ Section Code
 .pageHistory-section-title-container p {
     text-align: center;
 }
+
+/* Shows */
+.pageHistory-section-shows-pinned {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+.pageHistory-section-shows-pinned-heading {
+    position: absolute;
+    top: -2rem;
+    left: -3rem;
+    font-size: 2rem;
+}
+.pageHistory-section-shows-pinned .pageHistory-section-shows-item-title {
+    font-size: 1.25rem;
+}
+.pageHistory-section-shows-pinned .pageHistory-section-shows-item-year {
+    font-size: 1rem;
+}
+.pageHistory-section-shows-pinned .pageHistory-section-shows-item-poster {
+    height: 20rem;
+}
+.pageHistory-section-shows-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    padding: 1rem 1.5rem 0 1.5rem;
+}
+.pageHistory-section-shows-item-poster {
+    height: 15rem;
+}
+.pageHistory-section-shows-grid .pageHistory-section-shows-item-poster {
+    max-width: 10.9375rem;
+}
+.pageHistory-section-shows-item-title {
+    margin: 0;
+    align-self: center;
+    font-size: 1rem;
+    text-align: center;
+}
+.pageHistory-section-shows-item-year {
+    margin: 0;
+    align-self: center;
+    font-size: 0.75rem;
+    text-align: center;
+}
+.pageHistory-section-shows-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11.9375rem, 1fr));
+    width: 100%;
+    padding-top: 1rem;
+}

@@ -80,5 +80,5 @@
 }
 .pageHistory-backdrop-void3 {
     background-image: url("/assets/images/backdrops/pageHistory-void3.jpg");
-    filter: blur(1px) brightness(80%);
+    filter: brightness(80%);
 }
