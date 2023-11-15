@@ -12,7 +12,7 @@
     align-items: center;
     background-color: rgba(11, 11, 11, 0.75);
     margin-right: 10px;
-    transition: height 1s, opacity 1s;
+    transition: height 0.25s, opacity 0.25s;
 }
 .header-extension {
     /* Usually the header blocks the scrollbar, not allowing the user to interact with it.
