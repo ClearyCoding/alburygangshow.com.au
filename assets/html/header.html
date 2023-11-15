@@ -18,17 +18,4 @@
     <a class="header-navbar-button" href="/#contact">Contact</a>
   </nav>
   <label class="header-cascade-outside" for="header-cascade-toggle"></label>
-  <script>
-      let lastScrollTop = 0;
-      header = document.querySelector(".header");
-      window.addEventListener("scroll", () => {
-          let scrollTop = document.scrollTop;
-          if (scrollTop > lastScrollTop/* && scrollTop > window.innerHeight*/) {
-              header.style.top = "-70px";
-          } else {
-              header.style.top = "0";
-          }
-          lastScrollTop = scrollTop;
-      })
-  </script>
 </header>

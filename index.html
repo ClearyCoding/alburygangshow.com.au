@@ -23,6 +23,27 @@
 </head>
 <body>
     <iframe src="/assets/html/header.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let lastScrollTop = 0;
+            const header = document.querySelector(".header");
+            const scrollablePages = document.querySelectorAll(".pageHome, .pageMembers, .pageHistory");
+
+            scrollablePages.forEach(page => {
+                page.addEventListener("scroll", () => {
+                    let scrollTop = page.scrollTop;
+
+                    if (scrollTop > lastScrollTop && scrollTop > window.innerHeight) {
+                        header.style.top = "-70px";
+                    } else {
+                        header.style.top = "0";
+                    }
+                    lastScrollTop = scrollTop;
+                });
+            });
+        });
+
+    </script>
     <div id="loader">
         <script src="/assets/scripts/loader.js"></script>
         <div id="loader-wheel">
