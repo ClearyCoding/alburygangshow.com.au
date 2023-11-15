@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let lastScrollTop = 0;
     const header = document.querySelector(".header");
     const scrollablePages = document.querySelectorAll(".pageHome, .pageMembers, .pageHistory");
-    let timeout = false;
     console.log(window.innerHeight)
 
     scrollablePages.forEach(page => {
@@ -10,19 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
             let scrollTop = page.scrollTop;
 
             if (scrollTop >= lastScrollTop && scrollTop > window.innerHeight) {
-                if (timeout) {
-                    setTimeout(() =>{
-                        header.style.height = "0";
-                        header.style.opacity = "0";
-                    }, 1000)
-                } else {
-                    header.style.height = "0";
-                    header.style.opacity = "0";
-                }
+                header.style.transition = "transition: height 0.75s, opacity 0.75s;";
+                header.style.height = "0";
+                header.style.opacity = "0";
             } else {
+                header.style.transition = "transition: height 0.25s, opacity 0.25s;";
                 header.style.height = "70px";
                 header.style.opacity = "100";
-                timeout = true
             }
             lastScrollTop = scrollTop;
         });
