@@ -1,11 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
     let lastScrollTop = 0;
-    const header = document.querySelector(".header");
+    let header = document.querySelector(".header");
     const scrollablePages = document.querySelectorAll(".pageHome, .pageMembers, .pageHistory");
     console.log(window.innerHeight)
 
     scrollablePages.forEach(page => {
         page.addEventListener("scroll", () => {
+            if (!header) {
+                header = document.querySelector(".header");
+            }
+
             let scrollTop = page.scrollTop;
 
             if (scrollTop >= lastScrollTop && scrollTop > window.innerHeight) {
