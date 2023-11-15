@@ -11,11 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
             if (scrollTop >= lastScrollTop && scrollTop > window.innerHeight) {
                 header.style.height = "0";
                 header.style.opacity = "0";
-                console.log("up")
             } else {
                 header.style.height = "70px";
                 header.style.opacity = "100";
-                console.log("down")
             }
             lastScrollTop = scrollTop;
         });
