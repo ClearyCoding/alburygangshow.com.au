@@ -9,11 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
             let scrollTop = page.scrollTop;
 
             if (scrollTop >= lastScrollTop && scrollTop > window.innerHeight) {
-                header.style.transition = "transition: height 0.75s, opacity 0.75s;";
                 header.style.height = "0";
                 header.style.opacity = "0";
             } else {
-                header.style.transition = "transition: height 0.25s, opacity 0.25s;";
                 header.style.height = "70px";
                 header.style.opacity = "100";
             }
