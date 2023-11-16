@@ -173,8 +173,9 @@ Section Code
 .pageHistory-section-shows-item-year {
     margin: 0;
     align-self: center;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     text-align: center;
+    color: grey;
 }
 .pageHistory-section-shows-grid {
     display: grid;
