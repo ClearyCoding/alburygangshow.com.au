@@ -51,11 +51,13 @@ loadHTML();
 function openPopup(popupId) {
     const popup = document.getElementById(`pageHistory-section-shows-popup${popupId}`);
     popup.style.display = 'flex';
+    popup.style.opacity = '100';
 }
 
 function closePopup(popupId) {
     const popup = document.getElementById(`pageHistory-section-shows-popup${popupId}`);
     popup.style.display = 'none';
+    popup.style.opacity = '0';
 }
 
 function loadHTML() {
