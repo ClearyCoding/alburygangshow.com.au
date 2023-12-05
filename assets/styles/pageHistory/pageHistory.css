@@ -128,7 +128,7 @@ Section Code
 }
 
 /* Shows */
-.pageHistory-section-shows-pinned {
+#pageHistory-section-shows-pinned {
     display: flex;
     width: 100%;
     align-items: center;
@@ -141,13 +141,13 @@ Section Code
     left: -3rem;
     font-size: 2rem;
 }
-.pageHistory-section-shows-pinned .pageHistory-section-shows-item-title {
+#pageHistory-section-shows-pinned .pageHistory-section-shows-item-title {
     font-size: 1.25rem;
 }
-.pageHistory-section-shows-pinned .pageHistory-section-shows-item-year {
+#pageHistory-section-shows-pinned .pageHistory-section-shows-item-year {
     font-size: 1rem;
 }
-.pageHistory-section-shows-pinned .pageHistory-section-shows-item-poster {
+#pageHistory-section-shows-pinned .pageHistory-section-shows-item-poster {
     height: 20rem;
 }
 .pageHistory-section-shows-item {
@@ -157,11 +157,15 @@ Section Code
     justify-content: start;
     position: relative;
     padding: 1rem 1.5rem 0 1.5rem;
+    cursor: pointer;
+}
+.pageHistory-section-shows-item:hover {
+    filter: brightness(120%);
 }
 .pageHistory-section-shows-item-poster {
     height: 15rem;
 }
-.pageHistory-section-shows-grid .pageHistory-section-shows-item-poster {
+#pageHistory-section-shows-grid .pageHistory-section-shows-item-poster {
     max-width: 10.9375rem;
 }
 .pageHistory-section-shows-item-title {
@@ -177,7 +181,7 @@ Section Code
     text-align: center;
     color: grey;
 }
-.pageHistory-section-shows-grid {
+#pageHistory-section-shows-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(11.9375rem, 1fr));
     width: 100%;
@@ -188,24 +192,24 @@ Section Code
         font-size: 1.5rem;
         left: -2rem;
     }
-    .pageHistory-section-shows-pinned .pageHistory-section-shows-item-title {
+    #pageHistory-section-shows-pinned .pageHistory-section-shows-item-title {
         font-size: 1rem;
     }
-    .pageHistory-section-shows-pinned .pageHistory-section-shows-item-year {
+    #pageHistory-section-shows-pinned .pageHistory-section-shows-item-year {
         font-size: 0.75rem;
     }
     @media (max-width: 700px) {
         .pageHistory-section-shows-pinned-heading {
             left: -1.5rem;
         }
-        .pageHistory-section-shows-pinned .pageHistory-section-shows-item-poster {
+        #pageHistory-section-shows-pinned .pageHistory-section-shows-item-poster {
             height: 15rem;
         }
         @media (max-width: 500px) {
-            .pageHistory-section-shows-pinned {
+            #pageHistory-section-shows-pinned {
                 flex-direction: column;
             }
-            .pageHistory-section-shows-pinned .pageHistory-section-shows-item {
+            #pageHistory-section-shows-pinned .pageHistory-section-shows-item {
                 padding-bottom: 2.5rem;
             }
             .pageHistory-section-shows-item-poster {
