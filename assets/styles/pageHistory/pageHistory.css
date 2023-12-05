@@ -237,12 +237,48 @@ Section Code
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     z-index: 254;
 }
 .pageHistory-section-shows-popup-content {
     z-index: 255;
+    width: 28rem;
+    max-width: 90vw;
+    background-color: rgba(21,21,23,0.7);
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pageHistory-section-shows-popup-content-poster {
+    width: 90%;
+}
+.pageHistory-section-shows-popup-content-title {
+    text-align: center;
+    color: red;
+    align-self: center;
 }
 .pageHistory-section-shows-popup-close {
+    position: absolute;
+    top: -5px;
+    right: 10px;
     cursor: pointer;
+    font-size: 3rem;
+    color: red;
+}
+.pageHistory-section-shows-popup-content-year {
+    margin: 0;
+    align-self: center;
+    font-size: 1rem;
+    text-align: center;
+    color: grey;
+}
+.pageHistory-section-shows-popup-content-description {
+    margin: 0;
+    align-self: center;
+    font-size: 1.2rem;
+    text-align: center;
+    color: darkgrey;
 }

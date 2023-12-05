@@ -49,15 +49,19 @@ const showDictionary = [
 loadHTML();
 
 function openPopup(popupId) {
-    const popup = document.getElementById(`pageHistory-section-shows-popup${popupId}`);
+    const popup = document.querySelector(`#pageHistory-section-shows-popup${popupId}`);
+    const header = document.querySelector(`.header`);
     popup.style.display = 'flex';
     popup.style.opacity = '100';
+    header.style.display = 'none';
 }
 
 function closePopup(popupId) {
-    const popup = document.getElementById(`pageHistory-section-shows-popup${popupId}`);
+    const popup = document.querySelector(`#pageHistory-section-shows-popup${popupId}`);
+    const header = document.querySelector(`.header`);
     popup.style.display = 'none';
     popup.style.opacity = '0';
+    header.style.display = 'flex';
 }
 
 function loadHTML() {
@@ -99,7 +103,10 @@ function loadHTML() {
             <div class="pageHistory-section-shows-popup-cover" onclick="closePopup(${show.number})"></div>
             <section class="pageHistory-section-shows-popup-content">
                 <span class="pageHistory-section-shows-popup-close" onclick="closePopup(${show.number})">&times;</span>
-                <p style="color: white">${show.number}</p>
+                <img class="pageHistory-section-shows-popup-content-poster" alt="${show.year} Poster" src="/assets/images/pageHistory/posters/${show.year}.jpg">
+                <h3 class="pageHistory-section-shows-popup-content-title">${show.title || `${show.number}${showNumberSuffix} show`}</h3>
+                <h4 class="pageHistory-section-shows-popup-content-year">${show.number}${showNumberSuffix} Show - ${show.year}</h4>
+                <p class="pageHistory-section-shows-popup-content-description">${show.description}</p>
             </section>
         </div>
         `
