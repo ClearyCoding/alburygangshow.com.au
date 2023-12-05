@@ -308,6 +308,28 @@ Section Code
     align-self: start;
     line-height: 1.5rem;
 }
+.pageHistory-section-shows-popup-content-tickets {
+    text-align: center;
+    display: inline;
+    text-decoration: none;
+    box-sizing: border-box;
+
+    font-size: 1.25rem;
+    width: 13.75rem;
+    height: 4rem;
+    padding: 0.9375rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+
+    color: white;
+    border: solid #af2d24 5px;
+}
+.pageHistory-section-shows-popup-content-tickets:hover {
+    text-decoration: underline;
+    background: linear-gradient(to right, #af2d24, #821e17, #af2d24);
+    border: solid #821e17 3px;
+    padding-top: 1.125rem;;
+}
 @media (max-width: 650px) {
     .pageHistory-section-shows-popup-content {
         flex-direction: column;
@@ -319,6 +341,7 @@ Section Code
     }
     .pageHistory-section-shows-popup-content-info {
         width: 100%;
+        align-items: center;
     }
     .pageHistory-section-shows-popup-content-title {
         font-size: 1.5rem;
