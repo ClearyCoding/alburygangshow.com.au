@@ -49,20 +49,22 @@ const showDictionary = [
 loadHTML();
 
 function openPopup(popupId) {
-    const popup = document.getElementById(`pageHistory-section-shows-item-${popupId}`);
-    popup.style.display = 'block';
+    const popup = document.getElementById(`pageHistory-section-shows-popup${popupId}`);
+    popup.style.display = 'flex';
 }
 
 function closePopup(popupId) {
-    const popup = document.getElementById(`pageHistory-section-shows-item-${popupId}`);
+    const popup = document.getElementById(`pageHistory-section-shows-popup${popupId}`);
     popup.style.display = 'none';
 }
 
 function loadHTML() {
     const historyShowsGrid = document.querySelector('#pageHistory-section-shows-grid')
     const historyShowsPinned = document.querySelector('#pageHistory-section-shows-pinned')
+    const historyShowsPopups = document.querySelector('#pageHistory-section-shows-popups')
     let historyShowsGridHTML = "";
     let historyShowsPinnedHTML = "";
+    let historyShowsPopupsHTML = "";
     showDictionary.forEach((show, index) => {
         let showNumberSuffix = 'th';
         if (show.number > 20 || show.number < 10){
@@ -74,7 +76,7 @@ function loadHTML() {
             let showHeader = 'Next Show:'
             if (index === 1) {showHeader = 'Previous Show:'}
             historyShowsPinnedHTML += `
-                <div class="pageHistory-section-shows-item">
+                <div class="pageHistory-section-shows-item" onclick="openPopup(${show.number})">
                 <h3 class="pageHistory-section-shows-pinned-heading">${showHeader}</h3>
                     <img class="pageHistory-section-shows-item-poster" alt="${show.year} Poster" src="/assets/images/pageHistory/posters/${show.year}.jpg">
                     <h3 class="pageHistory-section-shows-item-title">${show.title || `${show.number}${showNumberSuffix} show`}</h3>
@@ -83,14 +85,24 @@ function loadHTML() {
             `
         } else {
             historyShowsGridHTML += `
-                <div class="pageHistory-section-shows-item">
+                <div class="pageHistory-section-shows-item" onclick="openPopup(${show.number})">
                     <img class="pageHistory-section-shows-item-poster" alt="${show.year} Poster" src="/assets/images/pageHistory/posters/${show.year}.jpg">
                     <h3 class="pageHistory-section-shows-item-title">${show.title || `${show.number}${showNumberSuffix} show`}</h3>
                     <h4 class="pageHistory-section-shows-item-year">${show.number}${showNumberSuffix} Show - ${show.year}</h4>
                 </div>
             `
         }
+        historyShowsPopupsHTML += `
+        <div id="pageHistory-section-shows-popup${show.number}" class="pageHistory-section-shows-popup">
+            <div class="pageHistory-section-shows-popup-cover" onclick="closePopup(${show.number})"></div>
+            <section class="pageHistory-section-shows-popup-content">
+                <span class="pageHistory-section-shows-popup-close" onclick="closePopup(${show.number})">&times;</span>
+                <p style="color: white">${show.number}</p>
+            </section>
+        </div>
+        `
     })
     historyShowsGrid.innerHTML = historyShowsGridHTML;
     historyShowsPinned.innerHTML = historyShowsPinnedHTML;
+    historyShowsPopups.innerHTML = historyShowsPopupsHTML;
 }

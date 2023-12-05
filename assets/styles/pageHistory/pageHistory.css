@@ -218,3 +218,29 @@ Section Code
         }
     }
 }
+
+.pageHistory-section-shows-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+}
+.pageHistory-section-shows-popup-cover {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 254;
+}
+.pageHistory-section-shows-popup-content {
+    z-index: 255;
+}
+.pageHistory-section-shows-popup-close {
+    cursor: pointer;
+}
