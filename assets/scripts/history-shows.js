@@ -7,33 +7,54 @@ const showDictionary = [
         title: "The Chase",
         year: 2023,
         number: 57,
+        dvd: true,
+        description: "Two original stories with a common theme 'The Chase for friendship'. " +
+            "One story of two friends seperated when one joins an evil villain organisation. " +
+            "The other about the journey of love and discovering if she's the one.",
     }, {
         title: "I'm A Cast Member, Get Me Out Of Here!",
         year: 2022,
         number: 56,
+        dvd: true,
+        description: "What happens when kids click pop ups on the Internet? " +
+            "Will they go on an online adventure, or risk being trapped inside forever? " +
+            "Join our Colorblind Host, Snoring Leaders, untold Disney Lovers & Time-travelling Vegemite! ",
     }, {
         title: "The Never Starting Story",
         year: 2021,
         number: 55,
+        dvd: true,
+        description: "Follow our story as a group of children battle over whose bedtime story is the best. " +
+            "Will it be about Dinosaurs, Aliens or Moustaches? " +
+            "Perhaps Dad really has the best stories to tell!",
     }, {
         title: "Lights, Cameras, NEXT!!!",
         year: 2019,
         number: 54,
+        dvd: true,
+        description: "Join us for our 54th show as a trio perform for a cantankerous Director, " +
+            "Disney villains go on trial, and some singing vegetables fall in love!",
     }, {
         title: "Oh No, My Mojo",
         year: 2018,
         number: 53,
+        dvd: true,
+        description: "In our 53rd show join our cast as a ripper detective works a case, " +
+            "heroes save their friend, and a witch gets pushed into an oven!",
     }, {
         title: "The Internet Is Down!!!",
         year: 2017,
         number: 52,
+        dvd: true,
     }, {
         title: "The Show Must Go On!!!",
         year: 2016,
         number: 51,
+        dvd: true,
     }, {
         year: 2015,
         number: 50,
+        dvd: true,
     }, {
         year: 2014,
         number: 49,
@@ -53,7 +74,8 @@ function openPopup(popupId) {
     const header = document.querySelector(`.header`);
     popup.style.display = 'flex';
     popup.style.opacity = '100';
-    header.style.display = 'none';
+    header.style.height = "0";
+    header.style.opacity = "0";
 }
 
 function closePopup(popupId) {
@@ -61,7 +83,8 @@ function closePopup(popupId) {
     const header = document.querySelector(`.header`);
     popup.style.display = 'none';
     popup.style.opacity = '0';
-    header.style.display = 'flex';
+    header.style.height = "70px";
+    header.style.opacity = "100";
 }
 
 function loadHTML() {
@@ -104,9 +127,11 @@ function loadHTML() {
             <section class="pageHistory-section-shows-popup-content">
                 <span class="pageHistory-section-shows-popup-close" onclick="closePopup(${show.number})">&times;</span>
                 <img class="pageHistory-section-shows-popup-content-poster" alt="${show.year} Poster" src="/assets/images/pageHistory/posters/${show.year}.jpg">
-                <h3 class="pageHistory-section-shows-popup-content-title">${show.title || `${show.number}${showNumberSuffix} show`}</h3>
-                <h4 class="pageHistory-section-shows-popup-content-year">${show.number}${showNumberSuffix} Show - ${show.year}</h4>
-                <p class="pageHistory-section-shows-popup-content-description">${show.description}</p>
+                <div class="pageHistory-section-shows-popup-content-info">
+                    <h3 class="pageHistory-section-shows-popup-content-title">${show.title || `${show.number}${showNumberSuffix} show`} ${show.dvd ? '<div class="pageHistory-section-shows-popup-content-dvd"><img class="pageHistory-section-shows-popup-content-dvd-icon" alt="DvD Available" src="/assets/images/pageHistory/dvd.png"><div class="pageHistory-section-shows-popup-content-dvd-label">DvDs are available for order</div></div>' : ''}</h3>
+                    <h4 class="pageHistory-section-shows-popup-content-year">${show.number}${showNumberSuffix} Show - ${show.year}</h4>
+                    ${show.description ? `<p class="pageHistory-section-shows-popup-content-description">${show.description}</p>` : ''}
+                </div>
             </section>
         </div>
         `

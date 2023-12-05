@@ -237,12 +237,13 @@ Section Code
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
     z-index: 254;
+    backdrop-filter: blur(2px);
 }
 .pageHistory-section-shows-popup-content {
     z-index: 255;
-    width: 28rem;
+    width: 56rem;
     max-width: 90vw;
     background-color: rgba(21,21,23,0.7);
     border-radius: 10px;
@@ -250,15 +251,7 @@ Section Code
     position: relative;
     display: flex;
     align-items: center;
-    flex-direction: column;
-}
-.pageHistory-section-shows-popup-content-poster {
-    width: 90%;
-}
-.pageHistory-section-shows-popup-content-title {
-    text-align: center;
-    color: red;
-    align-self: center;
+    justify-content: space-between;
 }
 .pageHistory-section-shows-popup-close {
     position: absolute;
@@ -268,17 +261,82 @@ Section Code
     font-size: 3rem;
     color: red;
 }
+.pageHistory-section-shows-popup-content-poster {
+    width: 45%;
+}
+.pageHistory-section-shows-popup-content-info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+.pageHistory-section-shows-popup-content-title {
+    color: red;
+    font-size: 2rem;
+    display: flex;
+}
+.pageHistory-section-shows-popup-content-dvd {
+    position: relative;
+    margin-left: 0.5rem;
+}
+.pageHistory-section-shows-popup-content-dvd-icon {
+    height: 1.6rem;
+}
+.pageHistory-section-shows-popup-content-dvd-label {
+    position: absolute;
+    font-size: 0.7rem;
+    top: -0.8rem;
+    left: -3.3rem;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+}
+.pageHistory-section-shows-popup-content-dvd:hover .pageHistory-section-shows-popup-content-dvd-label {
+    opacity: 100;
+}
 .pageHistory-section-shows-popup-content-year {
     margin: 0;
-    align-self: center;
-    font-size: 1rem;
-    text-align: center;
+    font-size: 1.2rem;
     color: grey;
+    align-self: start;
 }
 .pageHistory-section-shows-popup-content-description {
     margin: 0;
-    align-self: center;
-    font-size: 1.2rem;
-    text-align: center;
+    font-size: 1.3rem;
     color: darkgrey;
+    align-self: start;
+    line-height: 1.5rem;
+}
+@media (max-width: 650px) {
+    .pageHistory-section-shows-popup-content {
+        flex-direction: column;
+        width: 90%;
+        justify-content: normal;
+    }
+    .pageHistory-section-shows-popup-content-poster {
+        width: 60%;
+    }
+    .pageHistory-section-shows-popup-content-info {
+        width: 100%;
+    }
+    .pageHistory-section-shows-popup-content-title {
+        font-size: 1.5rem;
+        align-self: center;
+        text-align: center;
+    }
+    .pageHistory-section-shows-popup-content-dvd-icon {
+        height: 1.3rem;
+    }
+    .pageHistory-section-shows-popup-content-year {
+        font-size: 1rem;
+        align-self: center;
+        text-align: center;
+    }
+    .pageHistory-section-shows-popup-content-description {
+        font-size: 1.2rem;
+        align-self: center;
+        text-align: center;
+        line-height: 1.4rem;
+    }
 }
