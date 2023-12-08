@@ -67,6 +67,12 @@ const showDictionary = [
     }
 ]
 
+const historyShowsGrid = document.querySelector('#pageHistory-section-shows-grid')
+const historyShowsPinned = document.querySelector('#pageHistory-section-shows-pinned')
+const historyShowsPopups = document.querySelector('#pageHistory-section-shows-popups')
+const moreShowsButton = document.querySelector('#pageHistory-section-shows-more')
+let moreShowsButtonToggle = true;
+
 loadHTML();
 
 function openPopup(popupId) {
@@ -84,9 +90,6 @@ function closePopup(popupId) {
 }
 
 function loadHTML() {
-    const historyShowsGrid = document.querySelector('#pageHistory-section-shows-grid')
-    const historyShowsPinned = document.querySelector('#pageHistory-section-shows-pinned')
-    const historyShowsPopups = document.querySelector('#pageHistory-section-shows-popups')
     let historyShowsGridHTML = "";
     let historyShowsPinnedHTML = "";
     let historyShowsPopupsHTML = "";
@@ -136,4 +139,15 @@ function loadHTML() {
     historyShowsGrid.innerHTML = historyShowsGridHTML;
     historyShowsPinned.innerHTML = historyShowsPinnedHTML;
     historyShowsPopups.innerHTML = historyShowsPopupsHTML;
+}
+function moreShows() {
+    if (moreShowsButtonToggle) {
+        historyShowsGrid.style.maxHeight = "none";
+        moreShowsButtonToggle = false;
+        moreShowsButton.innerHTML = "Show Less &#x25B2";
+    } else {
+        historyShowsGrid.style.maxHeight = `${window.innerWidth <= 500 ? '34rem' : '40rem'}`;
+        moreShowsButtonToggle = true;
+        moreShowsButton.innerHTML = "Show More &#x25BC";
+    }
 }
