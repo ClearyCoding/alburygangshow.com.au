@@ -18,7 +18,8 @@
 .pageHistory-backdrop-title,
 .pageHistory-backdrop-void1,
 .pageHistory-backdrop-void2,
-.pageHistory-backdrop-void3 {
+.pageHistory-backdrop-void3,
+.pageHistory-backdrop-void4 {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -81,4 +82,8 @@
 .pageHistory-backdrop-void3 {
     background-image: url("/assets/images/backdrops/pageHistory-void3.jpg");
     filter: brightness(80%);
+}
+.pageHistory-backdrop-void4 {
+    background-image: url("/assets/images/backdrops/pageHistory-void4.jpg");
+    filter: blur(1px);
 }

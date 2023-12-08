@@ -3,6 +3,9 @@ const showDictionary = [
         title: "Coming Soon!",
         year: 2024,
         number: 58,
+        description: `This show is currently in development.` +
+            ` More details will be shared once the scripts and poster are finished and publicised.` +
+            ` If you would like to become a part of our next show, please check out the <a href="/#join">join section.</a> `,
     }, {
         title: "The Chase",
         year: 2023,
@@ -101,8 +104,8 @@ function loadHTML() {
             if (show.number % 10 === 1) {showNumberSuffix = 'st'}
         }
         if (index <= 1) {
-            let showHeader = 'Next Show:'
-            if (index === 1) {showHeader = 'Previous Show:'}
+            let showHeader = 'Upcoming Show:'
+            if (index === 1) {showHeader = 'Latest Show:'}
             historyShowsPinnedHTML += `
                 <div class="pageHistory-section-shows-item" onclick="openPopup(${show.number})">
                 <h3 class="pageHistory-section-shows-pinned-heading">${showHeader}</h3>

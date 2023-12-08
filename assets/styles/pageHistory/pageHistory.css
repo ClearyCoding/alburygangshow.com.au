@@ -1,7 +1,8 @@
 .pageHistory-section-title,
 .pageHistory-section-void1,
 .pageHistory-section-void2,
-.pageHistory-section-void3 {
+.pageHistory-section-void3,
+.pageHistory-section-void4 {
     width: 100%;
     position: absolute;
     left: 0;
@@ -10,6 +11,7 @@
 .pageHistory-section-early,
 .pageHistory-section-early2,
 .pageHistory-section-fire,
+.pageHistory-section-format,
 .pageHistory-section-shows {
     position: relative;
     background: linear-gradient(#171717, #212123, #171717);
@@ -90,6 +92,19 @@ Section Sizing
     height: 100%;
 }
 .pageHistory-section-void3 {
+    height: 25rem;
+    top: -25rem;
+}
+.pageHistory-section-format {
+    height: auto;
+    margin-top: 25rem;
+}
+
+/* Group 5 */
+.pageHistory-backdrop-void4 {
+    height: 100%;
+}
+.pageHistory-section-void4 {
     height: 25rem;
     top: -25rem;
 }
