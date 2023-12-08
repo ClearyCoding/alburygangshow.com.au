@@ -1,6 +1,6 @@
+let header = document.querySelector(".header");
 document.addEventListener("DOMContentLoaded", function () {
     let lastScrollTop = 0;
-    let header = document.querySelector(".header");
     const scrollablePages = document.querySelectorAll(".pageHome, .pageMembers, .pageHistory");
     console.log(window.innerHeight)
 
@@ -13,13 +13,21 @@ document.addEventListener("DOMContentLoaded", function () {
             let scrollTop = page.scrollTop;
 
             if (scrollTop >= lastScrollTop && scrollTop > window.innerHeight) {
-                header.style.height = "0";
-                header.style.opacity = "0";
+                headerUp()
             } else {
-                header.style.height = "70px";
-                header.style.opacity = "100";
+                headerDown()
             }
             lastScrollTop = scrollTop;
         });
     });
 });
+function headerUp() {
+    header.style.height = "0";
+    header.style.opacity = "0";
+    header.style.pointerEvents = "none";
+}
+function headerDown() {
+    header.style.height = "70px";
+    header.style.opacity = "100";
+    header.style.pointerEvents = "all";
+}

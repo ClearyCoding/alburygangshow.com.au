@@ -261,6 +261,9 @@ Section Code
     font-size: 3rem;
     color: red;
 }
+.pageHistory-section-shows-popup-close:hover {
+    filter: brightness(75%);
+}
 .pageHistory-section-shows-popup-content-poster {
     width: 45%;
 }

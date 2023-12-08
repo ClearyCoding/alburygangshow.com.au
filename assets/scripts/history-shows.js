@@ -71,20 +71,16 @@ loadHTML();
 
 function openPopup(popupId) {
     const popup = document.querySelector(`#pageHistory-section-shows-popup${popupId}`);
-    const header = document.querySelector(`.header`);
     popup.style.display = 'flex';
     popup.style.opacity = '100';
-    header.style.height = "0";
-    header.style.opacity = "0";
+    headerUp();
 }
 
 function closePopup(popupId) {
     const popup = document.querySelector(`#pageHistory-section-shows-popup${popupId}`);
-    const header = document.querySelector(`.header`);
     popup.style.display = 'none';
     popup.style.opacity = '0';
-    header.style.height = "70px";
-    header.style.opacity = "100";
+    headerDown()
 }
 
 function loadHTML() {
@@ -108,7 +104,7 @@ function loadHTML() {
                 <div class="pageHistory-section-shows-item" onclick="openPopup(${show.number})">
                 <h3 class="pageHistory-section-shows-pinned-heading">${showHeader}</h3>
                     <img class="pageHistory-section-shows-item-poster" alt="${show.year} Poster" src="/assets/images/pageHistory/posters/${show.year}.jpg">
-                    <h3 class="pageHistory-section-shows-item-title">${show.title || `${show.number}${showNumberSuffix} show`}</h3>
+                    <h3 class="pageHistory-section-shows-item-title">${show.title || `${show.number}${showNumberSuffix} Show`}</h3>
                     <h4 class="pageHistory-section-shows-item-year">${show.number}${showNumberSuffix} Show - ${show.year}</h4>
                 </div>
             `
@@ -116,7 +112,7 @@ function loadHTML() {
             historyShowsGridHTML += `
                 <div class="pageHistory-section-shows-item" onclick="openPopup(${show.number})">
                     <img class="pageHistory-section-shows-item-poster" alt="${show.year} Poster" src="/assets/images/pageHistory/posters/${show.year}.jpg">
-                    <h3 class="pageHistory-section-shows-item-title">${show.title || `${show.number}${showNumberSuffix} show`}</h3>
+                    <h3 class="pageHistory-section-shows-item-title">${show.title || `${show.number}${showNumberSuffix} Show`}</h3>
                     <h4 class="pageHistory-section-shows-item-year">${show.number}${showNumberSuffix} Show - ${show.year}</h4>
                 </div>
             `
@@ -128,7 +124,7 @@ function loadHTML() {
                 <span class="pageHistory-section-shows-popup-close" onclick="closePopup(${show.number})">&times;</span>
                 <img class="pageHistory-section-shows-popup-content-poster" alt="${show.year} Poster" src="/assets/images/pageHistory/posters/${show.year}.jpg">
                 <div class="pageHistory-section-shows-popup-content-info">
-                    <h3 class="pageHistory-section-shows-popup-content-title">${show.title || `${show.number}${showNumberSuffix} show`} ${show.dvd ? '<div class="pageHistory-section-shows-popup-content-dvd"><img class="pageHistory-section-shows-popup-content-dvd-icon" alt="DvD Available" src="/assets/images/pageHistory/dvd.png"><div class="pageHistory-section-shows-popup-content-dvd-label">DvDs are available to order</div></div>' : ''}</h3>
+                    <h3 class="pageHistory-section-shows-popup-content-title">${show.title || `${show.number}${showNumberSuffix} Albury Gang Show`} ${show.dvd ? '<div class="pageHistory-section-shows-popup-content-dvd"><img class="pageHistory-section-shows-popup-content-dvd-icon" alt="DvD Available" src="/assets/images/pageHistory/dvd.png"><div class="pageHistory-section-shows-popup-content-dvd-label">DvDs are available to order</div></div>' : ''}</h3>
                     <h4 class="pageHistory-section-shows-popup-content-year">${show.number}${showNumberSuffix} Show - ${show.year}</h4>
                     ${show.description ? `<p class="pageHistory-section-shows-popup-content-description">${show.description}</p>` : ''}
                     ${index === 0 ? '<a href="/#tickets" class="pageHistory-section-shows-popup-content-tickets">Tickets &#8594</a>' : ''}
