@@ -81,9 +81,9 @@
 }
 .pageHistory-backdrop-void3 {
     background-image: url("/assets/images/backdrops/pageHistory-void3.jpg");
-    filter: brightness(80%);
+    filter: blur(1px);
 }
 .pageHistory-backdrop-void4 {
     background-image: url("/assets/images/backdrops/pageHistory-void4.jpg");
-    filter: blur(1px);
+    filter: brightness(80%);
 }
