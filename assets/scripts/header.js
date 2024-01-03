@@ -1,7 +1,7 @@
 let header = document.querySelector(".header");
 document.addEventListener("DOMContentLoaded", function () {
     let lastScrollTop = 0;
-    const scrollablePages = document.querySelectorAll(".pageHome, .pageMembers, .pageHistory");
+    const scrollablePages = document.querySelectorAll(".parallax");
     console.log(window.innerHeight)
 
     scrollablePages.forEach(page => {
