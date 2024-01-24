@@ -69,7 +69,7 @@ const showDictionary = [
     }, {
         year: 2012,
         number: 47,
-    }/*, {
+    }, {
         year: 2011,
         number: 46,
     }, {
@@ -210,7 +210,7 @@ const showDictionary = [
     }, {
         year: 1965,
         number: 1,
-    }/**/
+    }
 ]
 
 const historyShowsGrid = document.querySelector('#pageHistory-section-shows-grid')
