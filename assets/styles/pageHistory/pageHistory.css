@@ -175,7 +175,7 @@ Section Code
     cursor: pointer;
 }
 .pageHistory-section-shows-item:hover {
-    filter: brightness(120%);
+    filter: brightness(110%);
 }
 .pageHistory-section-shows-item-poster {
     height: 15rem;
