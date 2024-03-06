@@ -42,7 +42,7 @@ const splashList = [
     'Speak Louder!',
     'The better \"AGS\"',
     'Shame Harley can\'t see the colour in this site!',
-    'Chill\'n Like A Villain!'
+    'Chill\'n Like A Villain!',
 ]
 const splashElement = document.querySelector('#pageHome-section-billboard-container-splash-text');
 const currentDate = `${new Date().getDate()}/${new Date().getMonth()}`
