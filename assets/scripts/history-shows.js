@@ -1,6 +1,6 @@
 const showDictionary = [
     {
-        title: "Coming Soon!",
+        title: "Intergalactic Show-Off",
         year: 2024,
         number: 58,
         description: `This show is currently in development.` +
