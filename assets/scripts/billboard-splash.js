@@ -72,5 +72,7 @@ function specialSplashes() {
         specialSplash = 'Happy New Year!';
     } else if (currentDate === "31/9") {
         specialSplash = `Don\'t Look Behind You!`
+    } else if (currentDate === "4/4") {
+        specialSplash = `May the 4th be with you!`
     }
 }
