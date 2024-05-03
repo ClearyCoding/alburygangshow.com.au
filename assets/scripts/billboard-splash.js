@@ -7,7 +7,7 @@ const splashList = [
     'You’re an actor, ACT!',
     'My Daddy\'s gonna hear about this!',
     'Don\'t forget to SMILE',
-    'Petition to burn the tight pants...',
+    'Featuring Harley\'s tight pants!',
     'Dehydrated Water!',
     'Gangitty Gangiest Gang Show Gang',
     'Cool & Creamy',
@@ -39,10 +39,10 @@ const splashList = [
     'This is a splash text, reload the page!',
     'A  Lizard forced me to add this...',
     'The Show Must Go On!',
-    'Speak Louder!',
+    'Sing Louder!',
     'The better \"AGS\"',
     'Shame Harley can\'t see the colour in this site!',
-    'Chill\'n Like A Villain!'
+    'Chill\'n Like A Villain!',
 ]
 const splashElement = document.querySelector('#pageHome-section-billboard-container-splash-text');
 const currentDate = `${new Date().getDate()}/${new Date().getMonth()}`
@@ -70,5 +70,7 @@ function specialSplashes() {
         specialSplash = 'Merry Christmas!';
     } else if (currentDate === "1/0") {
         specialSplash = 'Happy New Year!';
+    } else if (currentDate === "31/9") {
+        specialSplash = `Don\'t Look Behind You!`
     }
 }

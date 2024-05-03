@@ -1,23 +1,11 @@
-.pageHome,
-.pageMembers,
-.pageHistory {
+.parallax {
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
     width: 100%;
 }
-.pageHome-backdrop-billboard,
-.pageHome-backdrop-posters,
-.pageHome-backdrop-tickets,
-.pageHome-backdrop-join,
-.pageHome-backdrop-local_groups,
-.pageHome-backdrop-void,
-.pageHome-backdrop-crew,
-.pageMembers-backdrop-billboard,
-.pageHistory-backdrop-title,
-.pageHistory-backdrop-void1,
-.pageHistory-backdrop-void2 {
+.backdrop {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -76,4 +64,12 @@
 .pageHistory-backdrop-void2 {
     background-image: url("/assets/images/backdrops/pageHistory-void2.jpg");
     filter: blur(1px);
+}
+.pageHistory-backdrop-void3 {
+    background-image: url("/assets/images/backdrops/pageHistory-void3.jpg");
+    filter: blur(1px);
+}
+.pageHistory-backdrop-void4 {
+    background-image: url("/assets/images/backdrops/pageHistory-void4.jpg");
+    filter: brightness(80%);
 }
