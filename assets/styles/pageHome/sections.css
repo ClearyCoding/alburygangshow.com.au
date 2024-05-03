@@ -456,6 +456,8 @@ Section Code
 .pageHome-section-tickets-container-text {
     width: 50%;
     height: 90%;
+    display: flex;
+    flex-direction: column;
 }
 .pageHome-section-tickets-container-text time {
     font-size: 1.25rem;
@@ -486,17 +488,16 @@ Section Code
         font-size: 1rem;
     }
 }
-@media (max-width: 850px) {
-    .pageHome-section-tickets-container {
-        height: 75%;
-    }
-}
 @media (max-width: 700px) {
     .pageHome-section-tickets-container {
         flex-direction: column;
     }
     .pageHome-section-tickets-container-text {
         width: 100%;
+        order: 2;
+    }
+    .pageHome-section-tickets-text-button {
+        align-self: center;
     }
     .pageHome-section-tickets-container-images {
         justify-content: space-between;
@@ -505,13 +506,36 @@ Section Code
         flex-direction: column;
         width: 100%;
         height: auto;
+        order: 1;
     }
     .pageHome-section-tickets-container-images img {
-        width: 70%;
+        width: 50%;
     }
     .pageHome-section-tickets-container-images figcaption {
         font-size: 0.875rem;
     }
+}
+.pageHome-section-tickets-text-button {
+    text-align: center;
+    display: inline;
+    text-decoration: none;
+    box-sizing: border-box;
+
+    font-size: 1.25rem;
+    width: 12.5rem;
+    height: 4rem;
+    padding: 0.9375rem;
+    border-radius: 10px;
+    margin-top: 12px;
+
+    color: white;
+    border: solid #af2d24 5px;
+}
+.pageHome-section-tickets-text-button:hover {
+    text-decoration: underline;
+    background: linear-gradient(to right, #af2d24, #821e17, #af2d24);
+    border: solid #821e17 3px;
+    padding-top: 1.125rem;
 }
 
 /* FAQ */
