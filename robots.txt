@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /images/
+Disallow: /aspnet_client/
+Disallow: /usage/
+Disallow: /forum/
+Disallow: /gallery/
+Disallow: /gallery3/
+Disallow: /lol/
+Disallow: /forms/
+Disallow: /assets/images/pageHome/billboard_scroll_down.png
+Disallow: /assets/images/pageHome/links
+Disallow: /assets/images/pageHome/sponsors

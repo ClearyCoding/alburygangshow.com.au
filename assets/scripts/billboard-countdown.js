@@ -1,7 +1,7 @@
 // CREDIT: https://www.w3schools.com/howto/howto_js_countdown.asp
 
 // Set the date we're counting down to
-var countDownDate = convertTZ("Nov 14, 2023 18:59:00", "Australia/Sydney");
+var countDownDate = convertTZ("Jun 14, 2024 19:30:00", "Australia/Sydney");
 console.log(countDownDate)
 
 // Update the countdown every 1 second
@@ -18,6 +18,11 @@ var x = setInterval(function() {
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Append 0 to front of Day counter if the day counter reaches the single-digits
+    if (days < 10) {
+        days = ('0' + days).slice(-2)
+    }
 
     // Display the result in the element with id="pageHome-section-billboard-container-countdown"
     document.getElementById("pageHome-section-billboard-container-countdown").innerHTML = days + ":" + ('0' + hours).slice(-2) + ":"

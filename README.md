@@ -1,4 +1,4 @@
 # AlburyGangShowWebsite
-Repository for alburygangshow.com.au
+Website repository for alburygangshow.com.au
 
 Website By clearycoding.com
