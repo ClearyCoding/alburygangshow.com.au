@@ -23,53 +23,53 @@
 
 /* Backdrop Images*/
 .pageHome-backdrop-billboard {
-    background-image: url("/assets/images/backdrops/pageHome-billboard-cast.jpg");
+    background-image: url("/assets/images/backdrops/pageHome-billboard-cast.webp");
     filter: brightness(75%);
 }
 .pageHome-backdrop-posters {
-    background-image: url("/assets/images/backdrops/pageHome-posters.jpg");
+    background-image: url("/assets/images/backdrops/pageHome-posters.webp");
     filter: blur(1px) brightness(80%);
 }
 .pageHome-backdrop-tickets {
-    background-image: url("/assets/images/backdrops/pageHome-tickets.jpg");
+    background-image: url("/assets/images/backdrops/pageHome-tickets.webp");
     filter: blur(1px) brightness(80%);
 }
 .pageHome-backdrop-join {
-    background-image: url("/assets/images/backdrops/pageHome-join.jpg");
+    background-image: url("/assets/images/backdrops/pageHome-join.webp");
     filter: blur(1px);
 }
 .pageHome-backdrop-local_groups {
-    background-image: url("/assets/images/backdrops/pageHome-local_groups.jpg");
+    background-image: url("/assets/images/backdrops/pageHome-local_groups.webp");
     filter: blur(1px);
 }
 .pageHome-backdrop-void {
-    background-image: url("/assets/images/backdrops/pageHome-void.jpg");
+    background-image: url("/assets/images/backdrops/pageHome-void.webp");
 }
 .pageHome-backdrop-crew {
-    background-image: url("/assets/images/backdrops/pageHome-crew.jpg");
+    background-image: url("/assets/images/backdrops/pageHome-crew.webp");
     filter: blur(1px);
 }
 .pageMembers-backdrop-billboard {
-    background-image: url("/assets/images/backdrops/pageMembers-billboard.jpg");
+    background-image: url("/assets/images/backdrops/pageMembers-billboard.webp");
     filter: blur(1px);
 }
 .pageHistory-backdrop-title {
-    background-image: url("/assets/images/backdrops/pageHistory-title.jpg");
+    background-image: url("/assets/images/backdrops/pageHistory-title.webp");
     filter: blur(1px);
 }
 .pageHistory-backdrop-void1 {
-    background-image: url("/assets/images/backdrops/pageHistory-void1.jpg");
+    background-image: url("/assets/images/backdrops/pageHistory-void1.webp");
     filter: blur(1px);
 }
 .pageHistory-backdrop-void2 {
-    background-image: url("/assets/images/backdrops/pageHistory-void2.jpg");
+    background-image: url("/assets/images/backdrops/pageHistory-void2.webp");
     filter: blur(1px);
 }
 .pageHistory-backdrop-void3 {
-    background-image: url("/assets/images/backdrops/pageHistory-void3.jpg");
+    background-image: url("/assets/images/backdrops/pageHistory-void3.webp");
     filter: blur(1px);
 }
 .pageHistory-backdrop-void4 {
-    background-image: url("/assets/images/backdrops/pageHistory-void4.jpg");
+    background-image: url("/assets/images/backdrops/pageHistory-void4.webp");
     filter: brightness(80%);
 }
