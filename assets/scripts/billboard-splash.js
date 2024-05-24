@@ -1,3 +1,5 @@
+const forcedSplash = 'The Musical';
+
 const splashList = [
     'Est. 1965',
     '\"Harley here from First National Real Estate\"',
@@ -74,5 +76,7 @@ function specialSplashes() {
         specialSplash = `Don\'t Look Behind You!`
     } else if (currentDate === "4/4") {
         specialSplash = `May the 4th be with you!`
+    } else if (forcedSplash !== '') {
+        specialSplash = forcedSplash
     }
 }
