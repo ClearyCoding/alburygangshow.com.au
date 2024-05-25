@@ -73,19 +73,6 @@ Section Sizing
 }
 
 /* Group 2 */
-.pageHome-backdrop-posters {
-    height: 100%;
-}
-.pageHome-section-posters {
-    height: 18.75rem;
-    top: -18.75rem;
-}
-.pageHome-section-history {
-    height: auto;
-    margin-top: 18.75rem;
-}
-
-/* Group 3 */
 .pageHome-backdrop-tickets {
     height: 111%;
 }
@@ -93,9 +80,22 @@ Section Sizing
     height: 45rem;
     top: -45rem;
 }
-.pageHome-section-faq {
+.pageHome-section-history {
     height: auto;
     margin-top: 45rem;
+}
+
+/* Group 3 */
+.pageHome-backdrop-posters {
+    height: 100%;
+}
+.pageHome-section-posters {
+    height: 18.75rem;
+    top: -18.75rem;
+}
+.pageHome-section-faq {
+    height: auto;
+    margin-top: 18.75rem;
 }
 
 /* Group 4 */
