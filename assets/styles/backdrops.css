@@ -40,6 +40,8 @@
 .pageHome-backdrop-billboard {
     background-image: url("/assets/images/pageHome/poster/backdrop.png");
     filter: brightness(75%);
+    background-size: cover;
+    background-position: center calc(50% + 10%);
 }
 .pageHome-backdrop-posters {
     background-image: url("/assets/images/backdrops/pageHome-posters.webp");
