@@ -1,6 +1,7 @@
-let header = document.querySelector(".header"); //TODO: Fix header ducking randomly on touch devices
+let header = document.querySelector(".header");
 document.addEventListener("DOMContentLoaded", function () {
     let lastScrollTop = 0;
+    let startScrollPosition = null;
     const scrollablePages = document.querySelectorAll(".parallax");
     console.log(window.innerHeight)
 
@@ -12,10 +13,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
             let scrollTop = page.scrollTop;
 
-            if (scrollTop >= lastScrollTop && scrollTop > window.innerHeight) {
-                headerUp()
+            if (scrollTop > lastScrollTop && scrollTop > window.innerHeight) {
+                if (startScrollPosition === null) {
+                    startScrollPosition = lastScrollTop;
+                }
+                if (scrollTop - startScrollPosition > 400) {
+                    headerUp();
+                }
             } else {
-                headerDown()
+                headerDown();
+                startScrollPosition = null;
             }
             lastScrollTop = scrollTop;
         });
