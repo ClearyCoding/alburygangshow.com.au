@@ -1,4 +1,4 @@
-let header = document.querySelector(".header");
+let header = document.querySelector(".header"); //TODO: Fix header ducking randomly on touch devices
 document.addEventListener("DOMContentLoaded", function () {
     let lastScrollTop = 0;
     const scrollablePages = document.querySelectorAll(".parallax");
