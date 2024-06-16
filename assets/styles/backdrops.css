@@ -38,7 +38,7 @@
 
 /* Backdrop Images*/
 .pageHome-backdrop-billboard {
-    background-image: url("/assets/images/pageHome/poster/backdrop.png");
+    background-image: url("/assets/images/backdrops/2024.jpg");
     filter: brightness(75%);
     background-size: cover;
     background-position: center calc(50% + 10%);
