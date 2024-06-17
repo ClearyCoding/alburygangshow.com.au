@@ -1,12 +1,18 @@
 const showDictionary = [
     {
+        year: 2025,
+        number: 59,
+        description: `This show is currently in development.` +
+            ` More details will be shared once the scripts and poster are finished and publicised.` +
+            ` If you would like to become a part of our next show, please check out the <a href="/#join">join section.</a> `,
+    }, {
         title: "Intergalactic Show-Off",
         year: 2024,
         number: 58,
+        dvd: true,
         description: `Stage: The final frontier. These are the voyages of the starship Albury. ` +
             `Its continuing mission: To explore strange new dances, to seek out new costumes and props. ` +
-            'To boldly perform where no actor has gone before! ' +
-            `<br>Tickets are now on sale, more info in the <a href="/#tickets">tickets section.</a> `,
+            'To boldly perform where no actor has gone before! '
     }, {
         title: "The Chase",
         year: 2023,
