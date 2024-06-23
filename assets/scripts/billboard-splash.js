@@ -74,7 +74,9 @@ function rollSplash(splash) {
     }
 }
 function specialSplashes() {
-    if (currentDate === "25/11") {
+    if (forcedSplash !== '') {
+        specialSplash = forcedSplash
+    } else if (currentDate === "25/11") {
         specialSplash = 'Merry Christmas!';
     } else if (currentDate === "1/0") {
         specialSplash = 'Happy New Year!';
@@ -82,7 +84,5 @@ function specialSplashes() {
         specialSplash = `Don\'t Look Behind You!`
     } else if (currentDate === "4/4") {
         specialSplash = `May the 4th be with you!`
-    } else if (forcedSplash !== '') {
-        specialSplash = forcedSplash
     }
 }
