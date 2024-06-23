@@ -22,7 +22,6 @@ const splashList = [
     'The Bird Is The Word',
     'Don\'t disturb the costume department!',
     'Check out the RAG!',
-    'DEFINITELY not a cult...',
     'Sorry, need to edit the script again...',
     'Making kids voices hurt since \'65',
     'Birds of a Feather!',
@@ -45,6 +44,13 @@ const splashList = [
     'The better \"AGS\"',
     'Shame Harley can\'t see the colour in this site!',
     'Chill\'n Like A Villain!',
+    'You were my brother, Anakin! I LOVED YOU!',
+    'Mother know best!',
+    'L.E.M.P.I.S.Y.P',
+    'Yellow thing with hinges!',
+    'Also available in blue!',
+    'We\'re not going to make it!',
+    'Closing Time.',
 ]
 const splashElement = document.querySelector('#pageHome-section-billboard-container-splash-text');
 const currentDate = `${new Date().getDate()}/${new Date().getMonth()}`
