@@ -51,6 +51,7 @@ const splashList = [
     'Also available in blue!',
     'We\'re not going to make it!',
     'Closing Time.',
+    'Let\'s Do The Time Warp Again!',
 ]
 const splashElement = document.querySelector('#pageHome-section-billboard-container-splash-text');
 const currentDate = `${new Date().getDate()}/${new Date().getMonth()}`
