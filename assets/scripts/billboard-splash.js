@@ -85,5 +85,7 @@ function specialSplashes() {
         specialSplash = `Don\'t Look Behind You!`
     } else if (currentDate === "4/4") {
         specialSplash = `May the 4th be with you!`
+    } else if (currentDate === "1/3") {
+        specialSplash = `April Fools!`
     }
 }
