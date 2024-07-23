@@ -1,7 +1,7 @@
 const input = document.getElementById("pageLogin-container-input-password");
 const incorrect = document.getElementById("pageLogin-container-incorrect");
 const container = document.getElementById("pageLogin-container");
-// Yes, this is out in the open, but it's not like you cant just look at the redirect page in the GitHub anyway lol
+// Yes, this is out in the open, but it's not like you cant just look at the redirect page in the GitHub anyway lol. Will make a backend soon.
 const passList = ["FlyingMonkey"]
 document.getElementById("pageLogin-container-javascript").style.display = "none";
 
