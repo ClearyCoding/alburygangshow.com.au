@@ -1,4 +1,4 @@
-const forcedSplash = 'The Musical';
+const forcedSplash = '';
 
 const splashList = [
     'Est. 1965',
