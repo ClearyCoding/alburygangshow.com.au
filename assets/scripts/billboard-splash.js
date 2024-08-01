@@ -45,7 +45,7 @@ const splashList = [
     'Shame Harley can\'t see the colour in this site!',
     'Chill\'n Like A Villain!',
     'You were my brother, Anakin! I LOVED YOU!',
-    'Mother know best!',
+    'Mother knows best!',
     'L.E.M.P.I.S.Y.P',
     'Yellow thing with hinges!',
     'Also available in blue!',
