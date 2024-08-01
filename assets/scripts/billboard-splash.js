@@ -53,7 +53,8 @@ const splashList = [
     'Closing Time.',
     'Let\'s Do The Time Warp Again!',
     'Air Max 3000 EXTREME!',
-    'A little bit of everything...'
+    'A little bit of everything...',
+    'The Musical',
 ]
 const splashElement = document.querySelector('#pageHome-section-billboard-container-splash-text');
 const currentDate = `${new Date().getDate()}/${new Date().getMonth()}`
