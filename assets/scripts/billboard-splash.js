@@ -56,20 +56,44 @@ const splashList = [
     'A little bit of everything...',
     'The Musical',
 ]
+specialSplashList = [
+    {
+        splash: 'Merry Christmas!',
+        date: '25/11',
+    }, {
+        splash: 'Happy New Year!',
+        date: '1/0',
+    }, {
+        splash: 'Don\'t Look Behind You!',
+        date: '31/9',
+    }, {
+        splash: 'May the 4th be with you!',
+        date: '4/4',
+    }, {
+        splash: 'April Fools!',
+        date: '1/3',
+    },
+]
+
 const splashElement = document.querySelector('#pageHome-section-billboard-container-splash-text');
 const currentDate = `${new Date().getDate()}/${new Date().getMonth()}`
 let specialSplash;
+let specialForced;
 
 rollSplash()
 function rollSplash(splash) {
-    specialSplashes()
+    specialSplashes(splash)
     if (specialSplash) {
         splashElement.innerText = `${specialSplash}`;
-        console.log(`Special Splash Trigger Detected, Splash ${specialSplash} Rolled`);
+        if (specialForced) {
+            console.log(`Special Splash Trigger Detected, Splash ${specialSplash} At Splash Id #${splash} Successfully Rolled`);
+        } else {
+            console.log(`Special Splash Trigger Detected, Splash ${specialSplash} Rolled`);
+        }
     } else if (splash === undefined) {
         splashElement.innerText = splashList[Math.floor(Math.random() * splashList.length)];
         return `Random Splash \"${splashElement.innerText}\" Successfully Rolled`;
-    } else if(splash >= splashList.length || splash < 0) {
+    } else if(splash >= splashList.length || splash < 0 || Number.isInteger(splash) === false) {
         splashElement.innerText = 'missingno';
         return 'Illegal Splash ID, Backup Splash \"missingno\" Rolled';
     } else {
@@ -77,18 +101,19 @@ function rollSplash(splash) {
         return `Splash \"${splashElement.innerText}\" At Splash Id #${splash} Successfully Rolled.`;
     }
 }
-function specialSplashes() {
+function specialSplashes(splash) {
+    specialSplash = ''
+    specialForced = false
     if (forcedSplash !== '') {
         specialSplash = forcedSplash
-    } else if (currentDate === "25/11") {
-        specialSplash = 'Merry Christmas!';
-    } else if (currentDate === "1/0") {
-        specialSplash = 'Happy New Year!';
-    } else if (currentDate === "31/9") {
-        specialSplash = `Don\'t Look Behind You!`
-    } else if (currentDate === "4/4") {
-        specialSplash = `May the 4th be with you!`
-    } else if (currentDate === "1/3") {
-        specialSplash = `April Fools!`
+    } else if (splash < 0 && -1 * splash <= specialSplashList.length) {
+        specialSplash = specialSplashList[(splash + 1) * -1].splash
+        specialForced = true
+    } else {
+        specialSplashList.forEach(special => {
+            if (currentDate === special.date || splash === -2) {
+                specialSplash = special.splash
+            }
+        })
     }
 }
