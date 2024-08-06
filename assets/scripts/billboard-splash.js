@@ -55,6 +55,7 @@ const splashList = [
     'Air Max 3000 EXTREME!',
     'A little bit of everything...',
     'The Musical',
+    'I forgot to hand in my application form!',
 ]
 specialSplashList = [
     {
