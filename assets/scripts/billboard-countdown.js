@@ -25,13 +25,13 @@ const x = setInterval(function() {
     }
 
     // Display the result in the element with id="pageHome-section-billboard-container-countdown"
-    document.getElementById("pageHome-section-billboard-container-countdown").innerHTML = days + ":" + ('0' + hours).slice(-2) + ":"
+    document.querySelector("#pageHome-section-billboard-container-countdown").innerHTML = days + ":" + ('0' + hours).slice(-2) + ":"
         + ('0' + minutes).slice(-2) + ":" + ('0' + seconds ).slice(-2);
 
     // If the countdown is finished, write some text
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("pageHome-section-billboard-container-countdown").innerHTML = "NOW";
+        document.querySelector("#pageHome-section-billboard-container-countdown").innerHTML = "NOW";
     }
 }, 1000);
 
