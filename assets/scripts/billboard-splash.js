@@ -3,19 +3,19 @@ const forcedSplash = '';
 const splashList = [
     'Est. 1965',
     '\"Harley here from First National Real Estate\"',
-    'NOOOOOAH',
+    'NOOOOOAH', // 2022, 23, 24
     '*Laughs Maniacally*',
     'Alexander Hamilton!',
     'You’re an actor, ACT!',
-    'My Daddy\'s gonna hear about this!',
+    'My Daddy\'s gonna hear about this!', // 2023
     'Don\'t forget to SMILE',
-    'Featuring Harley\'s tight pants!',
-    'Dehydrated Water!',
-    'Gangitty Gangiest Gang Show Gang',
-    'Cool & Creamy',
+    'Featuring Harley\'s tight pants!', // 20__
+    'Dehydrated Water!', // 2022
+    'Gangitty Gangiest Gang Show Gang', // 2022
+    'Cool & Creamy', // 2015
     'Super-Trustworthy Steve & Drew Studios',
-    'OH NO! I\'ve lost my Mojo!',
-    'I\'ve got a dream!',
+    'OH NO! I\'ve lost my Mojo!', // 2018
+    'I\'ve got a dream!', // 2023
     'For the Republic, FOR DEMOCRACY!',
     '1300655506',
     'Flying Monkeys!',
@@ -25,10 +25,10 @@ const splashList = [
     'Sorry, need to edit the script again...',
     'Making kids voices hurt since \'65',
     'Birds of a Feather!',
-    'This is the best... This is the best night...',
+    'This is the best... This is the best night...', // 2022, 23, 24
     'Encore!',
     'What were the moves to Macarena again??',
-    'Wait! Why are we different cast members?',
+    'Wait! Why are we different cast members?', // 2023
     '\"GO TO BED\" - Drew',
     'Better than (insert show name)!',
     'Free Range Cast!',
@@ -43,19 +43,21 @@ const splashList = [
     'Sing Louder!',
     'The better \"AGS\"',
     'Shame Harley can\'t see the colour in this site!',
-    'Chill\'n Like A Villain!',
+    'Chill\'n Like A Villain!', // 20__
     'You were my brother, Anakin! I LOVED YOU!',
-    'Mother knows best!',
-    'L.E.M.P.I.S.Y.P',
-    'Yellow thing with hinges!',
-    'Also available in blue!',
-    'We\'re not going to make it!',
+    'Mother knows best!', // 2024
+    'L.E.M.P.I.S.Y.P', // 2024
+    'Yellow thing with hinges!', // 2024
+    'Also available in blue!', // 2024
+    'We\'re not going to make it!', // 2024
     'Closing Time.',
     'Let\'s Do The Time Warp Again!',
-    'Air Max 3000 EXTREME!',
-    'A little bit of everything...',
+    'Air Max 3000 EXTREME!', // 2013
+    'A little bit of everything...', // 2022
     'The Musical',
     'I forgot to hand in my application form!',
+    'Delivery for Mr. Jones!', //2014
+    'Albury Gang Show Style!', //2014
 ]
 specialSplashList = [
     {
