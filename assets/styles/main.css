@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
     font-family: YouMurderer;
     src: url(/assets/fonts/youmurdererbb_reg.ttf);
@@ -54,6 +55,8 @@
     src: url(/assets/fonts/digital7.ttf);
 }
 
+/* Page Configuration */
+
 * {
     scroll-behavior: smooth;
 }
@@ -79,9 +82,7 @@ figure {
 }
 
 
-/*-------------------------------------
-Text Presets
----------------------------------------*/
+/* Text Presets */
 
 h2 {
     color: red;
