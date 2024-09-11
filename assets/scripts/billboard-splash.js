@@ -58,7 +58,8 @@ const splashList = [
     'I forgot to hand in my application form!',
     'Delivery for Mr. Jones!', //2014
     'Albury Gang Show Style!', //2014
-    'Try clicking Uncle Sam ;)'
+    'Try clicking Uncle Sam ;)',
+    `Pineapple ${Math.round(Math.random()) ? "DOES" : "DOESN\'T"} belong on pizza!`,
 ]
 specialSplashList = [
     {
