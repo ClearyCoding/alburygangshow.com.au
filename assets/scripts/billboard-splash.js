@@ -41,7 +41,7 @@ const splashList = [
     'A  Lizard forced me to add this...',
     'The Show Must Go On!',
     'Sing Louder!',
-    'The better \"AGS\"',
+    'The better \"AGS\"', // Reference to Adelaide Gang Show
     'Shame Harley can\'t see the colour in this site!',
     'Chill\'n Like A Villain!', // 20__
     'You were my brother, Anakin! I LOVED YOU!',
