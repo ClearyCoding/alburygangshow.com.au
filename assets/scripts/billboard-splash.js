@@ -17,7 +17,6 @@ const splashList = [
     'OH NO! I\'ve lost my Mojo!', // 2018
     'I\'ve got a dream!', // 2023
     'For the Republic, FOR DEMOCRACY!',
-    '1300655506',
     'Flying Monkeys!',
     'The Bird Is The Word',
     'Don\'t disturb the costume department!',
