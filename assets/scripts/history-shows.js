@@ -1,10 +1,9 @@
 const showDictionary = [
     {
+        title: "Dungeons & Explorers",
         year: 2025,
         number: 59,
-        description: `This show is currently in development.` +
-            ` More details will be shared once the scripts and poster are finished and publicised.` +
-            ` If you would like to become a part of our next show, please check out the <a href="/#join">join section.</a> `,
+        description: `Join us for an epic, comedic journey through a fantastical world where four brave characters embark on their first-ever quest! In this unique performance, we weave together four interconnected stories, featuring a Fairy, a Bard, a Barbarian, and a Mage—each with their own quirks and challenges.`,
     }, {
         title: "Intergalactic Show-Off",
         year: 2024,
