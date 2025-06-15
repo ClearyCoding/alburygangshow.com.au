@@ -159,6 +159,9 @@ Section Code
     width: 100%;
     padding-top: 40px;
 }
+.pageHome-section-billboard h2 {
+    font-family: 'Fira Sans', Arial, sans-serif;
+}
 .pageHome-section-billboard-container {
     display: flex;
     justify-content: center;
