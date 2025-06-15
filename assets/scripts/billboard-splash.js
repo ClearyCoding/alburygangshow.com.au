@@ -1,64 +1,79 @@
-const forcedSplash = '';
+const forcedSplash = 'Radically Cool';
 
 const splashList = [
-    'Est. 1965',
-    '\"Harley here from First National Real Estate\"',
-    'NOOOOOAH', // 2022, 23, 24
-    '*Laughs Maniacally*',
-    'Alexander Hamilton!',
-    'You’re an actor, ACT!',
-    'My Daddy\'s gonna hear about this!', // 2023
-    'Don\'t forget to SMILE',
-    'Featuring Harley\'s tight pants!', // 20__
-    'Dehydrated Water!', // 2022
-    'Gangitty Gangiest Gang Show Gang', // 2022
-    'Cool & Creamy', // 2015
-    'Super-Trustworthy Steve & Drew Studios',
-    'OH NO! I\'ve lost my Mojo!', // 2018
-    'I\'ve got a dream!', // 2023
-    'For the Republic, FOR DEMOCRACY!',
-    'Flying Monkeys!',
-    'The Bird Is The Word',
-    'Don\'t disturb the costume department!',
-    'Check out the RAG!',
-    'Sorry, need to edit the script again...',
-    'Making kids voices hurt since \'65',
-    'Birds of a Feather!',
-    'This is the best... This is the best night...', // 2022, 23, 24
-    'Encore!',
-    'What were the moves to Macarena again??',
-    'Wait! Why are we different cast members?', // 2023
-    '\"GO TO BED\" - Drew',
-    'Better than (insert show name)!',
-    'Free Range Cast!',
-    'Thx 2nd Albury!',
-    '\"Albury Town Is Our Home!\"',
-    "TWO, THREE, FOUR!",
-    'You were AMAZING!',
-    'Win an Oscar!.... the grouch',
-    'This is a splash text, reload the page!',
-    'A  Lizard forced me to add this...',
-    'The Show Must Go On!',
-    'Sing Louder!',
-    'The better \"AGS\"', // Reference to Adelaide Gang Show
-    'Shame Harley can\'t see the colour in this site!',
-    'Chill\'n Like A Villain!', // 20__
-    'You were my brother, Anakin! I LOVED YOU!',
-    'Mother knows best!', // 2024
-    'L.E.M.P.I.S.Y.P', // 2024
-    'Yellow thing with hinges!', // 2024
-    'Also available in blue!', // 2024
-    'We\'re not going to make it!', // 2024
-    'Closing Time.',
-    'Let\'s Do The Time Warp Again!',
-    'Air Max 3000 EXTREME!', // 2013
-    'A little bit of everything...', // 2022
-    'The Musical',
-    'I forgot to hand in my application form!',
-    'Delivery for Mr. Jones!', //2014
-    'Albury Gang Show Style!', //2014
-    'Try clicking Uncle Sam ;)',
-    `Pineapple ${Math.round(Math.random()) ? "DOES" : "DOESN\'T"} belong on pizza!`,
+    // Generic
+    {text: 'Est. 1965', weight: 2},
+    {text: 'Don\'t forget to SMILE', weight: 1},
+    {text: '*Laughs Maniacally*', weight: 1},
+    {text: 'Making kids voices hurt since \'65', weight: 1},
+    {text: 'Don\'t disturb the costume department!', weight: 1},
+    {text: 'Encore!', weight: 1.5},
+    {text: 'The Show Must Go On!', weight: 1},
+    {text: 'Sing Louder!', weight: 1},
+    {text: 'Better than (insert show name)!', weight: 1},
+    {text: 'Free Range Cast!', weight: 1},
+    {text: 'This is a splash text, reload the page!', weight: 3},
+    {text: 'The Musical', weight: 1},
+    {text: 'Try clicking Uncle Sam ;)', weight: 1},
+    {text: 'I forgot to hand in my application form!', weight: 1},
+
+    // Cast General Knowledge
+    {text: '\"Harley here from First National Real Estate\"', weight: 1},
+    {text: 'Featuring Harley\'s tight pants!', weight: 1},
+    {text: 'Super-Trustworthy Steve & Drew Studios', weight: 1},
+    {text: 'The Bird Is The Word', weight: 1},
+    {text: 'Check out the RAG!', weight: 1},
+    {text: 'Sorry, need to edit the script again...', weight: 1},
+    {text: 'Birds of a Feather!', weight: 2},
+    {text: 'Closing Time.', weight: 1},
+    {text: 'What were the moves to Macarena again??', weight: 1},
+    {text: 'Thx 2nd Albury!', weight: 0.1},
+    {text: '\"Albury Town Is Our Home!\"', weight: 1},
+    {text: "TWO, THREE, FOUR!", weight: 2},
+    {text: 'You were AMAZING!', weight: 1},
+    {text: 'Shame Harley can\'t see the colour in this site!', weight: 1},
+    {text: 'Win an Oscar!.... the grouch', weight: 1},
+    {text: 'Let\'s Do The Time Warp Again!', weight: 1},
+
+    // Show Specific
+    {text: "Ye Old Callstone", weight: 0.05}, // 2025
+    {text: "Work this out!", weight: 0.05}, // 2025
+    {text: "You're Welcome!", weight: 0.05}, // 2025
+    {text: 'This is the best... This is the best night...', weight: 0.5}, // 2020s
+    {text: `Pineapple DOESN\'T belong on pizza!`, weight: 0.1}, // 2024
+    {text: `Pineapple DOES belong on pizza!`, weight: 0.1}, // 2024
+    {text: 'You’re an actor, ACT!', weight: 0.05}, //2024
+    {text: 'L.E.M.P.I.S.Y.P', weight: 0.1}, // 2024
+    {text: 'Mother knows best!', weight: 0.05}, // 2024
+    {text: 'Yellow thing with hinges!', weight: 0.05}, // 2024
+    {text: 'Also available in blue!', weight: 0.05}, // 2024
+    {text: 'We\'re not going to make it!', weight: 0.05}, // 2024
+    {text: 'My Daddy\'s gonna hear about this!', weight: 0.05}, //2023
+    {text: 'Wait! Why are we different cast members?', weight: 0.05}, // 2023
+    {text: 'I\'ve got a dream!', weight: 0.05}, // 2023
+    {text: 'Dehydrated Water!', weight: 0.1}, // 2022
+    {text: 'A little bit of everything...', weight: 0.05}, // 2022
+    {text: 'Chill\'n Like A Villain!', weight: 0.05}, // 2019 or 2021
+    {text: 'OH NO! I\'ve lost my Mojo!', weight: 0.05}, // 2018
+    {text: 'Cool & Creamy', weight: 0.05}, // 2015
+    {text: 'Albury Gang Show Style!', weight: 0.5}, // 2014
+    {text: 'Air Max 3000 EXTREME!', weight: 0.05}, // 2013
+    {text: 'Flying Monkeys!', weight: 0.5}, // 2010s-20s
+    {text: 'Delivery for Mr. Jones!', weight: 0.1}, // 2010s
+    {text: 'Radically Cool', weight: 0.05}, // 2010s & 2025
+
+    // Pop Culture
+    {text: 'Alexander Hamilton!', weight: 0.1},
+    {text: 'For the Republic, FOR DEMOCRACY!', weight: 0.1},
+    {text: 'You were my brother, Anakin! I LOVED YOU!', weight: 0.1},
+
+    // Niche
+    {text: 'NOOOOOAH!', weight: 0.01},
+    {text: 'Gangitty Gangiest Gang Show Gang', weight: 0.01},
+    {text: 'The better \"AGS\"', weight: 0.01},
+    {text: '\"GO TO BED\" - Drew', weight: 0.01},
+    {text: 'A  Lizard forced me to add this...', weight: 0.01},
+    {text: 'This splash will never appear on the website. Isn\'t that weird?', weight: 0},
 ]
 specialSplashList = [
     {
@@ -95,13 +110,21 @@ function rollSplash(splash) {
             console.log(`Special Splash Trigger Detected, Splash ${specialSplash} Rolled`);
         }
     } else if (splash === undefined) {
-        splashElement.innerText = splashList[Math.floor(Math.random() * splashList.length)];
+        const totalWeight = splashList.reduce((sum, entr) => sum + entr.weight, 0);
+        let rand = Math.random() * totalWeight;
+        for (const entry of splashList) {
+            if (rand < entry.weight) {
+                splashElement.innerText = entry.text;
+                break
+            }
+            rand -= entry.weight;
+        }
         return `Random Splash \"${splashElement.innerText}\" Successfully Rolled`;
     } else if(splash >= splashList.length || splash < 0 || Number.isInteger(splash) === false) {
         splashElement.innerText = 'missingno';
         return 'Illegal Splash ID, Backup Splash \"missingno\" Rolled';
     } else {
-        splashElement.innerText = splashList[splash];
+        splashElement.innerText = splashList[splash.text];
         return `Splash \"${splashElement.innerText}\" At Splash Id #${splash} Successfully Rolled.`;
     }
 }
