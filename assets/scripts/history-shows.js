@@ -1,5 +1,11 @@
 const showDictionary = [
     {
+        year: 2026,
+        number: 60,
+        description: `This show is currently in development.` +
+            ` More details will be shared once the scripts and poster are finished and publicised.` +
+            ` If you would like to become a part of our next show, please check out the <a href="/#join">join section.</a> `,
+    },{
         title: "Dungeons & Explorers",
         year: 2025,
         number: 59,
