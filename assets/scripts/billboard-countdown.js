@@ -1,40 +1,104 @@
-// CREDIT: https://www.w3schools.com/howto/howto_js_countdown.asp
+const eventList = [
+    {
+        text: 'THE CURTAINS HAVE CLOSED!',
+        count: false,
+        date: 'July 10, 2025 12:00:00',
+        context: 'Great job again everyone! See you all next year for the 60th!'
+    },
+    /*{
+        text: 'Until the 2026 Information Night!',
+        count: true,
+        date: 'June 19, 2025 10:45:00',
+        context: `For more information, check out the <a href='#join'>join</a> section!`
+    },
+    {
+        text: 'Until Rehearsals Start!',
+        count: true,
+        date: 'June 21, 2025 19:30:00',
+        context: `For more information, check out the <a href='#join'>join</a> section!`
+    },*/
+    {
+        text: 'Until Opening Curtains!',
+        count: true,
+        date: 'June 12, 2026 19:30:00',
+        context: `For more information, check out the <a href='#tickets'>tickets</a> section!`
+    },
+    {
+        text: 'Until the Next Show!',
+        count: true,
+        date: 'June 13, 2026 13:30:00',
+        context: `To book your seat, check out the <a href='#tickets'>tickets</a> section!`
+    },
+    {
+        text: 'Until the Final Show!',
+        count: true,
+        date: 'June 13, 2026 19:30:00',
+        context: `To book your seat, check out the <a href='#tickets'>tickets</a> section!`
+    },
+    {
+        text: 'THE CURTAINS HAVE CLOSED!',
+        count: false,
+        date: 'August 10, 2026 12:00:00',
+        context: 'Great job again everyone! See you all again next year!'
+    },
+]
 
-// Set the date we're counting down to
-const countDownDate = convertTZ("June 13, 2025 19:30:00", "Australia/Sydney");
-console.log(countDownDate)
+function getNextEvent(events) {
+    const now = Date.now();
+    const futureEvents = events
+        .filter(e => new Date(e.date).getTime() > now)
+        .sort((a, b) => new Date(a.date) - new Date(b.date));
+    return futureEvents[0] || null;
+}
 
-// Update the countdown every 1 second
-const x = setInterval(function() {
+const nextEvent = getNextEvent(eventList);
+const countText = document.querySelector('#countdown-text');
+const countContext = document.querySelector('#countdown-context');
+const countPrefix = document.querySelector('#countdown-prefix');
+const countUnits = document.querySelector('#countdown-units');
+const countdownElement = document.querySelector("#pageHome-section-billboard-container-countdown");
 
-    // Get today's date and time
-    let now = new Date().getTime();
+console.log(nextEvent);
 
-    // Find the distance between now and the count-down date
-    let distance = countDownDate - now;
+if (nextEvent) {
+    if (nextEvent.count) {
+        countText.innerHTML = nextEvent.text;
+        countContext.innerHTML = nextEvent.context;
 
-    // Time calculations for days, hours, minutes and seconds
-    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Set the date we're counting down to
+        const countDownDate = convertTZ(nextEvent.date, "Australia/Sydney");
+        console.log(countDownDate)
 
-    // Append 0 to front of Day counter if the day counter reaches the single-digits
-    if (days < 10) {
-        days = ('0' + days).slice(-2)
+        const x = setInterval(function() {
+
+            let now = new Date().getTime();
+            let distance = countDownDate - now;
+
+            let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            if (days < 10) {
+                days = ('0' + days).slice(-2)
+            }
+
+            countdownElement.innerHTML = days + ":" + ('0' + hours).slice(-2) + ":"
+                + ('0' + minutes).slice(-2) + ":" + ('0' + seconds ).slice(-2);
+            if (distance < 0) {
+                clearInterval(x);
+                countdownElement.innerHTML = "NOW";
+            }
+        }, 1000);
+
+        function convertTZ(date, tzString) {
+            return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", {timeZone: tzString})).getTime();
+        }
+    } else {
+        countPrefix.innerHTML = '';
+        countUnits.innerHTML = '';
+        countContext.innerHTML = '';
+        countdownElement.innerHTML = nextEvent.text;
+        countText.innerHTML = nextEvent.context;
     }
-
-    // Display the result in the element with id="pageHome-section-billboard-container-countdown"
-    document.querySelector("#pageHome-section-billboard-container-countdown").innerHTML = days + ":" + ('0' + hours).slice(-2) + ":"
-        + ('0' + minutes).slice(-2) + ":" + ('0' + seconds ).slice(-2);
-
-    // If the countdown is finished, write some text
-    if (distance < 0) {
-        clearInterval(x);
-        document.querySelector("#pageHome-section-billboard-container-countdown").innerHTML = "NOW";
-    }
-}, 1000);
-
-function convertTZ(date, tzString) {
-    return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", {timeZone: tzString})).getTime();
 }
