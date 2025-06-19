@@ -83,7 +83,7 @@ specialSplashList = [
         splash: 'Happy New Year!',
         date: '1/0',
     }, {
-        splash: 'Don\'t Look Behind You!',
+        splash: 'OoOoOOoOoo Spooky!',
         date: '31/9',
     }, {
         splash: 'May the 4th be with you!',
@@ -91,6 +91,14 @@ specialSplashList = [
     }, {
         splash: 'April Fools!',
         date: '1/3',
+    },
+    {
+        splash: 'Happy Birthday Drew!',
+        date: '31/4',
+    },
+    {
+        splash: 'Happy Birthday Adelaide!',
+        date: '21/8',
     },
 ]
 
