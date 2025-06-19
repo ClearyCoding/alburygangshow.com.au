@@ -1,58 +1,58 @@
 /* Fonts */
 @font-face {
     font-family: YouMurderer;
-    src: url(/assets/fonts/youmurdererbb_reg.ttf);
+    src: url("/assets/fonts/youmurdererbb_reg.ttf");
 }
 @font-face {
     font-family: MurderousDesire;
-    src: url(/assets/fonts/murderous_desire_DEMO.otf);
+    src: url("/assets/fonts/murderous_desire_DEMO.otf");
 }
 @font-face {
     font-family: Grinched;
-    src: url(/assets/fonts/Grinched.ttf);
+    src: url("/assets/fonts/Grinched.ttf");
 }
 @font-face {
     font-family: PowerRangers;
-    src: url(/assets/fonts/Power_Rangers.ttf);
+    src: url("/assets/fonts/Power_Rangers.ttf");
 }
 @font-face {
     font-family: Lovable;
-    src: url(/assets/fonts/FontdinerdotcomLuvable.ttf);
+    src: url("/assets/fonts/FontdinerdotcomLuvable.ttf");
 }
 @font-face {
     font-family: Secrets;
-    src: url(/assets/fonts/secrets.ttf);
+    src: url("/assets/fonts/secrets.ttf");
 }
 @font-face {
     font-family: Evil;
-    src: url(/assets/fonts/puree____2.ttf);
+    src: url("/assets/fonts/puree____2.ttf");
 }
 @font-face {
     font-family: WhoopAss;
-    src: url(/assets/fonts/WHOOPASS.TTF);
+    src: url("/assets/fonts/WHOOPASS.TTF");
 }
 @font-face {
     font-family: Ficticcia;
-    src: url(/assets/fonts/Ficticcia_College.otf);
+    src: url("/assets/fonts/Ficticcia_College.otf");
 }
 @font-face {
     font-family: Eraser;
-    src: url(/assets/fonts/EraserDust_0.ttf);
+    src: url("/assets/fonts/EraserDust_0.ttf");
 }
 @font-face {
     font-family: Mistery;
-    src: url(/assets/fonts/Mistery.otf);
+    src: url("/assets/fonts/Mistery.otf");
 }@font-face {
     font-family: RockBoulder;
-    src: url(/assets/fonts/RockBoulder.ttf);
+    src: url("/assets/fonts/RockBoulder.ttf");
 }
 @font-face {
     font-family: Aurella;
-    src: url(/assets/fonts/Aurella.ttf);
+    src: url("/assets/fonts/Aurella.ttf");
 }
 @font-face {
     font-family: Digital7;
-    src: url(/assets/fonts/digital7.ttf);
+    src: url("/assets/fonts/digital7.ttf");
 }
 
 /* Page Configuration */
