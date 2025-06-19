@@ -1,39 +1,58 @@
-.parallax {
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    perspective: 10px;
-    width: 100%;
+/* Fonts */
+@font-face {
+    font-family: YouMurderer;
+    src: url("/assets/fonts/youmurdererbb_reg.ttf");
 }
-.backdrop {
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transform: translateZ(-5px) scale(1.5);
-    position: absolute;
-    width: calc(100% + 10px);
-    object-fit: cover;
-    z-index: -1;
+@font-face {
+    font-family: MurderousDesire;
+    src: url("/assets/fonts/murderous_desire_DEMO.otf");
 }
-.mid-drop {
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transform: translateZ(-2.25px) scale(1.25);
-    width: 100%;
-    position: absolute;
-    object-fit: cover;
-    z-index: 0;
+@font-face {
+    font-family: Grinched;
+    src: url("/assets/fonts/Grinched.ttf");
+}
+@font-face {
+    font-family: PowerRangers;
+    src: url("/assets/fonts/Power_Rangers.ttf");
+}
+@font-face {
+    font-family: Lovable;
+    src: url("/assets/fonts/FontdinerdotcomLuvable.ttf");
+}
+@font-face {
+    font-family: Secrets;
+    src: url("/assets/fonts/secrets.ttf");
+}
+@font-face {
+    font-family: Evil;
+    src: url("/assets/fonts/puree____2.ttf");
+}
+@font-face {
+    font-family: WhoopAss;
+    src: url("/assets/fonts/WHOOPASS.TTF");
+}
+@font-face {
+    font-family: Ficticcia;
+    src: url("/assets/fonts/Ficticcia_College.otf");
+}
+@font-face {
+    font-family: Eraser;
+    src: url("/assets/fonts/EraserDust_0.ttf");
+}
+@font-face {
+    font-family: Mistery;
+    src: url("/assets/fonts/Mistery.otf");
+}@font-face {
+    font-family: RockBoulder;
+    src: url("/assets/fonts/RockBoulder.ttf");
+}
+@font-face {
+    font-family: Aurella;
+    src: url("/assets/fonts/Aurella.ttf");
+}
+@font-face {
+    font-family: Digital7;
+    src: url("/assets/fonts/digital7.ttf");
 }
 
 /* Backdrop Images*/
