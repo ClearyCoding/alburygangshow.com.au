@@ -1,4 +1,4 @@
-.header {
+#header {
     top: 0;
     right: 0;
     left: 0;
@@ -74,7 +74,7 @@
 
 /* Mobile Mode */
 @media (min-width: 350px) and (max-width: 750px) {
-    .header {
+    #header {
         flex-direction: column;
     }
     .header-branding {

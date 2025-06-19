@@ -16,14 +16,12 @@
 
     <link rel="stylesheet" href="/assets/styles/loader.css">
     <link rel="stylesheet" href="/assets/styles/main.css">
-    <link rel="stylesheet" href="/assets/styles/imports.css">
+    <link rel="stylesheet" href="assets/styles/imports.css">
     <link rel="stylesheet" href="/assets/styles/pageHome/sections.css">
     <link rel="stylesheet" href="/assets/styles/header.css">
     <link rel="stylesheet" href="/assets/styles/footer.css">
 </head>
 <body>
-    <iframe src="/assets/html/header.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
-    <script src="/assets/scripts/header.js"></script>
     <div id="loader">
         <script src="/assets/scripts/loader.js"></script>
         <div id="loader-wheel">
@@ -33,6 +31,7 @@
             <div id="loader-subtitle">Loading...</div>
         <div id="loader-notice">This site contains many images and may not be suitable on low-speed networks.</div>
     </div>
+    <header id="header"></header>
     <main class="parallax pageHome">
         <!--<section class="pageHome-section-billboard-poster backdrop mid-backdrop">
             <img draggable="false" class="pageHome-section-billboard-poster-captain" alt="Captain" src="/assets/images/pageHome/poster/captain.png">
@@ -498,10 +497,12 @@
                 <img  draggable="false" class="pageHome-section-contact-images-img3" alt="Darby and Crew" src="/assets/images/pageHome/contact_3.webp">
             </figure>
         </article>
-        <iframe src="/assets/html/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
-        <script src="/assets/scripts/billboard-countdown.js"></script>
-        <script src="/assets/scripts/uncle-sam.js"></script>
+        <footer id="footer"></footer>
     </main>
+
+    <script src="/assets/scripts/headers.js"></script>
+    <script src="/assets/scripts/billboard-countdown.js"></script>
+    <script src="/assets/scripts/uncle-sam.js"></script>
     <script src="/assets/scripts/reading-writing.js"></script>
 </body>
 </html>

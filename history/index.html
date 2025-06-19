@@ -22,8 +22,7 @@
   <link rel="stylesheet" href="/assets/styles/pageHistory/pageHistory.css">
 </head>
 <body>
-    <iframe src="/assets/html/header.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
-    <script src="/assets/scripts/header.js"></script>
+    <header id="header"></header>
     <div id="loader">
         <script src="/assets/scripts/loader.js"></script>
         <div id="loader-wheel">
@@ -103,9 +102,11 @@
                 <div id="pageHistory-section-shows-more" onclick="moreShows()">Show More &#x25BC</div>
             </div>
         </article>
-        <iframe src="/assets/html/footer.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+        <footer id="footer"></footer>
     </main>
     <div id="pageHistory-section-shows-popups"></div>
+
+    <script src="/assets/scripts/headers.js"></script>
     <script src="/assets/scripts/reading-writing.js"></script>
     <script src="/assets/scripts/history-shows.js"></script>
 </body>

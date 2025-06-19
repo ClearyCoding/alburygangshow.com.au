@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="/assets/styles/pageMembers/pageLogin.css">
 </head>
 <body>
-    <iframe src="/assets/html/header.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+    <header id="header"></header>
     <div id="loader">
         <script src="/assets/scripts/loader.js"></script>
         <div id="loader-wheel">
@@ -40,12 +40,14 @@
             <section class="pageLogin-container-input">
                 <label for="pageLogin-container-input-password"></label>
                 <input type="password" id="pageLogin-container-input-password" placeholder="Password">
-                <input type="submit" class="pageLogin-container-input-submit" onclick="verify()">
+                <input type="submit" class="pageLogin-container-input-submit" onclick="verify()" value="Submit">
             </section>
             <p id="pageLogin-container-incorrect">Incorrect Password, Try Again.</p>
         </section>
         <p id="pageLogin-container-javascript">If you have JavaScript disabled, this login will not work. To work around this, instead enter your password as a subdirectory of this domain. For Example: "alburygangshow.com.au/members/PASSWORD"</p>
     </main>
+
+    <script src="/assets/scripts/headers.js"></script>
     <script src="/assets/scripts/login.js"></script>
     <script src="/assets/scripts/reading-writing.js"></script>
 </body>

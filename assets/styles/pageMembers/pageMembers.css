@@ -20,11 +20,6 @@ Section Code
 ---------------------------------------*/
 
 /* Title */
-.pageMembers-section-billboard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .pageMembers-section-billboard-container {
     flex-direction: column;
     background-color: rgba(21,21,23,0.7);
@@ -40,7 +35,6 @@ Section Code
 
 /* Links */
 .pageMembers-section-links {
-    display: flex;
     justify-content: center;
     flex-direction: column;
 }
