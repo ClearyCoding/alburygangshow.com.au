@@ -3,16 +3,8 @@ Section Sizing
 ---------------------------------------*/
 
 /* Group 1 */
-.pageMembers-backdrop-billboard {
-    height: 100%;
-}
 .pageMembers-section-billboard {
     height: 90vh;
-    top: -90vh;
-}
-.pageMembers-section-links {
-    height: auto;
-    margin-top: 90vh;
 }
 
 /*-------------------------------------

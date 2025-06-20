@@ -44,6 +44,7 @@ figure {
     transform: translateZ(-5px) scale(1.5);
     position: absolute;
     width: calc(100% + 10px);
+    height: 100%;
     object-fit: cover;
     z-index: -1;
 }
@@ -70,9 +71,6 @@ figure {
 }
 .void {
     width: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;

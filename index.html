@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="/assets/styles/loader.css">
     <link rel="stylesheet" href="/assets/styles/main.css">
-    <link rel="stylesheet" href="assets/styles/imports.css">
+    <link rel="stylesheet" href="/assets/styles/imports.css">
     <link rel="stylesheet" href="/assets/styles/pageHome/sections.css">
     <link rel="stylesheet" href="/assets/styles/header.css">
     <link rel="stylesheet" href="/assets/styles/footer.css">
@@ -36,43 +36,33 @@
 
     <header id="header"></header>
     <main class="parallax pageHome">
-        <!--<section class="pageHome-section-billboard-poster backdrop mid-backdrop">
-            <img draggable="false" class="pageHome-section-billboard-poster-captain" alt="Captain" src="/assets/images/pageHome/poster/captain.png">
-            <img draggable="false" class="pageHome-section-billboard-poster-left" alt="Captain" src="/assets/images/pageHome/poster/left.png">
-            <img draggable="false" class="pageHome-section-billboard-poster-right" alt="Captain" src="/assets/images/pageHome/poster/right.png">
-        </section>-->
         <figure class="backdrop pageHome-backdrop-billboard"></figure>
-        <article class="section pageHome-section-about">
-            <article id="billboard" class="void pageHome-section-billboard">
-                <script src="/assets/scripts/billboard-backdrop.js"></script>
-                <h3 id="countdown-prefix">Only</h3>
-                <section class="pageHome-section-billboard-container">
-                    <h2 id="pageHome-section-billboard-container-countdown"> A Short Time</h2>
-                    <div id="countdown-units" class="pageHome-section-billboard-container-units">
-                        <h4>Days</h4>
-                        <h4>Hours</h4>
-                        <h4>Minutes</h4>
-                        <h4>Seconds</h4>
-                    </div>
-                    <div id="pageHome-section-billboard-container-splash"><div class="pageHome-section-billboard-container-splash-container"><div id="pageHome-section-billboard-container-splash-text">Birds of a Feather!</div></div></div>
-                    <script src="/assets/scripts/billboard-splash.js"></script>
-                </section>
-                <section class="pageHome-section-billboard-text-container">
-                    <h3 id="countdown-text">Until Opening Curtains!</h3>
-                    <h4 id="countdown-context">Great job again everyone! See you all next year for the 60th!</h4>
-                </section>
+        <article id="billboard" class="void pageHome-section-billboard">
+            <script src="/assets/scripts/billboard-backdrop.js"></script>
+            <h3 id="countdown-prefix">Only</h3>
+            <section class="pageHome-section-billboard-container">
+                <h2 id="pageHome-section-billboard-container-countdown"> A Short Time</h2>
+                <div id="countdown-units" class="pageHome-section-billboard-container-units">
+                    <h4>Days</h4>
+                    <h4>Hours</h4>
+                    <h4>Minutes</h4>
+                    <h4>Seconds</h4>
+                </div>
+                <div id="pageHome-section-billboard-container-splash"><div class="pageHome-section-billboard-container-splash-container"><div id="pageHome-section-billboard-container-splash-text">Birds of a Feather!</div></div></div>
+                <script src="/assets/scripts/billboard-splash.js"></script>
+            </section>
+            <section class="pageHome-section-billboard-text-container">
+                <h3 id="countdown-text">Until Opening Curtains!</h3>
+                <h4 id="countdown-context">Great job again everyone! See you all next year for the 60th!</h4>
+            </section>
+            <a href="#about">
+                <figure class="pageHome-section-billboard-scroll">
+                    <img draggable="false" alt="Scroll Down For More!" src="/assets/images/pageHome/billboard_scroll_down.webp">
+                </figure>
+            </a>
+        </article>
 
-                <!--
-                This creates the down button. Please only change the "href" attribute on the "a" tag :)
-                This can be changed in relevance to whatever is on the billboard at the time.
-                E.G: to #tickets during theatre season, or to #join during the early months
-                -->
-                <a href="#about">
-                    <figure class="pageHome-section-billboard-scroll">
-                        <img draggable="false" alt="Scroll Down For More!" src="/assets/images/pageHome/billboard_scroll_down.webp">
-                    </figure>
-                </a>
-            </article>
+        <article class="section pageHome-section-about">
             <div class="anchor" id="about"></div>
             <section class="pageHome-section-about-text">
                 <h2>Who Are We?</h2>
@@ -91,28 +81,30 @@
                 <img draggable="false" class="pageHome-section-about-images-2" src="/assets/images/pageHome/about_2.webp" alt="Gang Show Performing">
             </section>
         </article>
+
         <figure class="backdrop pageHome-backdrop-tickets"></figure>
-        <article class="section pageHome-section-history">
-            <article class="void pageHome-section-tickets">
-                <section class="container pageHome-section-tickets-container">
-                    <div class="anchor" id="tickets"></div>
-                    <section class="pageHome-section-tickets-container-text">
-                        <h2>Tickets</h2>
-                        <p>
-                            The 2026 Show currently under development
-                            The dates and times for the next show will be:
-                        </p>
-                        <time>- 7:30pm - Friday the 12th of June 2026</time>
-                        <time>- 1:30pm - Saturday the 13th of June 2026</time>
-                        <time>- 7:30pm - Saturday the 13th of June 2026</time>
-                        <!--<a href="https://www.alburyentertainmentcentre.com.au/" target="_blank" class="button">Book Now! &#8594</a>-->
-                    </section>
-                    <figure class="pageHome-section-tickets-container-images">
-                        <img alt="Cast Photo" src="/assets/images/pageHome/tickets.webp">
-                        <figcaption>The Albury Entertainment Center, 525 Swift St, Albury NSW</figcaption>
-                    </figure>
+        <article class="void pageHome-section-tickets">
+            <section class="container pageHome-section-tickets-container">
+                <div class="anchor" id="tickets"></div>
+                <section class="pageHome-section-tickets-container-text">
+                    <h2>Tickets</h2>
+                    <p>
+                        The 2026 Show currently under development
+                        The dates and times for the next show will be:
+                    </p>
+                    <time>- 7:30pm - Friday the 12th of June 2026</time>
+                    <time>- 1:30pm - Saturday the 13th of June 2026</time>
+                    <time>- 7:30pm - Saturday the 13th of June 2026</time>
+                    <!--<a href="https://www.alburyentertainmentcentre.com.au/" target="_blank" class="button">Book Now! &#8594</a>-->
                 </section>
-            </article>
+                <figure class="pageHome-section-tickets-container-images">
+                    <img alt="Cast Photo" src="/assets/images/pageHome/tickets.webp">
+                    <figcaption>The Albury Entertainment Center, 525 Swift St, Albury NSW</figcaption>
+                </figure>
+            </section>
+        </article>
+
+        <article class="section pageHome-section-history">
             <div class="anchor" id="history"></div>
             <figure class="pageHome-section-history-images">
                 <img draggable="false" src="/assets/images/pageHome/history.webp" alt="AGS Performance 1967">
@@ -127,11 +119,13 @@
                 <!--<a href="/history" target="_self" class="button">Our History &#8594</a>-->
             </section>
         </article>
+
         <figure class="backdrop pageHome-backdrop-posters"></figure>
+        <article class="void pageHome-section-posters">
+            <div class="anchor" id="posters"></div>
+        </article>
+
         <article class="section pageHome-section-faq">
-            <article class="void pageHome-section-posters">
-                <div class="anchor" id="posters"></div>
-            </article>
             <div class="anchor" id="faq"></div>
             <figure class="pageHome-section-faq-images">
                 <img draggable="false" src="/assets/images/pageHome/faq.webp" alt="If you remember these images, you are an AGS veteran!">
@@ -213,45 +207,47 @@
                 <h3>If you have any further questions, don't hesitate to <a href="#contact">contact us</a>!</h3>
             </section>
         </article>
+
         <figure class="backdrop pageHome-backdrop-join"></figure>
-        <article class="section pageHome-section-members">
-            <article class="void pageHome-section-join">
-                <section class="container pageHome-section-join-container">
-                    <div class="anchor" id="join"></div>
-                    <img draggable="false" alt="I WANT YOU TO JOIN THE ALBURY GANG SHOW!" src="/assets/images/pageHome/join_sam.webp" id="pageHome-section-join-samImage" onclick="samPlay()">
-                    <audio src="/assets/audio/join_sam.mp3" id="pageHome-section-join-samAudio"></audio>
-                    <section class="pageHome-section-join-container-text">
-                        <h2>Join Albury Gang Show!</h2>
-                        <p>
-                            The Albury Gang Show is always welcoming new cast members,
-                            from the ages of 10&frac12 to... well, anything!
-                            We love to see interest from scouts and guides, as well
-                            as leaders, from both sides of the border.
-                        </p>
-                        <p>
-                            No prior experience in theatre of any kind is required!
-                            Most of our first timers have never been on a stage before,
-                            and are quite nervous to perform to a large audience,
-                            only to finish the show begging for a bigger role the next year!
-                        </p>
-                        <section class="pageHome-section-join-container-text-buttons">
-                            <a href="/assets/forms/2025/Application_Info_Pack_2025.pdf" class="button" target="_blank">
-                                2025 Info. Pack
-                            </a>
-                            <a href="/assets/forms/2025/2025_AGS_E1_Form1.pdf" class="button" target="_blank">
-                                2025 App. Form
-                            </a>
-                        </section>
-                        <p class="pageHome-section-join-container-text-contact">
-                            For any enquiries, don't be afraid to <a href="#contact">contact us</a>!
-                        </p>
+        <article class="void pageHome-section-join">
+            <section class="container pageHome-section-join-container">
+                <div class="anchor" id="join"></div>
+                <img draggable="false" alt="I WANT YOU TO JOIN THE ALBURY GANG SHOW!" src="/assets/images/pageHome/join_sam.webp" id="pageHome-section-join-samImage" onclick="samPlay()">
+                <audio src="/assets/audio/join_sam.mp3" id="pageHome-section-join-samAudio"></audio>
+                <section class="pageHome-section-join-container-text">
+                    <h2>Join Albury Gang Show!</h2>
+                    <p>
+                        The Albury Gang Show is always welcoming new cast members,
+                        from the ages of 10&frac12 to... well, anything!
+                        We love to see interest from scouts and guides, as well
+                        as leaders, from both sides of the border.
+                    </p>
+                    <p>
+                        No prior experience in theatre of any kind is required!
+                        Most of our first timers have never been on a stage before,
+                        and are quite nervous to perform to a large audience,
+                        only to finish the show begging for a bigger role the next year!
+                    </p>
+                    <section class="pageHome-section-join-container-text-buttons">
+                        <a href="/assets/forms/2025/Application_Info_Pack_2025.pdf" class="button" target="_blank">
+                            2025 Info. Pack
+                        </a>
+                        <a href="/assets/forms/2025/2025_AGS_E1_Form1.pdf" class="button" target="_blank">
+                            2025 App. Form
+                        </a>
                     </section>
-                    <figure class="pageHome-section-join-container-images">
-                        <img draggable="false" alt="Lily McQualter, our resident smiler!" src="/assets/images/pageHome/join.webp">
-                        <figcaption>Lily McQualter, our resident smiler!</figcaption>
-                    </figure>
+                    <p class="pageHome-section-join-container-text-contact">
+                        For any enquiries, don't be afraid to <a href="#contact">contact us</a>!
+                    </p>
                 </section>
-            </article>
+                <figure class="pageHome-section-join-container-images">
+                    <img draggable="false" alt="Lily McQualter, our resident smiler!" src="/assets/images/pageHome/join.webp">
+                    <figcaption>Lily McQualter, our resident smiler!</figcaption>
+                </figure>
+            </section>
+        </article>
+
+        <article class="section pageHome-section-members">
             <div class="anchor" id="members"></div>
             <figure class="pageHome-section-members-images">
                 <img draggable="false" src="/assets/images/pageHome/members.webp" alt="Cast Rehearsing">
@@ -264,38 +260,40 @@
                 <a href="/members" target="_self" class="button">Members Portal &#8594</a>
             </section>
         </article>
+
         <figure class="backdrop pageHome-backdrop-local_groups"></figure>
-        <article class="section pageHome-section-links">
-            <article class="void pageHome-section-local_groups">
-                <section class="container pageHome-section-local_groups-container">
-                    <div class="anchor" id="local_groups"></div>
-                    <h2>Where do our gangsters come from?</h2>
-                    <h3>
-                        We have members from throughout the local area,
-                        these are just a few of the scout and guide groups where our cast & crew are from!
-                    </h3>
-                    <section class="pageHome-section-local_groups-container-grid">
-                        <h4>1st Albury Rovers</h4>
-                        <h4>1st Albury Scouts</h4>
-                        <h4>2nd Albury Scouts</h4>
-                        <h4>1st Baranduda Scouts</h4>
-                        <h4>1st Beechworth Scouts</h4>
-                        <h4>1st Benalla Scouts</h4>
-                        <h4>1st Lavington Scouts</h4>
-                        <h4>1st Wodonga Scouts</h4>
-                        <h4>3rd Wodonga Scouts</h4>
-                        <h4>1st Yarrunga Scouts</h4>
-                        <h4>Albury Gang Show Fellowship</h4>
-                        <h4>Albury Guides</h4>
-                        <h4>Bundara Scouts</h4>
-                        <h4>Ettamogah Venturers</h4>
-                        <h4>North Albury Guides</h4>
-                        <h4>Twin Rivers Olave Fellowship</h4>
-                        <h4>Upper Murray Venturers</h4>
-                        <h4>Wodonga Guides</h4>
-                    </section>
+        <article class="void pageHome-section-local_groups">
+            <section class="container pageHome-section-local_groups-container">
+                <div class="anchor" id="local_groups"></div>
+                <h2>Where do our gangsters come from?</h2>
+                <h3>
+                    We have members from throughout the local area,
+                    these are just a few of the scout and guide groups where our cast & crew are from!
+                </h3>
+                <section class="pageHome-section-local_groups-container-grid">
+                    <h4>1st Albury Rovers</h4>
+                    <h4>1st Albury Scouts</h4>
+                    <h4>2nd Albury Scouts</h4>
+                    <h4>1st Baranduda Scouts</h4>
+                    <h4>1st Beechworth Scouts</h4>
+                    <h4>1st Benalla Scouts</h4>
+                    <h4>1st Lavington Scouts</h4>
+                    <h4>1st Wodonga Scouts</h4>
+                    <h4>3rd Wodonga Scouts</h4>
+                    <h4>1st Yarrunga Scouts</h4>
+                    <h4>Albury Gang Show Fellowship</h4>
+                    <h4>Albury Guides</h4>
+                    <h4>Bundara Scouts</h4>
+                    <h4>Ettamogah Venturers</h4>
+                    <h4>North Albury Guides</h4>
+                    <h4>Twin Rivers Olave Fellowship</h4>
+                    <h4>Upper Murray Venturers</h4>
+                    <h4>Wodonga Guides</h4>
                 </section>
-            </article>
+            </section>
+        </article>
+
+        <article class="section pageHome-section-links">
             <div class="anchor" id="links"></div>
             <h2>Other Shows</h2>
             <h3>
@@ -402,11 +400,13 @@
                 </a>
             </section>
         </article>
+
         <figure class="backdrop pageHome-backdrop-void"></figure>
+        <article class="void pageHome-section-void">
+            <div class="anchor" id="void"></div>
+        </article>
+
         <article class="section pageHome-section-sponsors">
-            <article class="void pageHome-section-void">
-                <div class="anchor" id="void"></div>
-            </article>
             <div class="anchor" id="sponsors"></div>
             <h2>Our Supporters</h2>
             <h3>The Albury Gang Show would cease to exist if not for our fantastic and generous supporters!</h3>
@@ -432,49 +432,51 @@
                 <a target="_blank" href="https://www.youtube.com/watch?v=98fD5DaO_Do"><img  draggable="false" alt="Supertrustworthy Steve and Drew Studios" src="/assets/images/pageHome/sponsors/supertrustworthy.webp"></a>
             </section>
         </article>
+
         <figure class="backdrop pageHome-backdrop-crew"></figure>
-        <article class="section pageHome-section-contact">
-            <article class="void pageHome-section-crew">
-                <section class="container pageHome-section-crew-container">
-                    <div class="anchor" id="crew"></div>
-                    <h2>Our Crew</h2>
-                    <section class="pageHome-section-crew-container-grid">
-                        <figure class="pageHome-section-crew-container-grid-item">
-                            <h3>Executive Team</h3>
-                            <h4>Anne Moffat, Andrew Ferguson, Mackenzi Harrison, Amanda Harrison</h4>
-                        </figure>
-                        <figure class="pageHome-section-crew-container-grid-item">
-                            <h3>Production Team</h3>
-                            <h4>Andrew Ferguson, Harley Maclachlan, Adelaide Roach, Lily McQualter</h4>
-                        </figure>
-                        <figure class="pageHome-section-crew-container-grid-item">
-                            <h3>Costumes Team</h3>
-                            <h4>Mackenzi Harrison, Joanne Amos, Kyleen Marheine</h4>
-                        </figure>
-                        <figure class="pageHome-section-crew-container-grid-item">
-                            <h3>Backstage Team</h3>
-                            <h4>Anne Moffat, Iain Anderson, Connor Campbell, Ashley Gillespie, Kevin Scott, Logan Schilg, Callan Spinelli, Alice McQualter</h4>
-                        </figure>
-                        <figure class="pageHome-section-crew-container-grid-item">
-                            <h3>Welfare Team</h3>
-                            <h4>Kara Rennick, Jenny Clark, Janie Eckert, Darren Leckie</h4>
-                        </figure>
-                        <figure class="pageHome-section-crew-container-grid-item">
-                            <h3>Make-Up Team</h3>
-                            <h4>Anne Breedon, Sue Timmermans, Emma Timmermans, Dee Sweetland</h4>
-                        </figure>
-                        <!--<figure class="pageHome-section-crew-container-grid-item">
-                            <h3>Sound & Lighting</h3>
-                            <h4>Dim Roach, Charlie Roach</h4>
-                        </figure>
-                        <figure class="pageHome-section-crew-container-grid-item">
-                            <h3>Creative Team</h3>
-                            <h4></h4>
-                        </figure>-->
-                    </section>
-                    <h5>And MANY more behind the scenes!</h5>
+        <article class="void pageHome-section-crew">
+            <section class="container pageHome-section-crew-container">
+                <div class="anchor" id="crew"></div>
+                <h2>Our Crew</h2>
+                <section class="pageHome-section-crew-container-grid">
+                    <figure class="pageHome-section-crew-container-grid-item">
+                        <h3>Executive Team</h3>
+                        <h4>Anne Moffat, Andrew Ferguson, Mackenzi Harrison, Amanda Harrison</h4>
+                    </figure>
+                    <figure class="pageHome-section-crew-container-grid-item">
+                        <h3>Production Team</h3>
+                        <h4>Andrew Ferguson, Harley Maclachlan, Adelaide Roach, Lily McQualter</h4>
+                    </figure>
+                    <figure class="pageHome-section-crew-container-grid-item">
+                        <h3>Costumes Team</h3>
+                        <h4>Mackenzi Harrison, Joanne Amos, Kyleen Marheine</h4>
+                    </figure>
+                    <figure class="pageHome-section-crew-container-grid-item">
+                        <h3>Backstage Team</h3>
+                        <h4>Anne Moffat, Iain Anderson, Connor Campbell, Ashley Gillespie, Kevin Scott, Logan Schilg, Callan Spinelli, Alice McQualter</h4>
+                    </figure>
+                    <figure class="pageHome-section-crew-container-grid-item">
+                        <h3>Welfare Team</h3>
+                        <h4>Kara Rennick, Jenny Clark, Janie Eckert, Darren Leckie</h4>
+                    </figure>
+                    <figure class="pageHome-section-crew-container-grid-item">
+                        <h3>Make-Up Team</h3>
+                        <h4>Anne Breedon, Sue Timmermans, Emma Timmermans, Dee Sweetland</h4>
+                    </figure>
+                    <!--<figure class="pageHome-section-crew-container-grid-item">
+                        <h3>Sound & Lighting</h3>
+                        <h4>Dim Roach, Charlie Roach</h4>
+                    </figure>
+                    <figure class="pageHome-section-crew-container-grid-item">
+                        <h3>Creative Team</h3>
+                        <h4></h4>
+                    </figure>-->
                 </section>
-            </article>
+                <h5>And MANY more behind the scenes!</h5>
+            </section>
+        </article>
+
+        <article class="section pageHome-section-contact">
             <div class="anchor" id="contact"></div>
                 <section class="pageHome-section-contact-text">
                     <section class="pageHome-section-contact-text-emails">
@@ -500,6 +502,7 @@
                 <img  draggable="false" class="pageHome-section-contact-images-img3" alt="Darby and Crew" src="/assets/images/pageHome/contact_3.webp">
             </figure>
         </article>
+
         <footer id="footer"></footer>
     </main>
 

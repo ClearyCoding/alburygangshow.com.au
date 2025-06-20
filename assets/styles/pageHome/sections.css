@@ -3,32 +3,16 @@ Section Sizing
 ---------------------------------------*/
 
 /* Group 1 */
-.pageHome-backdrop-billboard {
-    height: 100%;
-}
 .pageHome-section-billboard {
     height: 90vh;
-    top: -90vh;
-}
-.pageHome-section-about {
-    margin-top: 90vh;
-    height: auto;
 }
 @media (max-width: 600px) {
     .pageHome-section-billboard {
         height: 95vh;
-        top: -95vh;
-    }
-    .pageHome-section-about {
-        margin-top: 95vh;
     }
     @media (max-width: 475px) {
         .pageHome-section-billboard {
             height: 100vh;
-            top: -100vh;
-        }
-        .pageHome-section-about {
-            margin-top: 100vh;
         }
     }
 }
@@ -39,105 +23,49 @@ Section Sizing
 }
 .pageHome-section-tickets {
     height: 45rem;
-    top: -45rem;
-}
-.pageHome-section-history {
-    height: auto;
-    margin-top: 45rem;
 }
 
 /* Group 3 */
-.pageHome-backdrop-posters {
-    height: 100%;
-}
 .pageHome-section-posters {
     height: 18.75rem;
-    top: -18.75rem;
-}
-.pageHome-section-faq {
-    height: auto;
-    margin-top: 18.75rem;
 }
 
 /* Group 4 */
-.pageHome-backdrop-join {
-    height: 100%;
-}
 .pageHome-section-join {
     height: 40.625rem;
-    top: -40.625rem;
-}
-.pageHome-section-members {
-    height: auto;
-    margin-top: 40.625rem;
 }
 @media (max-width: 1175px) {
     .pageHome-section-join {
         height: 43.75rem;
-        top: -43.75rem;
-    }
-    .pageHome-section-members {
-        height: auto;
-        margin-top: 43.75rem;
     }
     @media (max-width: 1100px) {
         .pageHome-section-join {
             height: 50rem;
-            top: -50rem;
-        }
-        .pageHome-section-members {
-            height: auto;
-            margin-top: 50rem;
         }
         @media (max-width: 700px) {
             .pageHome-section-join {
                 height: 56.25rem;
-                top: -56.25rem;
-            }
-            .pageHome-section-members {
-                margin-top: 56.25rem;
             }
         }
     }
 }
 
 /* Group 5 */
-.pageHome-backdrop-local_groups {
-    height: 100%;
-}
 .pageHome-section-local_groups {
     height: 37.5rem;
-    top: -37.5rem;
-}
-.pageHome-section-links {
-    height: auto;
-    margin-top: 37.5rem;
 }
 
 /* Group 6 */
 .pageHome-backdrop-void {
-    height: 100%;
+    height: 111%;
 }
 .pageHome-section-void {
     height: 25rem;
-    top: -25rem;
-}
-.pageHome-section-sponsors {
-    height: auto;
-    margin-top: 25rem;
 }
 
 /* Group 7*/
-.pageHome-backdrop-crew {
-    height: 100%;
-}
 .pageHome-section-crew {
     height: 50rem;
-    top: -50rem;
-}
-.pageHome-section-contact {
-    height: auto;
-    margin-top: 50rem;
 }
 
 
@@ -423,6 +351,9 @@ Section Code
     height: 90%;
     display: flex;
     flex-direction: column;
+}
+.pageHome-section-tickets-container-text .button {
+    margin-top: 1rem;
 }
 .pageHome-section-tickets-container-text time {
     font-size: 1.25rem;
@@ -743,10 +674,6 @@ Section Code
     }
     .pageHome-section-local_groups {
         height: 50rem;
-        top: -50rem;
-    }
-    .pageHome-section-links {
-        margin-top: 50rem;
     }
     @media (max-width: 650px) {
         .pageHome-section-local_groups-container-grid {
@@ -760,10 +687,6 @@ Section Code
         }
         .pageHome-section-local_groups {
             height: 62.5rem;
-            top: -62.5rem;
-        }
-        .pageHome-section-links {
-            margin-top: 62.5rem;
         }
     }
 }
@@ -935,10 +858,6 @@ Section Code
     }
     .pageHome-section-crew {
         height: 62.5rem;
-        top: -62.5rem;
-    }
-    .pageHome-section-contact {
-        margin-top: 62.5rem;
     }
     @media (max-width: 750px) {
         .pageHome-section-crew-container-grid {
@@ -949,10 +868,6 @@ Section Code
         }
         .pageHome-section-crew {
             height: 75rem;
-            top: -75rem;
-        }
-        .pageHome-section-contact {
-            margin-top: 75rem;
         }
     }
 }

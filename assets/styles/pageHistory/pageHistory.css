@@ -21,68 +21,28 @@ Section Sizing
 ---------------------------------------*/
 
 /* Group 1 */
-.pageHistory-backdrop-title {
-    height: 100%;
-}
 .pageHistory-section-title {
     height: 90vh;
-    top: -90vh;
-}
-.pageHistory-section-early {
-    height: auto;
-    margin-top: 90vh;
 }
 
 /* Group 2 */
-.pageHistory-backdrop-void1 {
-    height: 100%;
-}
 .pageHistory-section-void1 {
     height: 25rem;
-    top: -25rem;
-}
-.pageHistory-section-early2 {
-    height: auto;
-    margin-top: 25rem;
 }
 
 /* Group 3 */
-.pageHistory-backdrop-void2 {
-    height: 100%;
-}
 .pageHistory-section-void2 {
     height: 25rem;
-    top: -25rem;
-}
-.pageHistory-section-fire {
-    height: auto;
-    margin-top: 25rem;
 }
 
 /* Group 4 */
-.pageHistory-backdrop-void3 {
-    height: 100%;
-}
 .pageHistory-section-void3 {
     height: 25rem;
-    top: -25rem;
-}
-.pageHistory-section-format {
-    height: auto;
-    margin-top: 25rem;
 }
 
 /* Group 5 */
-.pageHistory-backdrop-void4 {
-    height: 100%;
-}
 .pageHistory-section-void4 {
     height: 25rem;
-    top: -25rem;
-}
-.pageHistory-section-shows {
-    height: auto;
-    margin-top: 25rem;
 }
 
 /*-------------------------------------

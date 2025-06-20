@@ -57,6 +57,10 @@
     text-decoration: none;
     font-family: serif;
 }
+.footer-credit a:hover {
+    color: gray;
+    text-decoration: underline;
+}
 @media (max-width: 1100px) {
     .footer-privacy h2 {
         font-size: 1rem;
