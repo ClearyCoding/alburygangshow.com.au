@@ -617,7 +617,9 @@ Section Code
     font-family: WhoopAss, 'Fira Sans', Arial, sans-serif;
     font-weight: 500;
 }
-.pageHome-section-join-container-text h2 { /* Join */
+
+/* Join */
+.pageHome-section-join-container-text h2 {
     font-family: Lovable, 'Fira Sans', Arial, sans-serif;;
 }
 .pageHome-section-members-images {
@@ -703,7 +705,7 @@ Section Code
     font-family: Aurella, 'Fira Sans', Arial, sans-serif;
 }
 .pageHome-section-local_groups-container h2 { /* Local Groups */
-    font-family: Ficticcia, 'Fira Sans', Arial, sans-serif;
+    font-family: TopSecret, 'Fira Sans', Arial, sans-serif;
     font-weight: 500;
 }
 .pageHome-section-links-grid {

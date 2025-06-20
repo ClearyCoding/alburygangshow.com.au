@@ -8,10 +8,10 @@ html {
     box-sizing: border-box;
 }
 h1, h2, a, time {
-    font-family: 'Fira Sans', Arial, sans-serif;
+    font-family: FiraSans, Arial, sans-serif;
 }
 p, h3, h4, h5, label, figcaption, div {
-    font-family: 'Heebo', Arial, sans-serif;
+    font-family: Heebo, Arial, sans-serif;
 }
 body {
     position: relative;
@@ -56,7 +56,7 @@ figure {
 .section {
     position: relative;
     background: linear-gradient(#171717, #212123, #171717);
-    min-height: 450px;
+    min-height: 500px;
     padding: 30px 40px;
     box-sizing: border-box;
     display: flex;

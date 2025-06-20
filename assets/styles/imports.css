@@ -1,58 +1,70 @@
 /* Fonts */
 @font-face {
+    font-family: FiraSans;
+    src: url("/assets/fonts/fira.ttf") format("truetype");
+}
+@font-face {
+    font-family: Heebo;
+    src: url("/assets/fonts/heebo.ttf") format("truetype");
+}
+@font-face {
     font-family: YouMurderer;
-    src: url("/assets/fonts/youmurdererbb_reg.ttf");
+    src: url("/assets/fonts/murderer.ttf") format("truetype");
 }
 @font-face {
     font-family: MurderousDesire;
-    src: url("/assets/fonts/murderous_desire_DEMO.otf");
+    src: url("/assets/fonts/murderous.otf") format("opentype");
+}
+@font-face {
+    font-family: TopSecret;
+    src: url("/assets/fonts/topsecret.otf") format("opentype");
 }
 @font-face {
     font-family: Grinched;
-    src: url("/assets/fonts/Grinched.ttf");
+    src: url("/assets/fonts/grinched.ttf") format("truetype");
 }
 @font-face {
     font-family: PowerRangers;
-    src: url("/assets/fonts/Power_Rangers.ttf");
+    src: url("/assets/fonts/power.ttf") format("truetype");
 }
 @font-face {
     font-family: Lovable;
-    src: url("/assets/fonts/FontdinerdotcomLuvable.ttf");
+    src: url("/assets/fonts/luvable.ttf") format("truetype");
 }
 @font-face {
     font-family: Secrets;
-    src: url("/assets/fonts/secrets.ttf");
+    src: url("/assets/fonts/secrets.ttf") format("truetype");
 }
 @font-face {
     font-family: Evil;
-    src: url("/assets/fonts/puree____2.ttf");
+    src: url("/assets/fonts/puree.ttf") format("truetype");
 }
 @font-face {
     font-family: WhoopAss;
-    src: url("/assets/fonts/WHOOPASS.TTF");
+    src: url("/assets/fonts/whoopass.ttf") format("truetype");
 }
 @font-face {
     font-family: Ficticcia;
-    src: url("/assets/fonts/Ficticcia_College.otf");
+    src: url("/assets/fonts/ficticcia.otf") format("opentype");
 }
 @font-face {
     font-family: Eraser;
-    src: url("/assets/fonts/EraserDust_0.ttf");
+    src: url("/assets/fonts/eraser.ttf") format("truetype");
 }
 @font-face {
     font-family: Mistery;
-    src: url("/assets/fonts/Mistery.otf");
+    src: url("/assets/fonts/mistery.otf") format("opentype");
 }@font-face {
     font-family: RockBoulder;
-    src: url("/assets/fonts/RockBoulder.ttf");
+    src: url("/assets/fonts/boulder.ttf") format("truetype");
 }
 @font-face {
     font-family: Aurella;
-    src: url("/assets/fonts/Aurella.ttf");
+    src: url("/assets/fonts/aurella.ttf") format("truetype");
 }
 @font-face {
     font-family: Digital7;
-    src: url("/assets/fonts/digital7.ttf");
+    src: url("/assets/fonts/digital.ttf") format("truetype");
 }
 
 /* Backdrop Images*/

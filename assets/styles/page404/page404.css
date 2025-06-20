@@ -41,28 +41,6 @@
 .page404-container h4 {
     font-size: 1.5rem;
 }
-.page404-container-button {
-    text-align: center;
-    display: inline;
-    text-decoration: none;
-    box-sizing: border-box;
-
-    font-size: 1.25rem;
-    width: 12.5rem;
-    min-height: 4rem;
-    padding: 0.9375rem;
-    margin-top: 20px;
-    border-radius: 10px;
-
-    color: white;
-    border: solid #af2d24 5px;
-}
-.page404-container-button:hover {
-    text-decoration: underline;
-    background: linear-gradient(to right, #af2d24, #821e17, #af2d24);
-    border: solid #821e17 3px;
-    padding-top: 1.125rem;;
-}
 @media (max-aspect-ratio: 1/1){
     .page404-backdrop {
         height: 100%;
