@@ -21,16 +21,19 @@
   <link rel="stylesheet" href="/assets/styles/pageMembers/pageLogin.css">
 </head>
 <body>
-    <header id="header"></header>
     <div id="loader">
-        <script src="/assets/scripts/loader.js"></script>
-        <div id="loader-wheel">
-            <img draggable="false" alt="Gang Show Logo" src="/assets/images/branding/AGS_transparent-noText.png" class="loader-logo">
-        </div>
-        <div id="loader-title">alburygangshow.com.au</div>
-        <div id="loader-subtitle">Loading...</div>
-        <div id="loader-notice">This may take a minute.</div>
+        <noscript>
+            <div id="loader-wheel-error">
+                <img draggable="false" alt="Gang Show Logo" src="/assets/images/branding/AGS_transparent-sad.png" class="loader-logo">
+            </div>
+            <div class="loader-title loader-error">alburygangshow.com.au</div>
+            <div class="loader-subtitle">This site requires Javascript</div>
+            <div class="loader-notice">Please refer to your internet browser's documentations on how to enable JavaScript for this website.</div>
+        </noscript>
     </div>
+    <script src="/assets/scripts/loader.js"></script>
+
+    <header id="header"></header>
     <main class="pageLogin">
         <img draggable="false" alt="Cast Script Reading Session" src="/assets/images/backdrops/pageLogin.webp" class="pageLogin-backdrop">
         <section id="pageLogin-container">

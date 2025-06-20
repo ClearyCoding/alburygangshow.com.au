@@ -4,9 +4,6 @@ const footer = document.querySelector("#footer");
 header.innerHTML =
     `
     <div class="header-extension"></div>
-      <div class="header-screen_limit">
-        This Website Does Not Support Screen Widths Less Than 350px :(<br>Sorry For The Inconvenience.
-      </div>
       <a class="header-branding" href="/#billboard">
         <img draggable="false" class="header-branding-logo" src="/assets/images/branding/AGS_transparent.png" alt="Albury Gang Show Logo">
         <h1 class="header-branding-title">Albury Gang Show</h1>

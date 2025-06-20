@@ -26,9 +26,6 @@
     background-color: rgba(11, 11, 11, 0.75);
     pointer-events: none;
 }
-.header-screen_limit {
-    display: none;
-}
 .pageHome-title {
     padding-top: 70px;
 }
@@ -198,31 +195,5 @@
         .header-branding-title {
             font-size: 1.25rem;
         }
-    }
-}
-/* Too Small */
-@media (max-width: 350px) {
-    .header-screen_limit {
-        display: flex;
-        position: fixed;
-        z-index: 254;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        padding-top: 70px;
-        justify-items: center;
-        background: #212123;
-        color: white;
-    }
-    .header-branding-logo {
-        z-index: 255;
-        height: 40px;
-        position: absolute;
-    }
-    .header-branding-title {
-        z-index: 255;
-        position: absolute;
-        left: 50px;
     }
 }

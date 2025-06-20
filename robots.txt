@@ -10,3 +10,6 @@ Disallow: /forms/
 Disallow: /assets/images/pageHome/billboard_scroll_down.png
 Disallow: /assets/images/pageHome/links
 Disallow: /assets/images/pageHome/sponsors
+Allow: /assets/images/branding/AGS_opaque.jpg
+Allow: /assets/images/branding/AGS_transparent.jpg
+Disallow: /assets/images/branding/
