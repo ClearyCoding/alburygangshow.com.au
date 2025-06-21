@@ -96,11 +96,11 @@
     }
 }
 @media (max-width: 700px) {
+    #countdown {
+        font-size: 3rem;
+    }
     .void-billboard h3 {
         font-size: 1.5rem;
-    }
-    .void-billboard .container-countdown {
-        font-size: 3.75rem;
     }
     #countdown-units h4 {
         font-size: 0.9375rem;

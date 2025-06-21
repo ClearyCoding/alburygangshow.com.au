@@ -1,5 +1,62 @@
 let header = document.querySelector("#header");
 const footer = document.querySelector("#footer");
+const page = header.dataset.page;
+
+let navbar = [
+    {
+        title: "About",
+        link: "/#about",
+    },
+    {
+        title: "Join",
+        link: "/#join",
+    },
+    {
+        title: "History",
+        link: "/#history",
+    },
+    {
+        title: "Tickets",
+        link: "/#tickets",
+    },
+    {
+        title: "FAQ",
+        link: "/#faq",
+    },
+    {
+        title: "Contact",
+        link: "/#contact",
+    },
+]
+
+if (page && page == "History") {
+    navbar = [
+            {
+                title: "Home",
+                link: "/",
+            },
+            {
+                title: "Join",
+                link: "/#join",
+            },
+            {
+                title: "History",
+                link: "/history",
+            },
+            {
+                title: "Tickets",
+                link: "/#tickets",
+            },
+            {
+                title: "FAQ",
+                link: "/#faq",
+            },
+            {
+                title: "Contact",
+                link: "/#contact",
+            },
+        ]
+}
 
 header.innerHTML =
     `
@@ -11,12 +68,12 @@ header.innerHTML =
       <input class="header-cascade-toggle" type="checkbox" id="header-cascade-toggle" />
       <label class="header-cascade-graphic" for="header-cascade-toggle"><span class="header-cascade-graphic-section"></span></label>
       <nav class="header-navbar">
-        <a class="header-navbar-button" href="/#about">About</a>
-        <a class="header-navbar-button" href="/#tickets">Tickets</a>
-        <a class="header-navbar-button" href="/#history">History</a>
-        <a class="header-navbar-button" href="/#faq">FAQ</a>
-        <a class="header-navbar-button" href="/#join">Join</a>
-        <a class="header-navbar-button" href="/#contact">Contact</a>
+        <a class="header-navbar-button" href="${navbar[0].link}">${navbar[0].title}</a>
+        <a class="header-navbar-button" href="${navbar[1].link}">${navbar[1].title}</a>
+        <a class="header-navbar-button" href="${navbar[2].link}">${navbar[2].title}</a>
+        <a class="header-navbar-button" href="${navbar[3].link}">${navbar[3].title}</a>
+        <a class="header-navbar-button" href="${navbar[4].link}">${navbar[4].title}</a>
+        <a class="header-navbar-button" href="${navbar[5].link}">${navbar[5].title}</a>
       </nav>
     <label class="header-cascade-outside" for="header-cascade-toggle"></label>
     `
