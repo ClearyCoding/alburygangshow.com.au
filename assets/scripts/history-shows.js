@@ -225,23 +225,23 @@ const showDictionary = [
     }
 ]
 
-const historyShowsGrid = document.querySelector('#pageHistory-section-shows-grid')
-const historyShowsPinned = document.querySelector('#pageHistory-section-shows-pinned')
-const historyShowsPopups = document.querySelector('#pageHistory-section-shows-popups')
-const moreShowsButton = document.querySelector('#pageHistory-section-shows-more')
+const historyShowsGrid = document.querySelector('#shows-grid')
+const historyShowsPinned = document.querySelector('#pinned-shows')
+const historyShowsPopups = document.querySelector('#show-popups')
+const moreShowsButton = document.querySelector('#more-shows')
 let moreShowsButtonToggle = true;
 
 loadHTML();
 
 function openPopup(popupId) {
-    const popup = document.querySelector(`#pageHistory-section-shows-popup${popupId}`);
+    const popup = document.querySelector(`#shows-popup${popupId}`);
     popup.style.display = 'flex';
     popup.style.opacity = '100';
     headerUp();
 }
 
 function closePopup(popupId) {
-    const popup = document.querySelector(`#pageHistory-section-shows-popup${popupId}`);
+    const popup = document.querySelector(`#shows-popup${popupId}`);
     popup.style.display = 'none';
     popup.style.opacity = '0';
     headerDown()
@@ -262,33 +262,33 @@ function loadHTML() {
             let showHeader = 'Upcoming Show:'
             if (index === 1) {showHeader = 'Latest Show:'}
             historyShowsPinnedHTML += `
-                <div class="pageHistory-section-shows-item" onclick="openPopup(${show.number})">
-                <h3 class="pageHistory-section-shows-pinned-heading">${showHeader}</h3>
-                    <img class="pageHistory-section-shows-item-poster" alt="${show.year} Poster" src="/assets/images/pageHistory/posters/${show.year}.jpg">
-                    <h3 class="pageHistory-section-shows-item-title">${show.title || `${show.number}${showNumberSuffix} Show`}</h3>
-                    <h4 class="pageHistory-section-shows-item-year">${show.number}${showNumberSuffix} Show - ${show.year}</h4>
+                <div class="shows-item" onclick="openPopup(${show.number})">
+                    <h3 class="pinned-heading">${showHeader}</h3>
+                    <img class="item-poster" alt="${show.year} Poster" src="/assets/images/pageHistory/posters/${show.year}.jpg">
+                    <h3 class="item-title">${show.title || `${show.number}${showNumberSuffix} Show`}</h3>
+                    <h6 class="item-year">${show.number}${showNumberSuffix} Show - ${show.year}</h6>
                 </div>
             `
         } else {
             historyShowsGridHTML += `
-                <div class="pageHistory-section-shows-item" onclick="openPopup(${show.number})">
-                    <img class="pageHistory-section-shows-item-poster" alt="${show.year} Poster" src="/assets/images/pageHistory/posters/${show.year}.jpg">
-                    <h3 class="pageHistory-section-shows-item-title">${show.title || `${show.number}${showNumberSuffix} Show`}</h3>
-                    <h4 class="pageHistory-section-shows-item-year">${show.number}${showNumberSuffix} Show - ${show.year}</h4>
+                <div class="shows-item" onclick="openPopup(${show.number})">
+                    <img class="item-poster" alt="${show.year} Poster" src="/assets/images/pageHistory/posters/${show.year}.jpg">
+                    <h3 class="item-title">${show.title || `${show.number}${showNumberSuffix} Show`}</h3>
+                    <h6 class="item-year">${show.number}${showNumberSuffix} Show - ${show.year}</h6>
                 </div>
             `
         }
         historyShowsPopupsHTML += `
-        <div id="pageHistory-section-shows-popup${show.number}" class="pageHistory-section-shows-popup">
-            <div class="pageHistory-section-shows-popup-cover" onclick="closePopup(${show.number})"></div>
-            <section class="pageHistory-section-shows-popup-content">
-                <span class="pageHistory-section-shows-popup-close" onclick="closePopup(${show.number})">&times;</span>
-                <img class="pageHistory-section-shows-popup-content-poster" alt="${show.year} Poster" src="/assets/images/pageHistory/posters/${show.year}.jpg">
-                <div class="pageHistory-section-shows-popup-content-info">
-                    <h3 class="pageHistory-section-shows-popup-content-title">${show.title || `${show.number}${showNumberSuffix} Albury Gang Show`} ${show.dvd ? '<a href="/#contact" class="pageHistory-section-shows-popup-content-dvd"><img class="pageHistory-section-shows-popup-content-dvd-icon" alt="DvD Available" src="/assets/images/pageHistory/dvd.webp"><div class="pageHistory-section-shows-popup-content-dvd-label">DvDs are available to order</div></a>' : ''}</h3>
-                    <h4 class="pageHistory-section-shows-popup-content-year">${show.number}${showNumberSuffix} Show - ${show.year}</h4>
-                    ${show.description ? `<p class="pageHistory-section-shows-popup-content-description">${show.description}</p>` : ''}
-                    ${index === 0 ? '<a href="/#tickets" class="pageHistory-section-shows-popup-content-tickets">Tickets &#8594</a>' : ''}
+        <div id="shows-popup${show.number}" class="shows-popup">
+            <div class="popup-blur" onclick="closePopup(${show.number})"></div>
+            <section class="crate-content">
+                <span class="popup-close" onclick="closePopup(${show.number})">&times;</span>
+                <img class="popup-poster" alt="${show.year} Poster" src="/assets/images/pageHistory/posters/${show.year}.jpg">
+                <div class="crate-info">
+                    <h3 class="popup-title">${show.title || `${show.number}${showNumberSuffix} Albury Gang Show`} ${show.dvd ? '<a href="/#contact" class="popup-dvd"><img class="dvd-icon" alt="DvD Available" src="/assets/images/pageHistory/dvd.webp"><div class="dvd-label">DvDs are available to order</div></a>' : ''}</h3>
+                    <h6 class="popup-year">${show.number}${showNumberSuffix} Show - ${show.year}</h6>
+                    ${show.description ? `<p class="popup-description">${show.description}</p>` : ''}
+                    ${index === 0 ? '<a href="/#tickets" class="button popup-button">Tickets &#8594</a>' : ''}
                 </div>
             </section>
         </div>

@@ -68,54 +68,50 @@
 }
 
 /* Backdrop Images*/
-.pageHome-backdrop-billboard {
+#pageHome .backdrop-billboard {
     background-image: url("/assets/images/backdrops/2025.jpg");
     filter: brightness(75%);
 }
-.pageHome-backdrop-posters {
+#pageHome .backdrop-posters {
     background-image: url("/assets/images/backdrops/pageHome-posters.webp");
     filter: blur(1px) brightness(80%);
 }
-.pageHome-backdrop-tickets {
+#pageHome .backdrop-tickets {
     background-image: url("/assets/images/backdrops/pageHome-tickets.webp");
     filter: blur(1px) brightness(80%);
 }
-.pageHome-backdrop-join {
+#pageHome .backdrop-join {
     background-image: url("/assets/images/backdrops/pageHome-join.webp");
     filter: blur(1px);
 }
-.pageHome-backdrop-local_groups {
+#pageHome .backdrop-local_groups {
     background-image: url("/assets/images/backdrops/pageHome-local_groups.webp");
     filter: blur(1px);
 }
-.pageHome-backdrop-void {
+#pageHome .backdrop-void {
     background-image: url("/assets/images/backdrops/pageHome-void.webp");
 }
-.pageHome-backdrop-crew {
+#pageHome .backdrop-crew {
     background-image: url("/assets/images/backdrops/pageHome-crew.webp");
     filter: blur(1px);
 }
-.pageMembers-backdrop-billboard {
-    background-image: url("/assets/images/backdrops/pageMembers-billboard.webp");
-    filter: blur(1px);
-}
-.pageHistory-backdrop-title {
+#pageHistory .backdrop-title {
     background-image: url("/assets/images/backdrops/pageHistory-title.webp");
     filter: blur(1px);
 }
-.pageHistory-backdrop-void1 {
+#pageHistory .backdrop-void1 {
     background-image: url("/assets/images/backdrops/pageHistory-void1.webp");
     filter: blur(1px);
 }
-.pageHistory-backdrop-void2 {
+#pageHistory .backdrop-void2 {
     background-image: url("/assets/images/backdrops/pageHistory-void2.webp");
     filter: blur(1px);
 }
-.pageHistory-backdrop-void3 {
+#pageHistory .backdrop-void3 {
     background-image: url("/assets/images/backdrops/pageHistory-void3.webp");
     filter: blur(1px);
 }
-.pageHistory-backdrop-void4 {
+#pageHistory .backdrop-void4 {
     background-image: url("/assets/images/backdrops/pageHistory-void4.webp");
     filter: brightness(80%);
 }

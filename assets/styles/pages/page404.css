@@ -1,4 +1,4 @@
-.page404 {
+#page404 {
     height: 100vh;
     width: 100%;
 
@@ -30,7 +30,7 @@
 }
 .page404-container * {
     align-self: center;
-    margin: 5px;
+    margin: 0.5rem;
 }
 .page404-container h2 {
     font-size: 5rem;

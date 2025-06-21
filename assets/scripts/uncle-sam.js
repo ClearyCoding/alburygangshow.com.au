@@ -1,5 +1,5 @@
-const samAudio = document.querySelector('#pageHome-section-join-samAudio');
-const samImage = document.querySelector('#pageHome-section-join-samImage');
+const samAudio = document.querySelector('#samAudio');
+const samImage = document.querySelector('#samImage');
 let samCount = 0;
 
 setInterval(reduceSam, 750);

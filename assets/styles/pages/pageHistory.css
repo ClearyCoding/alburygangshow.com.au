@@ -1,102 +1,49 @@
-.pageHistory-caption {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgba(21,21,23,0.7);
-    height: auto;
-    border-radius: 5px;
-
-    padding: 0.3rem;
-    font-size: 1rem;
-    color: darkgray;
-
-    position: absolute;
-    bottom: 10px;
-    right: 5px;
-}
-
-/*-------------------------------------
-Section Sizing
----------------------------------------*/
-
-/* Group 1 */
-.pageHistory-section-title {
+/* Title */
+.void-title {
     height: 90vh;
 }
-
-/* Group 2 */
-.pageHistory-section-void1 {
-    height: 25rem;
-}
-
-/* Group 3 */
-.pageHistory-section-void2 {
-    height: 25rem;
-}
-
-/* Group 4 */
-.pageHistory-section-void3 {
-    height: 25rem;
-}
-
-/* Group 5 */
-.pageHistory-section-void4 {
-    height: 25rem;
-}
-
-/*-------------------------------------
-Section Code
----------------------------------------*/
-
-/* Title */
-.pageHistory-section-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.pageHistory-section-title-container {
+.void-title .container {
     flex-direction: column;
     background-color: rgba(21,21,23,0.7);
 }
-.pageHistory-section-title-container h2 {
+.void-title .container h2 {
     align-self: center;
     font-size: 3rem;
 }
-.pageHistory-section-title-container p {
+.void-title .container p {
     text-align: center;
 }
 
 /* Shows */
-.pageHistory-section-shows {
+.section-shows {
     flex-direction: column;
 }
-.pageHistory-section-shows p {
+.section-shows p {
     align-self: start;
 }
-#pageHistory-section-shows-pinned {
+#pinned-shows {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-around;
     padding-top: 3rem;
 }
-.pageHistory-section-shows-pinned-heading {
+#pinned-shows .pinned-heading {
     position: absolute;
     top: -2rem;
     left: -3rem;
     font-size: 2rem;
 }
-#pageHistory-section-shows-pinned .pageHistory-section-shows-item-title {
+#pinned-shows .item-title {
     font-size: 1.25rem;
 }
-#pageHistory-section-shows-pinned .pageHistory-section-shows-item-year {
+#pinned-shows .item-year {
     font-size: 1rem;
 }
-#pageHistory-section-shows-pinned .pageHistory-section-shows-item-poster {
+#pinned-shows .item-poster {
     height: 20rem;
 }
-.pageHistory-section-shows-item {
+.section-shows .shows-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,29 +52,29 @@ Section Code
     padding: 1rem 1.5rem 0 1.5rem;
     cursor: pointer;
 }
-.pageHistory-section-shows-item:hover {
+.section-shows .show-item:hover {
     filter: brightness(110%);
 }
-.pageHistory-section-shows-item-poster {
+.section-shows .shows-item .item-poster {
     height: 15rem;
 }
-#pageHistory-section-shows-grid .pageHistory-section-shows-item-poster {
+#shows-grid .shows-item .item-poster {
     max-width: 10.9375rem;
 }
-.pageHistory-section-shows-item-title {
+.section-shows .shows-item .item-title {
     margin: 0;
     align-self: center;
     font-size: 1rem;
     text-align: center;
 }
-.pageHistory-section-shows-item-year {
+.section-shows .shows-item .item-year {
     margin: 0;
     align-self: center;
     font-size: 0.8rem;
     text-align: center;
     color: grey;
 }
-#pageHistory-section-shows-grid {
+#shows-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(11.9375rem, 1fr));
     grid-auto-rows: 20rem;
@@ -137,14 +84,14 @@ Section Code
     overflow: hidden;
     transition: max-height 0.15s
 }
-.pageHistory-section-shows-more-center {
+.section-shows .more-positioner {
     width: 100%;
     margin-top: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#pageHistory-section-shows-more {
+#more-shows {
     text-align: center;
     display: inline;
     text-decoration: none;
@@ -160,41 +107,41 @@ Section Code
     color: white;
     border: solid #af2d24 5px;
 }
-#pageHistory-section-shows-more:hover {
+#more-shows:hover {
     text-decoration: underline;
     background: linear-gradient(to right, #af2d24, #821e17, #af2d24);
     border: solid #821e17 3px;
     padding-top: 1.125rem;;
 }
 @media (max-width: 1100px) {
-    .pageHistory-section-shows-pinned-heading {
+    #pinned-shows .pinned-heading {
         font-size: 1.5rem;
         left: -2rem;
     }
-    #pageHistory-section-shows-pinned .pageHistory-section-shows-item-title {
+    #pinned-shows .shows-item .item-title {
         font-size: 1rem;
     }
-    #pageHistory-section-shows-pinned .pageHistory-section-shows-item-year {
+    #pinned-shows .shows-item .item-year {
         font-size: 0.75rem;
     }
     @media (max-width: 700px) {
-        .pageHistory-section-shows-pinned-heading {
+        #pinned-shows .pinned-heading {
             left: -1.5rem;
         }
-        #pageHistory-section-shows-pinned .pageHistory-section-shows-item-poster {
+        #pinned-shows .shows-item .item-poster {
             height: 15rem;
         }
         @media (max-width: 500px) {
-            #pageHistory-section-shows-pinned {
+            #pinned-shows {
                 flex-direction: column;
             }
-            #pageHistory-section-shows-pinned .pageHistory-section-shows-item {
+            #pinned-shows .shows-item {
                 padding-bottom: 2.5rem;
             }
-            .pageHistory-section-shows-item-poster {
+            .section-shows .shows-item .item-poster {
                 height: 12rem;
             }
-            #pageHistory-section-shows-grid {
+            #shows-grid {
                 max-height: 34rem;
                 grid-auto-rows: 17rem;
             }
@@ -202,7 +149,8 @@ Section Code
     }
 }
 
-.pageHistory-section-shows-popup {
+/* Shows Popups*/
+.shows-popup {
     display: none;
     position: fixed;
     top: 0;
@@ -214,7 +162,7 @@ Section Code
     opacity: 0;
     transition: opacity 0.15s;
 }
-.pageHistory-section-shows-popup-cover {
+.shows-popup .popup-blur {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -224,7 +172,7 @@ Section Code
     z-index: 254;
     backdrop-filter: blur(2px);
 }
-.pageHistory-section-shows-popup-content {
+.shows-popup .crate-content {
     z-index: 255;
     width: 56rem;
     max-width: 90vw;
@@ -236,7 +184,7 @@ Section Code
     align-items: center;
     justify-content: space-between;
 }
-.pageHistory-section-shows-popup-close {
+.shows-popup .popup-close {
     position: absolute;
     top: -5px;
     right: 10px;
@@ -244,31 +192,33 @@ Section Code
     font-size: 3rem;
     color: red;
 }
-.pageHistory-section-shows-popup-close:hover {
+.shows-popup .popup-close:hover {
     filter: brightness(75%);
 }
-.pageHistory-section-shows-popup-content-poster {
+.shows-popup .popup-poster {
     width: 45%;
 }
-.pageHistory-section-shows-popup-content-info {
+.shows-popup .crate-info {
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 50%;
 }
-.pageHistory-section-shows-popup-content-title {
+.shows-popup .popup-title {
     color: red;
     font-size: 2rem;
     display: flex;
 }
-.pageHistory-section-shows-popup-content-dvd {
+.shows-popup .popup-dvd {
     position: relative;
+    display: flex;
+    align-items: center;
     margin-left: 0.5rem;
 }
-.pageHistory-section-shows-popup-content-dvd-icon {
+.shows-popup .popup-dvd .dvd-icon {
     height: 1.6rem;
 }
-.pageHistory-section-shows-popup-content-dvd-label {
+.shows-popup .popup-dvd .dvd-label {
     position: absolute;
     font-size: 0.7rem;
     top: -0.8rem;
@@ -278,71 +228,53 @@ Section Code
     transition: opacity 0.15s;
     white-space: nowrap;
 }
-.pageHistory-section-shows-popup-content-dvd:hover .pageHistory-section-shows-popup-content-dvd-label {
+.shows-popup .popup-dvd:hover .dvd-label {
     opacity: 100;
 }
-.pageHistory-section-shows-popup-content-year {
+.shows-popup .popup-year {
     margin: 0;
     font-size: 1.2rem;
     color: grey;
     align-self: start;
 }
-.pageHistory-section-shows-popup-content-description {
-    margin: 0;
+.shows-popup .popup-description {
+    margin: 1rem 0 0 0;
     font-size: 1.3rem;
     color: darkgrey;
     align-self: start;
     line-height: 1.5rem;
 }
-.pageHistory-section-shows-popup-content-tickets {
-    text-align: center;
-    display: inline;
-    text-decoration: none;
-    box-sizing: border-box;
-
-    font-size: 1.25rem;
+.shows-popup .popup-button {
     width: 13.75rem;
-    height: 4rem;
-    padding: 0.9375rem;
-    border-radius: 10px;
     margin-top: 1rem;
-
-    color: white;
-    border: solid #af2d24 5px;
-}
-.pageHistory-section-shows-popup-content-tickets:hover {
-    text-decoration: underline;
-    background: linear-gradient(to right, #af2d24, #821e17, #af2d24);
-    border: solid #821e17 3px;
-    padding-top: 1.125rem;;
 }
 @media (max-width: 650px) {
-    .pageHistory-section-shows-popup-content {
+    .shows-popup .crate-content {
         flex-direction: column;
         width: 90%;
         justify-content: normal;
     }
-    .pageHistory-section-shows-popup-content-poster {
+    .shows-popup .popup-poster {
         width: 60%;
     }
-    .pageHistory-section-shows-popup-content-info {
+    .shows-popup .crate-info {
         width: 100%;
         align-items: center;
     }
-    .pageHistory-section-shows-popup-content-title {
+    .shows-popup .popup-title {
         font-size: 1.5rem;
         align-self: center;
         text-align: center;
     }
-    .pageHistory-section-shows-popup-content-dvd-icon {
+    .shows-popup .popup-dvd .dvd-icon {
         height: 1.3rem;
     }
-    .pageHistory-section-shows-popup-content-year {
+    .shows-popup .popup-year {
         font-size: 1rem;
         align-self: center;
         text-align: center;
     }
-    .pageHistory-section-shows-popup-content-description {
+    .shows-popup .popup-description {
         font-size: 1.2rem;
         align-self: center;
         text-align: center;

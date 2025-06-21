@@ -2,7 +2,7 @@ const eventList = [
     {
         text: 'THE CURTAINS HAVE CLOSED!',
         count: false,
-        date: 'July 10, 2025 12:00:00',
+        date: 'June 10, 2025 12:00:00',
         context: 'Great job again everyone! See you all next year for the 60th!'
     },
     /*{
@@ -56,7 +56,7 @@ const countText = document.querySelector('#countdown-text');
 const countContext = document.querySelector('#countdown-context');
 const countPrefix = document.querySelector('#countdown-prefix');
 const countUnits = document.querySelector('#countdown-units');
-const countdownElement = document.querySelector("#pageHome-section-billboard-container-countdown");
+const countdownElement = document.querySelector("#countdown");
 
 console.log(nextEvent);
 

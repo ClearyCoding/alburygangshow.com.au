@@ -20,7 +20,7 @@ const splashList = [
     // Cast General Knowledge
     {text: '\"Harley here from First National Real Estate\"', weight: 1},
     {text: 'Featuring Harley\'s tight pants!', weight: 1},
-    {text: 'Super-Trustworthy Steve & Drew Studios', weight: 1},
+    {text: 'Super-Trustworthy Steve & Drew Industries', weight: 1},
     {text: 'The Bird Is The Word', weight: 1},
     {text: 'Check out the RAG!', weight: 1},
     {text: 'Sorry, need to edit the script again...', weight: 1},
@@ -91,18 +91,19 @@ specialSplashList = [
     }, {
         splash: 'April Fools!',
         date: '1/3',
-    },
-    {
+    }, {
         splash: 'Happy Birthday Drew!',
         date: '31/4',
-    },
-    {
+    }, {
         splash: 'Happy Birthday Adelaide!',
         date: '21/8',
+    }, {
+        splash: 'Happy Birthday Mackenzi!',
+        date: '14/1',
     },
 ]
 
-const splashElement = document.querySelector('#pageHome-section-billboard-container-splash-text');
+const splashElement = document.querySelector('#splash-text');
 const currentDate = `${new Date().getDate()}/${new Date().getMonth()}`
 let specialSplash;
 let specialForced;

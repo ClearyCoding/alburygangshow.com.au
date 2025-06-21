@@ -7,10 +7,10 @@ html {
     height: 100%;
     box-sizing: border-box;
 }
-h1, h2, a, time {
+h1, h2, h4, h5, a, time {
     font-family: FiraSans, Arial, sans-serif;
 }
-p, h3, h4, h5, label, figcaption, div {
+p, h3, h6, label, figcaption, div {
     font-family: Heebo, Arial, sans-serif;
 }
 body {
@@ -71,10 +71,12 @@ figure {
 }
 .void {
     width: 100%;
+    min-height: 25rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 .container {
     display: flex;
@@ -113,6 +115,23 @@ figure {
     border: solid #821e17 3px;
     padding-top: 1.125rem;
 }
+.caption {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-direction: column;
+     background-color: rgba(21,21,23,0.7);
+     height: auto;
+     border-radius: 5px;
+
+     padding: 0.3rem;
+     font-size: 1rem;
+     color: darkgray;
+
+     position: absolute;
+     bottom: 10px;
+     right: 5px;
+ }
 .anchor {
     position: absolute;
     top: -80px;
@@ -139,6 +158,24 @@ h3 {
     align-self: start;
 }
 h4 {
+    color: white;
+    font-size: 2rem;
+
+    font-weight: 900;
+    margin: 0;
+
+    align-self: center;
+}
+h5 {
+    color: darkgray;
+    font-size: 1.25rem;
+
+    font-weight: 900;
+    margin: 0;
+
+    align-self: start;
+}
+h6 {
     color: darkgray;
     font-size: 1.125rem;
 }

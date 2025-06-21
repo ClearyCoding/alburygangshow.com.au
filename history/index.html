@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="/assets/styles/main.css">
     <link rel="stylesheet" href="/assets/styles/header.css">
    <link rel="stylesheet" href="/assets/styles/footer.css">
-    <link rel="stylesheet" href="/assets/styles/imports.css">
-    <link rel="stylesheet" href="/assets/styles/pageHistory/pageHistory.css">
+    <link rel="stylesheet" href="../assets/styles/imports.css">
+    <link rel="stylesheet" href="/assets/styles/pages/pageHistory.css">
 </head>
 <body>
     <div id="loader">
@@ -31,89 +31,93 @@
     <script src="/assets/scripts/loader.js"></script>
 
     <header id="header"></header>
-    <main class="parallax pageHistory">
-        <figure class="backdrop pageHistory-backdrop-title"></figure>
-        <article id="title" class="void pageHistory-section-title">
-            <section class="container pageHistory-section-title-container">
+    <main id="pageHistory" class="parallax">
+        <figure class="backdrop backdrop-title"></figure>
+        <article id="title" class="void void-title">
+            <section class="container">
                 <h2>The History of Albury Gang Show</h2>
                 <p>Since 1965, local Scouts have graced our theatres with an Albury rendition of ever-popular Gang Show format.
                     Celebrating our 60th show in 2026, we still hold true, continuing to have the time of our lives.</p>
             </section>
-            <div class="pageHistory-caption">
+            <div class="caption">
                 AGS Finale, 1967
             </div>
         </article>
 
-        <article class="section pageHistory-section-early">
+        <article class="section section-early">
             <div class="anchor" id="early"></div>
-            <h2>The Beginning</h2>
-            <h3>1960s</h3>
+            <section class="crate-text">
+                <h2>The Beginning</h2>
+                <h3>1960s</h3>
+            </section>
         </article>
 
-        <figure class="backdrop pageHistory-backdrop-void1"></figure>
-        <article class="void pageHistory-section-void1">
-            <div class="anchor" id="void1"></div>
-            <div class="pageHistory-caption">
+        <figure class="backdrop backdrop-void1"></figure>
+        <article class="void">
+            <div class="caption">
                 The AGS Cast, 1976
             </div>
         </article>
 
-        <article class="section pageHistory-section-early2">
+        <article class="section section-early2">
             <div class="anchor" id="early2"></div>
-            <h2>Coming Of Age</h2>
-            <h3>1970s-80s</h3>
+            <section class="crate-text">
+                <h2>Coming Of Age</h2>
+                <h3>1970s-80s</h3>
+            </section>
         </article>
 
-        <figure class="backdrop pageHistory-backdrop-void2"></figure>
-        <article class="void pageHistory-section-void2">
-            <div class="anchor" id="void2"></div>
-            <div class="pageHistory-caption">
+        <figure class="backdrop backdrop-void2"></figure>
+        <article class="void">
+            <div class="caption">
                 AGS Performance, n.d.
             </div>
         </article>
 
-        <article class="section pageHistory-section-fire">
+        <article class="section section-fire">
             <div class="anchor" id="fire"></div>
-            <h2>Fire at Kiewa Street</h2>
-            <h3>2000s</h3>
+            <section class="crate-text">
+                <h2>Fire at Kiewa Street</h2>
+                <h3>2000s</h3>
+            </section>
         </article>
 
-        <figure class="backdrop pageHistory-backdrop-void3"></figure>
-        <article class="void pageHistory-section-void3">
-            <div class="anchor" id="void3"></div>
-            <div class="pageHistory-caption">
+        <figure class="backdrop backdrop-void3"></figure>
+        <article class="void">
+            <div class="caption">
                 Theatre-Week Rehearsal, 2004
             </div>
         </article>
 
-        <article class="section pageHistory-section-format">
+        <article class="section section-format">
             <div class="anchor" id="format"></div>
-            <h2>A New Format</h2>
-            <h3>2010s</h3>
+            <section class="crate-text">
+                <h2>A New Format</h2>
+                <h3>2010-20s</h3>
+            </section>
         </article>
 
-        <figure class="backdrop pageHistory-backdrop-void4"></figure>
-        <article class="void pageHistory-section-void4">
-            <div class="anchor" id="void4"></div>
-            <div class="pageHistory-caption">
+        <figure class="backdrop backdrop-void4"></figure>
+        <article class="void">
+            <div class="caption">
                 AGS Finale, 2022
             </div>
         </article>
 
-        <article class="section pageHistory-section-shows">
+        <article class="section section-shows">
             <div class="anchor" id="shows"></div>
             <h2>Birds Of A Feather</h2>
             <p>After a great many years, we have produced countless fantastic performances, each even better than the last!</p>
-            <section id="pageHistory-section-shows-pinned"></section>
-            <section id="pageHistory-section-shows-grid"></section>
-            <div class="pageHistory-section-shows-more-center">
-                <div id="pageHistory-section-shows-more" onclick="moreShows()">Show More &#x25BC</div>
+            <section id="pinned-shows"></section>
+            <section id="shows-grid"></section>
+            <div class="more-positioner">
+                <div id="more-shows" onclick="moreShows()">Show More &#x25BC</div>
             </div>
         </article>
 
         <footer id="footer"></footer>
     </main>
-    <div id="pageHistory-section-shows-popups"></div>
+    <div id="show-popups"></div>
 
     <script src="/assets/scripts/headers.js"></script>
     <script src="/assets/scripts/reading-writing.js"></script>
