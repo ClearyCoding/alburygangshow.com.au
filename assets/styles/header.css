@@ -14,7 +14,7 @@
     margin-right: 10px;
     transition: height 0.4s, opacity 0.4s;
 }
-.header-extension {
+#header .extender {
     /* Usually the header blocks the scrollbar, not allowing the user to interact with it.
     This allows the header to visually continue along the page, whilst allowing interaction
     with the scrollbar beneath*/
@@ -26,31 +26,28 @@
     background-color: rgba(11, 11, 11, 0.75);
     pointer-events: none;
 }
-.pageHome-title {
-    padding-top: 70px;
-}
-.header-branding {
+#header .branding {
     display: flex;
     align-items: center;
     text-decoration: none;
 }
-.header-branding-logo {
+#header .branding img {
     height: 60px;
     padding: 5px;
 }
-.header-branding-title {
-    font-size: 2rem;
-    font-weight: 700;
+#header h1 {
     padding: 0 20px;
     color: red;
     font-family: Grinched, 'Fira Sans', Arial, sans-serif;;
 }
-.header-navbar {
+
+/* Navbar */
+#navbar {
     list-style: none;
     display: flex;
     transition: width 0.2s;
 }
-.header-navbar-button {
+#navbar a {
     color: red;
     text-decoration: none;
     display: inline-block;
@@ -58,26 +55,34 @@
     text-align: center;
     transition: font-size 0.2s;
 }
-.header-navbar-button:hover {
+#navbar a:hover {
     text-decoration: underline;
     font-size: 1.125rem;
 }
-.header-cascade-toggle {
+
+/* Cascade */
+#cascade-toggle {
     display: none;
 }
-.header-cascade-outside {
+#header .cascade-outside {
     display: none;
 }
 
 /* Mobile Mode */
-@media (min-width: 350px) and (max-width: 750px) {
+@media (max-width: 480px) {
+    #header h1 {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
     #header {
         flex-direction: column;
     }
-    .header-branding {
+    #header .branding {
         z-index: 100;
     }
-    .header-navbar {
+
+    #navbar {
         position: absolute;
         top: 4.375rem;
         flex-direction: column;
@@ -89,16 +94,17 @@
         height: 360px;
         justify-content: space-between;
     }
-    .header-cascade-toggle:checked ~ .header-navbar {
+    #cascade-toggle:checked ~ #navbar {
         max-height: 1000px;
     }
-    .header-navbar-button {
+    #navbar a {
         width: 100%;
         padding: 20px 0;
         text-align: center;
         z-index: 100;
     }
-    .header-cascade-graphic {
+
+    #header .cascade-graphic {
         cursor: pointer;
         display: flex;
         justify-content: center;
@@ -107,93 +113,78 @@
         right: 0;
         position: absolute;
     }
-    .header-cascade-graphic-section, .header-cascade-graphic-section:before, .header-cascade-graphic-section:after {
+    #header .cascade-midbar,
+    #header .cascade-midbar:before,
+    #header .cascade-midbar:after {
         background: #af2d24;
         display: block;
         height: 3px;
         width: 24px;
     }
-
-    .header-cascade-graphic-section {
-        position: relative;
-        transition: background 0.2s ease-out;
-    }
-
-    .header-cascade-graphic-section:before, .header-cascade-graphic-section:after {
+    #header .cascade-midbar:before,
+    #header .cascade-midbar:after {
         content: "";
         position: absolute;
         transition: all 0.2s ease-out;
     }
-
-    .header-cascade-graphic-section:before {
+    #header .cascade-midbar {
+        position: relative;
+        transition: background 0.2s ease-out;
+    }
+    #header .cascade-midbar:before {
         top: 8px;
     }
-
-    .header-cascade-graphic-section:after {
+    #header .cascade-midbar:after {
         top: -8px;
     }
-
-    .header-cascade-toggle:checked ~ .header-cascade-graphic .header-cascade-graphic-section {
+    #cascade-toggle:checked ~ .cascade-graphic .cascade-midbar {
         background: transparent;
     }
-
-    .header-cascade-toggle:checked ~ .header-cascade-graphic .header-cascade-graphic-section:before {
+    #cascade-toggle:checked ~ .cascade-graphic .cascade-midbar:before {
         transform: rotate(-45deg);
         top: 0;
     }
-
-    .header-cascade-toggle:checked ~ .header-cascade-graphic .header-cascade-graphic-section:after {
+    #cascade-toggle:checked ~ .cascade-graphic .cascade-midbar:after {
         transform: rotate(45deg);
         top: 0;
     }
-    .header-cascade-toggle:checked ~ .header-cascade-outside {
+    #cascade-toggle:checked ~ .cascade-outside {
         display: block;
         position: fixed;
         inset: 0;
         z-index: 1;
     }
-    @media (max-width: 450px) {
-        .header-branding-title {
-            padding-left: 0;
-            padding-right: 0;
-        }
-    }
-    @media (max-width: 400px) {
-        .header-branding-title {
-            display: none;
-        }
-    }
 }
 /* Desktop Mode */
-@media (min-width: 750px) {
-    .header-navbar {
+@media (min-width: 768px) {
+    #navbar {
         justify-content: space-between;
         align-items: center;
     }
-    .header-navbar-button {
+    #navbar a {
         padding: 20px;
     }
-    .header-cascade-graphic {
+    #header .cascade-graphic {
         display: none;
     }
 
     /* Header Spacing Adjustments */
-    @media (max-width: 860px) {
-        .header-branding-title {
+    @media (max-width: 1023px) {
+        #header h1 {
             display: none;
         }
-        .header-navbar {
-            width: 90%;
+        #navbar {
+            width: 85%;
         }
     }
-    @media (min-width: 855px) {
-        .header-navbar {
+    @media (min-width: 1024px) {
+        #navbar {
             width: 70%;
         }
     }
-    @media (max-width: 1125px) {
-        .header-branding-title {
-            font-size: 1.25rem;
+    @media (max-width: 1200px) {
+        #header h1 {
+            font-size: 1.5rem;
         }
     }
 }

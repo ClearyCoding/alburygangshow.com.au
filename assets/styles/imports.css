@@ -72,6 +72,10 @@
     background-image: url("/assets/images/backdrops/2025.jpg");
     filter: brightness(75%);
 }
+#pageHome .backdrop-join {
+    background-image: url("/assets/images/backdrops/pageHome-join.webp");
+    filter: blur(1px);
+}
 #pageHome .backdrop-posters {
     background-image: url("/assets/images/backdrops/pageHome-posters.webp");
     filter: blur(1px) brightness(80%);
@@ -79,10 +83,6 @@
 #pageHome .backdrop-tickets {
     background-image: url("/assets/images/backdrops/pageHome-tickets.webp");
     filter: blur(1px) brightness(80%);
-}
-#pageHome .backdrop-join {
-    background-image: url("/assets/images/backdrops/pageHome-join.webp");
-    filter: blur(1px);
 }
 #pageHome .backdrop-local_groups {
     background-image: url("/assets/images/backdrops/pageHome-local_groups.webp");

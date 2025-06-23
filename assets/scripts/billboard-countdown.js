@@ -2,7 +2,7 @@ const eventList = [
     {
         text: 'THE CURTAINS HAVE CLOSED!',
         count: false,
-        date: 'July 10, 2025 12:00:00',
+        date: 'June 10, 2025 12:00:00',
         context: 'Great job again everyone! See you all next year for the 60th!'
     },
     /*{

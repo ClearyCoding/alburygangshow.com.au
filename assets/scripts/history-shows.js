@@ -304,7 +304,7 @@ function moreShows() {
         moreShowsButtonToggle = false;
         moreShowsButton.innerHTML = "Show Less &#x25B2";
     } else {
-        historyShowsGrid.style.maxHeight = `${window.innerWidth <= 500 ? '34rem' : '40rem'}`;
+        historyShowsGrid.style.maxHeight = `${window.innerWidth <= 480 ? '0' : '40rem'}`;
         moreShowsButtonToggle = true;
         moreShowsButton.innerHTML = "Show More &#x25BC";
     }

@@ -1,5 +1,6 @@
 /* Title */
 .void-title {
+    padding-top: 70px;
     height: 90vh;
 }
 .void-title .container {
@@ -9,6 +10,7 @@
 .void-title .container h2 {
     align-self: center;
     font-size: 3rem;
+    text-align: center;
 }
 .void-title .container p {
     text-align: center;
@@ -113,7 +115,7 @@
     border: solid #821e17 3px;
     padding-top: 1.125rem;;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1024px) {
     #pinned-shows .pinned-heading {
         font-size: 1.5rem;
         left: -2rem;
@@ -124,25 +126,28 @@
     #pinned-shows .shows-item .item-year {
         font-size: 0.75rem;
     }
-    @media (max-width: 700px) {
+    @media (max-width: 767px) {
         #pinned-shows .pinned-heading {
             left: -1.5rem;
         }
         #pinned-shows .shows-item .item-poster {
             height: 15rem;
         }
-        @media (max-width: 500px) {
+        @media (max-width: 480px) {
             #pinned-shows {
                 flex-direction: column;
             }
             #pinned-shows .shows-item {
                 padding-bottom: 2.5rem;
             }
+            #more-shows {
+                margin-top: 0;
+            }
             .section-shows .shows-item .item-poster {
                 height: 12rem;
             }
             #shows-grid {
-                max-height: 34rem;
+                max-height: 0;
                 grid-auto-rows: 17rem;
             }
         }
@@ -248,14 +253,15 @@
     width: 13.75rem;
     margin-top: 1rem;
 }
-@media (max-width: 650px) {
+@media (max-width: 767px) {
     .shows-popup .crate-content {
         flex-direction: column;
         width: 90%;
         justify-content: normal;
     }
     .shows-popup .popup-poster {
-        width: 60%;
+        width: 50%;
+        margin-bottom: 1rem;
     }
     .shows-popup .crate-info {
         width: 100%;

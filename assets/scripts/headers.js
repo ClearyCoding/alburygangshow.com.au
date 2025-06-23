@@ -29,7 +29,7 @@ let navbar = [
     },
 ]
 
-if (page && page == "History") {
+if (page && toString(page) == "History") {
     navbar = [
             {
                 title: "Home",
@@ -60,34 +60,34 @@ if (page && page == "History") {
 
 header.innerHTML =
     `
-    <div class="header-extension"></div>
-      <a class="header-branding" href="/#billboard">
-        <img draggable="false" class="header-branding-logo" src="/assets/images/branding/AGS_transparent.png" alt="Albury Gang Show Logo">
-        <h1 class="header-branding-title">Albury Gang Show</h1>
-      </a>
-      <input class="header-cascade-toggle" type="checkbox" id="header-cascade-toggle" />
-      <label class="header-cascade-graphic" for="header-cascade-toggle"><span class="header-cascade-graphic-section"></span></label>
-      <nav class="header-navbar">
-        <a class="header-navbar-button" href="${navbar[0].link}">${navbar[0].title}</a>
-        <a class="header-navbar-button" href="${navbar[1].link}">${navbar[1].title}</a>
-        <a class="header-navbar-button" href="${navbar[2].link}">${navbar[2].title}</a>
-        <a class="header-navbar-button" href="${navbar[3].link}">${navbar[3].title}</a>
-        <a class="header-navbar-button" href="${navbar[4].link}">${navbar[4].title}</a>
-        <a class="header-navbar-button" href="${navbar[5].link}">${navbar[5].title}</a>
-      </nav>
-    <label class="header-cascade-outside" for="header-cascade-toggle"></label>
+    <div class="extender"></div>
+    <a class="branding" href="/#billboard">
+      <img draggable="false" src="/assets/images/branding/AGS_transparent.png" alt="Albury Gang Show Logo">
+      <h1>Albury Gang Show</h1>
+    </a>
+    <input type="checkbox" id="cascade-toggle" />
+    <label class="cascade-graphic" for="cascade-toggle"><span class="cascade-midbar"></span></label>
+    <nav id="navbar">
+      <a href="${navbar[0].link}">${navbar[0].title}</a>
+      <a href="${navbar[1].link}">${navbar[1].title}</a>
+      <a href="${navbar[2].link}">${navbar[2].title}</a>
+      <a href="${navbar[3].link}">${navbar[3].title}</a>
+      <a href="${navbar[4].link}">${navbar[4].title}</a>
+      <a href="${navbar[5].link}">${navbar[5].title}</a>
+    </nav>
+    <label class="cascade-outside" for="cascade-toggle"></label>
     `
 footer.innerHTML =
     `
-    <section class="footer-logos">
+    <section class="crate-images">
         <a href="https://scouts.com.au/wp-content/uploads/2019/07/SCOUTS-AUSTRALIA-PRIVACY-POLICY-2018.pdf">
-            <img class="footer-logos-logo" alt="Scouts Australia Logo" src="/assets/images/branding/scouts.png">
+            <img alt="Scouts Australia Logo" src="/assets/images/branding/scouts.png">
         </a>
         <a href="https://www.guidelinesforgirlguides.org.au/guide_lines/privacy-policy/">
-            <img class="footer-logos-logo" alt="Guides Australia Logo" src="/assets/images/branding/guides.png">
+            <img alt="Guides Australia Logo" src="/assets/images/branding/guides.png">
         </a>
     </section>
-    <section class="footer-privacy">
+    <section class="crate-text">
         <div class="anchor" id="privacy"></div>
         <h2>Privacy Policy</h2>
         <p>
