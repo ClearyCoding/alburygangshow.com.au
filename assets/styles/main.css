@@ -72,6 +72,11 @@ figure {
     flex-direction: column;
     position: relative;
 }
+@media (max-width: 480px) {
+    .void {
+        min-height: 15rem;
+    }
+}
 .container {
     display: flex;
     justify-content: space-between;
@@ -226,6 +231,32 @@ figcaption {
     }
     figcaption {
         font-size: 0.875rem;
+    }
+    @media (max-width: 480px) {
+        h2 {
+            font-size: 1.5rem;
+        }
+        h3 {
+            font-size: 1rem;
+        }
+        h4 {
+            font-size: 1.25rem;
+        }
+        h5 {
+            font-size: 0.75rem;
+        }
+        h6 {
+            font-size: 0.75rem;
+        }
+        p {
+            font-size: 0.75rem;
+        }
+        time {
+            font-size: 0.75rem;
+        }
+        figcaption {
+            font-size: 0.5rem;
+        }
     }
 }
 

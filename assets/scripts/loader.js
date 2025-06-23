@@ -2,7 +2,7 @@ const loader = document.querySelector("#loader")
 const body = document.querySelector("body")
 
 function updateLoader() {
-    if (window.innerWidth < 350) {
+    if (window.innerWidth < 320) {
         loader.innerHTML =
             `
             <div id="loader">
@@ -11,7 +11,7 @@ function updateLoader() {
                 </div>
                 <div class="loader-title loader-error">alburygangshow.com.au</div>
                 <div class="loader-subtitle">Incompatible Device</div>
-                <div class="loader-notice">Unfortunatley this site does not support screen widths below 350px, please try again on a different device.</div>
+                <div class="loader-notice">Unfortunately this site does not support screen widths below 320px, please try again on a different device.</div>
             </div>
             `
         loader.style.display = "flex";

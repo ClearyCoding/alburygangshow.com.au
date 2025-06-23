@@ -29,7 +29,7 @@ let navbar = [
     },
 ]
 
-if (page && toString(page) == "History") {
+if (page && page.toString() == "History") {
     navbar = [
             {
                 title: "Home",
@@ -41,7 +41,7 @@ if (page && toString(page) == "History") {
             },
             {
                 title: "History",
-                link: "/history",
+                link: "/history/#title",
             },
             {
                 title: "Tickets",
@@ -110,7 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let lastScrollTop = 0;
     let startScrollPosition = null;
     const scrollablePages = document.querySelectorAll(".parallax");
-    console.log(window.innerHeight)
 
     scrollablePages.forEach(page => {
         page.addEventListener("scroll", () => {
