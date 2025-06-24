@@ -436,9 +436,6 @@
         .void-join .crate-text  p {
             font-size: 1rem;
         }
-        .void-join .crate-images figcaption {
-            font-size: 1rem;
-        }
         .void-join .crate-buttons {
             padding: 0 25px;
             flex-direction: column;
@@ -547,75 +544,31 @@
 .section-links h2 {
     font-family: Aurella, FiraSans, Arial, sans-serif;
 }
-.section-links .crate-grid {
+.section-links .carousel {
     margin-top: 1.5rem;
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(10.3125rem, 1fr));
-    grid-template-rows: repeat(auto-fit, 7.5rem)
+    align-items: start;
 }
-.section-links .crate-grid a {
+.section-links .carousel h3 {
+    rotate: -90deg;
+    align-self: center;
+    padding-top: 4rem;
+}
+.section-links .carousel a {
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 10rem;
     margin: 10px 10px;
 }
-.section-links .crate-grid a h6 {
-    margin: 0;
+.section-links .carousel a h6 {
+    margin: 1rem 0 0 0;
     text-align: center;
     font-weight: 500;
 }
-.section-links .crate-grid a img {
-    height: 5rem;
-}
-.section-links .toggle {
-    display: none;
-}
-.section-links .toggle-title {
-    width: 100%;
-    display: none;
-    padding: 30px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: darkgray;
-    text-decoration: underline;
-}
-.section-links .toggle-arrow {
-    display: inline-block;
-    transform: scale(1, 0.8) rotate(-90deg);;
-    transition: all 0.15s ease-out;
-}
-.section-links .toggle:checked ~ .toggle-title .toggle-arrow {
-    transform: rotate(0deg);
-}
-@media (max-width: 1024px) {
-    .section-links .crate-grid {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s;
-    }
-    .section-links .toggle:checked ~ .crate-grid {
-        max-height: 4000px;
-    }
-    .section-links .toggle-title {
-        display: inline-block;
-    }
-    @media (max-width: 767px) {
-        .section-links .toggle-title {
-            font-size: 1.25rem;
-        }
-        @media (max-width: 480px) {
-            .section-links .crate-grid {
-                grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
-            }
-            .section-links .toggle-title {
-                font-size: 1rem;
-            }
-        }
-    }
+.section-links .carousel a img {
+    height: 7rem;
 }
 
 /* Sponsors */
@@ -626,62 +579,17 @@
 .section-sponsors h2 {
     font-family: RockBoulder, FiraSans, Arial, sans-serif;
 }
-.section-sponsors .crate-grid {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(10.9375rem, 1fr));
+.section-sponsors .carousel {
+    margin-top: 2rem;
 }
-.section-sponsors .crate-grid a {
-    width: 100%;
-    aspect-ratio: 1.25/1;
+.section-sponsors .carousel a {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 15rem;
 }
-.section-sponsors .crate-grid a img {
+.section-sponsors .carousel a img {
     width: 90%;
-}
-.section-sponsors .toggle {
-    display: none;
-}
-.section-sponsors .toggle-title {
-    width: 100%;
-    display: none;
-    padding: 30px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: darkgray;
-    text-decoration: underline;
-}
-.section-sponsors .toggle-arrow {
-    display: inline-block;
-    transform: scale(1, 0.8) rotate(-90deg);;
-    transition: all 0.15s ease-out;
-}
-.section-sponsors .toggle:checked ~ .toggle-title .toggle-arrow {
-    transform: rotate(0deg);
-}
-@media (max-width: 767px) {
-    .section-sponsors .toggle-title {
-        font-size: 1.25rem;
-    }
-    .section-sponsors .crate-grid {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s;
-        grid-template-columns: repeat(auto-fit, minmax(8.9375rem, 1fr));
-    }
-    .section-sponsors .toggle:checked ~ .crate-grid {
-        max-height: 4000px;
-    }
-    .section-sponsors .toggle-title {
-        display: inline-block;
-    }
-    @media (max-width: 480px) {
-        .section-sponsors .toggle-title {
-            font-size: 1rem;
-        }
-    }
 }
 
 /* Crew */

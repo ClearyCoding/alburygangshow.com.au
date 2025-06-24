@@ -94,6 +94,12 @@ figure {
         align-items: center;
     }
 }
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 100%;
+}
 .button {
     text-align: center;
     display: inline;
