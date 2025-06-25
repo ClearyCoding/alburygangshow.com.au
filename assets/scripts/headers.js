@@ -56,6 +56,33 @@ if (page && page.toString() == "History") {
                 link: "/#contact",
             },
         ]
+} else if (page && page.toString() == "Join") {
+    navbar = [
+        {
+            title: "Home",
+            link: "/",
+        },
+        {
+            title: "Join",
+            link: "/join/#title",
+        },
+        {
+            title: "History",
+            link: "/#history",
+        },
+        {
+            title: "Tickets",
+            link: "/#tickets",
+        },
+        {
+            title: "FAQ",
+            link: "/#faq",
+        },
+        {
+            title: "Contact",
+            link: "/#contact",
+        },
+    ]
 }
 
 header.innerHTML =

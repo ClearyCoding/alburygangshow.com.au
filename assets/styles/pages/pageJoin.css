@@ -1,0 +1,17 @@
+/* Title */
+.void-title {
+    padding-top: 70px;
+    height: 90vh;
+}
+.void-title .container {
+    flex-direction: column;
+    background-color: rgba(21,21,23,0.7);
+}
+.void-title .container h2 {
+    align-self: center;
+    font-size: 3rem;
+    text-align: center;
+}
+.void-title .container p {
+    text-align: center;
+}

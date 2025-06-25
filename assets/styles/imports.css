@@ -115,3 +115,7 @@
     background-image: url("/assets/images/backdrops/pageHistory-void4.webp");
     filter: brightness(80%);
 }
+#pageJoin .backdrop-title {
+    background-image: url("/assets/images/backdrops/pageJoin.webp");
+    filter: brightness(75%);
+}

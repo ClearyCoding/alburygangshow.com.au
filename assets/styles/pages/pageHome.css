@@ -421,6 +421,11 @@
     box-sizing: border-box;
     padding: 0 40px;
 }
+.void-join .crate-buttons p {
+    color: white;
+    text-align: center;
+    weight: 900;
+}
 .void-join .crate-text .join-context {
     text-align: center;
     margin: 1rem 2rem;
@@ -518,19 +523,26 @@
     .void-local_groups .crate-list {
         grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     }
-    .void-local_groups .crate-list h3{
+    .void-local_groups .crate-list h6 {
         margin: 0.3rem 0;
     }
     @media (max-width: 767px) {
         .void-local_groups .crate-list {
             grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
         }
-        .void-local_groups .crate-list h3{
-            margin: 0.1rem 0;
+        .void-local_groups .crate-list h6 {
+            margin: 0.5rem 0;
         }
         @media (max-width: 480px) {
-            .void-local_groups .container{
-                display: none;
+            .void-local_groups .crate-list {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .void-local_groups .crate-list  h6 {
+                margin: 0.5rem;
+                display: inline-block;
             }
         }
     }
@@ -551,6 +563,7 @@
 .section-links .carousel h3 {
     rotate: -90deg;
     align-self: center;
+    text-align: center;
     padding-top: 4rem;
 }
 .section-links .carousel a {
@@ -680,26 +693,17 @@
     flex-direction: column;
     align-items: end;
 }
-.section-contact .crate-images .crate-top {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 .section-contact .crate-images .contact-image1 {
-    width: 40%;
-    border-radius: 15px;
-    border: #171717 3px solid;
-}
-.section-contact .crate-images .contact-image2 {
-    width: 40%;
-    border-radius: 15px;
-    border: #171717 3px solid;
-    margin-right: 20px;
-}
-.section-contact .crate-images .contact-image3{
     width: 80%;
     border-radius: 15px;
     border: #171717 3px solid;
+    align-self: start;
+}
+.section-contact .crate-images .contact-image2{
+    width: 80%;
+    border-radius: 15px;
+    border: #171717 3px solid;
+    align-self: end;
 }
 @media (max-width: 1200px) {
     .section-contact .crate-images {
