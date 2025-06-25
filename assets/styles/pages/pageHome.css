@@ -424,7 +424,7 @@
 .void-join .crate-buttons p {
     color: white;
     text-align: center;
-    weight: 900;
+    font-weight: 900;
 }
 .void-join .crate-text .join-context {
     text-align: center;
@@ -564,7 +564,8 @@
     rotate: -90deg;
     align-self: center;
     text-align: center;
-    padding-top: 4rem;
+    box-sizing: border-box;
+    width: 10rem;
 }
 .section-links .carousel a {
     text-decoration: none;
@@ -573,7 +574,7 @@
     align-items: center;
     flex-direction: column;
     width: 10rem;
-    margin: 10px 10px;
+    margin: 1rem 1rem;
 }
 .section-links .carousel a h6 {
     margin: 1rem 0 0 0;

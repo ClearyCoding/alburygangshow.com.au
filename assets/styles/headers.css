@@ -77,9 +77,13 @@
 @media (max-width: 767px) {
     #header {
         flex-direction: column;
+        margin-right: 0;
     }
     #header .branding {
         z-index: 100;
+    }
+    #header .extender {
+        display: none;
     }
 
     #navbar {
