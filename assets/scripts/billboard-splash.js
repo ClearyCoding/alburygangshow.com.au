@@ -1,4 +1,4 @@
-const forcedSplash = 'Radically Cool';
+const forcedSplash = '';
 
 const splashList = [
     // Generic
@@ -53,7 +53,7 @@ const splashList = [
     {text: 'I\'ve got a dream!', weight: 0.05}, // 2023
     {text: 'Dehydrated Water!', weight: 0.1}, // 2022
     {text: 'A little bit of everything...', weight: 0.05}, // 2022
-    {text: 'Chill\'n Like A Villain!', weight: 0.05}, // 2019 or 2021
+    {text: 'Chill\'n Like A Villain!', weight: 0.05}, // 2019 or 2021?
     {text: 'OH NO! I\'ve lost my Mojo!', weight: 0.05}, // 2018
     {text: 'Cool & Creamy', weight: 0.05}, // 2015
     {text: 'Albury Gang Show Style!', weight: 0.5}, // 2014

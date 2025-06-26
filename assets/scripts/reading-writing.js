@@ -17,7 +17,7 @@ function readingWriting() {
     currentDigit = 0;
     readingWritingCount++;
     if (readingWritingCount >= 3){
-        if (screen.width > 500) {
+        if (screen.width > 480) {
             window.location.href="https://www.readingwritinghotline.edu.au/";
         } else {
             window.location.href="Tel: 1300655506 ";

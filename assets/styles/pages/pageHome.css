@@ -321,7 +321,7 @@
 .section-faq .crate-list .question p {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s;
+    transition: max-height 0.5s;
     margin: 0 0 5px 75px;
     color: white;
     font-size: 1.25rem;

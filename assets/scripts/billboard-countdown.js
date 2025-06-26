@@ -1,9 +1,9 @@
 const eventList = [
     {
-        text: 'THE CURTAINS HAVE CLOSED!',
-        count: false,
-        date: 'July 31, 2025 12:00:00',
-        context: 'Great job again everyone! See you all next year for the 60th!'
+        text: 'Until the 2025 DVD Viewing Night!',
+        count: true,
+        date: 'August 16, 2025 16:00:00',
+        context: 'Cast, Crew and Parents check out the <a href="/#members">2025 facebook</a> group for more details!'
     },
     /*{
         text: 'Until the 2026 Information Night!',
