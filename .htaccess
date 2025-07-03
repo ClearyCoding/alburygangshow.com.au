@@ -1,8 +1,0 @@
-ErrorDocument 404 /404.html
-Redirect 301 /bookings.html /#tickets
-Redirect 301 /about_ags.html /#about
-Redirect 301 /contact_ags.html /#contact
-Redirect 301 /links.html /#links
-Redirect 301 /forum /#contact
-Redirect 301 /photos.html /#contact
-Redirect 301 /privacy.html /#privacy
