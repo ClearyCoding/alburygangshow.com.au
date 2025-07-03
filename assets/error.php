@@ -19,7 +19,7 @@ http_response_code($code);
     <meta charset="UTF-8">
     <title><?php echo $code; ?> - Albury Gang Show</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/branding/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
     <meta name="author" content="Albury Gang Show">
     <meta name="description" content="We are the Albury Gang Show, a two-and-a-half hour variety show created and presented by the Scouts and Guides of the Albury/Wodonga region.">
