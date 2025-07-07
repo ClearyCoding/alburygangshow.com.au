@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Home - Albury Gang Show</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/branding/AGS_transparent.png">
 
     <meta name="author" content="Albury Gang Show">
     <meta name="description" content="We are the Albury Gang Show, a two-and-a-half hour variety show created and presented by the Scouts and Guides of the Albury/Wodonga region.">
@@ -29,7 +29,7 @@
     </div>
     <script src="/assets/scripts/loader.js"></script>
 
-    <header id="header" data-page="Home"></header>
+    <?php $page = 'Home'; include $_SERVER['DOCUMENT_ROOT'] . '/assets/php/header.php'; ?>
     <main id="pageHome" class="parallax">
         <figure class="backdrop backdrop-billboard"></figure>
         <article id="billboard" class="void void-billboard">
@@ -535,12 +535,12 @@
             </figure>
         </article>
 
-        <footer id="footer"></footer>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/php/footer.php'; ?>
     </main>
 
     <script src="/assets/scripts/billboard-splash.js"></script>
     <script src="/assets/scripts/carousel.js"></script>
-    <script src="/assets/scripts/headers.js"></script>
+    <script src="/assets/scripts/header.js"></script>
     <script src="/assets/scripts/billboard-countdown.js"></script>
     <script src="/assets/scripts/uncle-sam.js"></script>
     <script src="/assets/scripts/reading-writing.js"></script>

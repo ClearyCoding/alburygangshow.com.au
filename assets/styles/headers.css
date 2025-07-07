@@ -117,38 +117,38 @@
         right: 0;
         position: absolute;
     }
-    #header .cascade-midbar,
-    #header .cascade-midbar:before,
-    #header .cascade-midbar:after {
+    #header .cascade-segment,
+    #header .cascade-segment:before,
+    #header .cascade-segment:after {
         background: #af2d24;
         display: block;
         height: 3px;
         width: 24px;
     }
-    #header .cascade-midbar:before,
-    #header .cascade-midbar:after {
+    #header .cascade-segment:before,
+    #header .cascade-segment:after {
         content: "";
         position: absolute;
         transition: all 0.2s ease-out;
     }
-    #header .cascade-midbar {
+    #header .cascade-segment {
         position: relative;
         transition: background 0.2s ease-out;
     }
-    #header .cascade-midbar:before {
+    #header .cascade-segment:before {
         top: 8px;
     }
-    #header .cascade-midbar:after {
+    #header .cascade-segment:after {
         top: -8px;
     }
-    #cascade-toggle:checked ~ .cascade-graphic .cascade-midbar {
+    #cascade-toggle:checked ~ .cascade-graphic .cascade-segment {
         background: transparent;
     }
-    #cascade-toggle:checked ~ .cascade-graphic .cascade-midbar:before {
+    #cascade-toggle:checked ~ .cascade-graphic .cascade-segment:before {
         transform: rotate(-45deg);
         top: 0;
     }
-    #cascade-toggle:checked ~ .cascade-graphic .cascade-midbar:after {
+    #cascade-toggle:checked ~ .cascade-graphic .cascade-segment:after {
         transform: rotate(45deg);
         top: 0;
     }

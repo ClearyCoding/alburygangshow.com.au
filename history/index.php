@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>History - Albury Gang Show</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/branding/AGS_transparent.png">
 
     <meta name="author" content="Albury Gang Show">
     <meta name="description" content="We are the Albury Gang Show, a two-and-a-half hour variety show created and presented by the Scouts and Guides of the Albury/Wodonga region.">
@@ -29,7 +29,7 @@
     </div>
     <script src="/assets/scripts/loader.js"></script>
 
-    <header id="header" data-page="History"></header>
+    <?php $page = 'History'; include $_SERVER['DOCUMENT_ROOT'] . '/assets/php/header.php'; ?>
     <main id="pageHistory" class="parallax">
         <figure class="backdrop backdrop-title"></figure>
         <article id="title" class="void void-title">
@@ -114,11 +114,11 @@
             </div>
         </article>
 
-        <footer id="footer"></footer>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/php/footer.php'; ?>
     </main>
     <div id="show-popups"></div>
 
-    <script src="/assets/scripts/headers.js"></script>
+    <script src="/assets/scripts/header.js"></script>
     <script src="/assets/scripts/reading-writing.js"></script>
     <script src="/assets/scripts/history-shows.js"></script>
 </body>
