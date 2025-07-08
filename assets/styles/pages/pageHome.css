@@ -8,15 +8,20 @@
     align-self: center;
     margin: 12px;
 }
-.void-billboard .container-context h5,
-.void-billboard .container-context h5 a {
+#container-context h5,
+#container-context h5 a {
     color: white;
+    align-self: center;
     text-align: center;
+}
+#countdown-prefix {
+    display: none;
 }
 #countdown-units h5 {
     width: 70px;
 }
-.void-billboard .container-countdown {
+#container-countdown {
+    display: none;
     justify-content: center;
     flex-direction: column;
     background-color: rgba(21,21,23,0.7);
@@ -30,7 +35,8 @@
     align-items: center;
     width: 100%;
 }
-.void-billboard .container-context {
+#container-context {
+    display: none;
     justify-content: center;
     flex-direction: column;
     width: auto;
@@ -38,6 +44,24 @@
     border-radius: 15px;
     padding: 0.25rem;
     margin: 2rem 1rem 0 1rem;
+}
+#container-backup {
+    flex-direction: column;
+    background-color: rgba(21,21,23,0.5);
+    width: auto;
+    align-items: center;
+}
+#container-backup .crate-title {
+    display: flex;
+    align-content: center;
+}
+#container-backup img {
+    width: 5rem;
+    margin-right: 1rem;
+}
+#container-backup h2 {
+    font-family: Grinched, FiraSans, Arial, sans-serif;
+    align-self: center;
 }
 #countdown {
     font-size: 5.625rem;
@@ -57,7 +81,8 @@
     position: absolute;
     white-space: nowrap;
 }
-#splash-text {
+#splash-text,
+.splash-text {
     position: relative;
     bottom: 0;
     right: 0;
@@ -128,11 +153,12 @@
         width: 60px;
     }
     @media (max-width: 480px) {
-        .void-billboard .container-countdown {
+        #container-countdown {
             font-size: 2.5rem;
         }
-        #splash-text {
-            font-size: 0.25rem;
+        #splash-text,
+        .splash-text {
+            display: none;
         }
         @keyframes splashPulse {
             0% {

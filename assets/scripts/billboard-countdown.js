@@ -57,19 +57,20 @@ const countContext = document.querySelector('#countdown-context');
 const countPrefix = document.querySelector('#countdown-prefix');
 const countUnits = document.querySelector('#countdown-units');
 const countdownElement = document.querySelector("#countdown");
-
-console.log(nextEvent);
+const countDownContainer = document.querySelector("#container-countdown");
+const countContextContainer = document.querySelector("#container-context");
+countDownContainer.style.display = "Flex";
+countContextContainer.style.display = "Flex";
+countPrefix.style.display = "Block";
 
 if (nextEvent) {
     if (nextEvent.count) {
         countText.innerHTML = nextEvent.text;
         countContext.innerHTML = nextEvent.context;
 
-        // Set the date we're counting down to
         const countDownDate = convertTZ(nextEvent.date, "Australia/Sydney");
-        console.log(countDownDate)
 
-        const x = setInterval(function() {
+        const countTick = setInterval(function() {
 
             let now = new Date().getTime();
             let distance = countDownDate - now;
@@ -86,8 +87,14 @@ if (nextEvent) {
             countdownElement.innerHTML = days + ":" + ('0' + hours).slice(-2) + ":"
                 + ('0' + minutes).slice(-2) + ":" + ('0' + seconds ).slice(-2);
             if (distance < 0) {
-                clearInterval(x);
-                countdownElement.innerHTML = "NOW";
+                clearInterval(countTick);
+                countdownElement.innerHTML = "00:00:00:00";
+
+                let countFlash = true;
+                setInterval(function() {
+                    countFlash = !countFlash;
+                    countdownElement.innerHTML = countFlash ? "00:00:00:00" : "--:--:--:--";
+                }, 1000);
             }
         }, 1000);
 

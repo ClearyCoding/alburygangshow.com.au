@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="/assets/styles/loader.css">
     <link rel="stylesheet" href="/assets/styles/main.css">
-    <link rel="stylesheet" href="/assets/styles/imports.css">
+    <link rel="stylesheet" href="assets/styles/imports.css">
     <link rel="stylesheet" href="/assets/styles/pages/pageHome.css">
     <link rel="stylesheet" href="/assets/styles/headers.css">
 </head>
@@ -34,8 +34,8 @@
         <figure class="backdrop backdrop-billboard"></figure>
         <article id="billboard" class="void void-billboard">
             <h4 id="countdown-prefix">Only</h4>
-            <section class="container container-countdown">
-                <h2 id="countdown"> A Short Time</h2>
+            <section class="container" id="container-countdown">
+                <h2 id="countdown">--:--:--:--</h2>
                 <div id="countdown-units">
                     <h5>Days</h5>
                     <h5>Hours</h5>
@@ -48,10 +48,23 @@
                     </div>
                 </div>
             </section>
-            <section class="container container-context">
-                <h4 id="countdown-text">Until Opening Curtains!</h4>
-                <h5 id="countdown-context">Great job again everyone! See you all next year for the 60th!</h5>
+            <section class="container" id="container-context">
+                <h4 id="countdown-text"></h4>
+                <h5 id="countdown-context"></h5>
             </section>
+
+            <noscript class="container" id="container-backup">
+                <div class="crate-title">
+                    <img alt="Albury Gang Show Logo" src="/assets/images/branding/AGS_transparent.png">
+                    <h2>Albury Gang Show</h2>
+                </div>
+                <div class="splash-positioner">
+                    <div class="splash-restrainer">
+                        <div class="splash-text">Birds of a Feather!</div>
+                    </div>
+                </div>
+            </noscript>
+
             <a href="#about">
                 <figure class="pulser">
                     <img draggable="false" alt="Scroll Down For More!" src="/assets/images/pageHome/billboard_scroll_down.webp">
@@ -257,7 +270,7 @@
                     If you are currently a member of the cast or crew or are a parent of a current cast member,
                     join the latest group to stay in the loop!
                 </p>
-                <a href="https://www.facebook.com/groups/2025ags" target="_blank" class="button">2025 Facebook &#8594</a>
+                <a href="https://www.facebook.com/groups/2025ags" target="_blank" class="button">2025 Portal &#8594</a>
             </section>
         </article>
 

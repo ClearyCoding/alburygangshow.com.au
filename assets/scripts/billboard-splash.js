@@ -60,7 +60,6 @@ const splashList = [
     {text: 'Air Max 3000 EXTREME!', weight: 0.05}, // 2013
     {text: 'Flying Monkeys!', weight: 0.5}, // 2010s-20s
     {text: 'Delivery for Mr. Jones!', weight: 0.1}, // 2010s
-    {text: 'Radically Cool', weight: 0.05}, // 2010s & 2025
 
     // Pop Culture
     {text: 'Alexander Hamilton!', weight: 0.1},
@@ -74,6 +73,7 @@ const splashList = [
     {text: '\"GO TO BED\" - Drew', weight: 0.01},
     {text: 'A  Lizard forced me to add this...', weight: 0.01},
     {text: 'This splash will never appear on the website. Isn\'t that weird?', weight: 0},
+    {text: 'Radically Cool', weight: 0.05},
 ]
 specialSplashList = [
     {
