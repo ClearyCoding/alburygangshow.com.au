@@ -1,5 +1,5 @@
 #loader {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -83,10 +83,12 @@
     display: none;
     visibility: hidden;
 }
-@media (max-width: 350px) {
-    #loader-screen {
-        display: flex;
-        visibility: visible;
+@media (max-width: 480px) {
+    .loader-title {
+        font-size: 1rem;
+    }
+    .loader-subtitle {
+        font-size: 2rem;
     }
 }
 

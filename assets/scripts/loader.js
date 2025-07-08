@@ -1,18 +1,17 @@
-const loader = document.querySelector("#loader")
-const body = document.querySelector("body")
+const loader = document.querySelector("#loader");
+const body = document.querySelector("body");
+loader.style.display = "flex";
 
 function updateLoader() {
     if (window.innerWidth < 320) {
         loader.innerHTML =
             `
-            <div id="loader">
-                <div id="loader-wheel-error">
-                    <img draggable="false" alt="Gang Show Logo" src="/assets/images/branding/AGS_transparent-sad.png" class="loader-logo">
-                </div>
-                <div class="loader-title loader-error">alburygangshow.com.au</div>
-                <div class="loader-subtitle">Incompatible Device</div>
-                <div class="loader-notice">Unfortunately this site does not support screen widths below 320px, please try again on a different device.</div>
+            <div id="loader-wheel-error">
+                <img draggable="false" alt="Gang Show Logo" src="/assets/images/branding/AGS_transparent-sad.png" class="loader-logo">
             </div>
+            <div class="loader-title loader-error">alburygangshow.com.au</div>
+            <div class="loader-subtitle">Incompatible Device</div>
+            <div class="loader-notice">Unfortunately this site does not support screen widths below 320px, please try again on a different device.</div>
             `
         loader.style.display = "flex";
         loader.style.visibility = "visible";

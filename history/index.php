@@ -17,16 +17,7 @@
     <link rel="stylesheet" href="/assets/styles/pages/pageHistory.css">
 </head>
 <body>
-    <div id="loader">
-        <noscript>
-            <div id="loader-wheel-error">
-                <img draggable="false" alt="Gang Show Logo" src="/assets/images/branding/AGS_transparent-sad.png" class="loader-logo">
-            </div>
-            <div class="loader-title loader-error">alburygangshow.com.au</div>
-            <div class="loader-subtitle">This site requires Javascript</div>
-            <div class="loader-notice">Please refer to your internet browser's documentations on how to enable JavaScript for this website.</div>
-        </noscript>
-    </div>
+    <div id="loader"></div>
     <script src="/assets/scripts/loader.js"></script>
 
     <?php $page = 'History'; include $_SERVER['DOCUMENT_ROOT'] . '/assets/php/header.php'; ?>
