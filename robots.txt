@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /assets/images/branding/AGS_opaque.jpg
 Allow: /assets/images/branding/AGS_transparent.jpg
+Disallow: /assets/forms/
 Disallow: /assets/images/branding/
 Disallow: /assets/images/pageHome/links/
 Disallow: /assets/images/pageHome/sponsors/

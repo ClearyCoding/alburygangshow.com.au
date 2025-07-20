@@ -9,6 +9,7 @@
     <meta name="author" content="Albury Gang Show">
     <meta name="description" content="We are the Albury Gang Show, a two-and-a-half hour variety show created and presented by the Scouts and Guides of the Albury/Wodonga region.">
     <meta name="keywords" content="Gang Show, Albury, Scouts, Guides, Theatre, Wodonga, Australia, Gang, Show">
+    <link rel="canonical" href="https://www.alburygangshow.com.au/history/" />
 
     <link rel="stylesheet" href="/assets/styles/loader.css">
     <link rel="stylesheet" href="/assets/styles/main.css">

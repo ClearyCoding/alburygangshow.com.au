@@ -1,11 +1,16 @@
 <?php
-$code = $_SERVER['REDIRECT_STATUS'] ?? 500;
+$allowed = [400, 401, 403, 404, 418, 500, 503];
+$code = (int) ($_SERVER['REDIRECT_STATUS'] ?? 404);
+if (!in_array($code, $allowed, true)) {
+    $code = 500;
+}
 
 $messages = [
     400 => 'Bad Request',
     401 => 'Unauthorized',
     403 => 'Forbidden',
     404 => 'Page Not Found',
+    418 => 'I\'m a teapot',
     500 => 'Internal Server Error',
     503 => 'Service Unavailable'
 ];
