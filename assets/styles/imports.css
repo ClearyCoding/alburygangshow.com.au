@@ -76,8 +76,8 @@
     background-image: url("/assets/images/backdrops/pageHome-join.webp");
     filter: blur(1px);
 }
-#pageHome .backdrop-posters {
-    background-image: url("/assets/images/backdrops/pageHome-posters.webp");
+#pageHome .backdrop-merch {
+    background-image: url("/assets/images/backdrops/pageHome-merch.webp");
     filter: blur(1px) brightness(80%);
 }
 #pageHome .backdrop-tickets {

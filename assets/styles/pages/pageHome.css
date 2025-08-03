@@ -251,6 +251,54 @@
     }
 }
 
+/* Merch */
+.void-merch .crate-text h2 {
+    font-family: WhoopAss, FiraSans, Arial, sans-serif;;
+}
+.void-merch .container {
+    align-items: center;
+}
+.void-merch .crate-text {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.void-merch .crate-text .button {
+    margin-top: 1rem;
+}
+.void-merch .crate-images {
+    width: 45%;
+    height: 90%;
+}
+.void-merch .crate-images img {
+    max-width: 100%;
+    border-radius: 15px;
+    border: #171717 3px solid;
+}
+@media (max-width: 767px) {
+    .void-merch .crate-text {
+        width: 100%;
+        order: 2;
+    }
+    .void-merch .crate-text .button {
+        align-self: center;
+    }
+    .void-merch .crate-images {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        height: auto;
+        margin-top: 1rem;
+        order: 1;
+    }
+    .void-merch .crate-images figcaption {
+        font-size: 0.875rem;
+    }
+}
+
 /* Tickets */
 .void-tickets .crate-text h2 {
     font-family: YouMurderer, FiraSans, Arial, sans-serif;;

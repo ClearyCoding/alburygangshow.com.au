@@ -139,8 +139,24 @@
             </section>
         </article>
 
-        <figure class="backdrop backdrop-posters"></figure>
-        <article class="void"></article>
+        <figure class="backdrop backdrop-merch"></figure>
+        <article class="void void-merch">
+            <section class="container">
+                <div class="anchor" id="merch"></div>
+                <section class="crate-text">
+                    <h2>2025 Show DvDs</h2>
+                    <p>
+                        Your chance to relive all of your favourite moments from Albury Gang Show from the comfort of your own home!
+                    </p>
+                    <a href="/assets/forms/2025/2025_dvd.pdf" class="button" target="_blank">
+                        Order Form
+                    </a>
+                </section>
+                <figure class="crate-images">
+                    <img draggable="false" src="/assets/images/pageHome/merch.jpg" alt="AGS Performance 1967">
+                </figure>
+            </section>
+        </article>
 
         <article class="section section-faq">
             <div class="anchor" id="faq"></div>

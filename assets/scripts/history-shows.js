@@ -285,7 +285,7 @@ function loadHTML() {
                 <span class="popup-close" onclick="closePopup(${show.number})">&times;</span>
                 <img class="popup-poster" alt="${show.year} Poster" src="/assets/images/pageHistory/posters/${show.year}.jpg">
                 <div class="crate-info">
-                    <h3 class="popup-title">${show.title || `${show.number}${showNumberSuffix} Albury Gang Show`} ${show.dvd ? '<a href="/#contact" class="popup-dvd"><img class="dvd-icon" alt="DvD Available" src="/assets/images/pageHistory/dvd.webp"><div class="dvd-label">DvDs are available to order</div></a>' : ''}</h3>
+                    <h3 class="popup-title">${show.title || `${show.number}${showNumberSuffix} Albury Gang Show`} ${show.dvd ? '<a href="/#merch" class="popup-dvd"><img class="dvd-icon" alt="DvD Available" src="/assets/images/pageHistory/dvd.webp"><div class="dvd-label">DvDs are available to order</div></a>' : ''}</h3>
                     <h6 class="popup-year">${show.number}${showNumberSuffix} Show - ${show.year}</h6>
                     ${show.description ? `<p class="popup-description">${show.description}</p>` : ''}
                     ${index === 0 ? '<a href="/#tickets" class="button popup-button">Tickets &#8594</a>' : ''}

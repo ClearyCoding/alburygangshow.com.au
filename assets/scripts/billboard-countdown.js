@@ -3,7 +3,7 @@ const eventList = [
         text: 'Until the 2025 DVD Viewing Night!',
         count: true,
         date: 'August 16, 2025 16:00:00',
-        context: 'Cast, Crew and Parents check out the <a href="/#members">2025 facebook</a> group for more details!'
+        context: 'DVD Orders are open NOW! Check out the <a href="/#merch">Merch</a> section for more details!'
     },
     /*{
         text: 'Until the 2026 Information Night!',
