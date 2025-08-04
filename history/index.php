@@ -24,7 +24,7 @@
     <?php $page = 'History'; include $_SERVER['DOCUMENT_ROOT'] . '/assets/php/header.php'; ?>
     <main id="pageHistory" class="parallax">
         <figure class="backdrop backdrop-title"></figure>
-        <article id="title" class="void void-title">
+        <article id="title" class="void panel-title">
             <section class="container">
                 <h2>The History of Albury Gang Show</h2>
                 <p>Since 1965, local Scouts have graced our theatres with an Albury rendition of the ever-popular Gang Show format.
@@ -35,7 +35,7 @@
             </div>
         </article>
 
-        <article class="section section-early">
+        <article class="section panel-early">
             <div class="anchor" id="early"></div>
             <section class="crate-text">
                 <h2>The Beginning</h2>
@@ -50,7 +50,7 @@
             </div>
         </article>
 
-        <article class="section section-early2">
+        <article class="section panel-early2">
             <div class="anchor" id="early2"></div>
             <section class="crate-text">
                 <h2>Coming Of Age</h2>
@@ -65,7 +65,7 @@
             </div>
         </article>
 
-        <article class="section section-fire">
+        <article class="section panel-fire">
             <div class="anchor" id="fire"></div>
             <section class="crate-text">
                 <h2>Fire at Kiewa Street</h2>
@@ -80,7 +80,7 @@
             </div>
         </article>
 
-        <article class="section section-format">
+        <article class="section panel-format">
             <div class="anchor" id="format"></div>
             <section class="crate-text">
                 <h2>A New Format</h2>
@@ -95,7 +95,7 @@
             </div>
         </article>
 
-        <article class="section section-shows">
+        <article class="section panel-shows">
             <div class="anchor" id="shows"></div>
             <h2>Birds Of A Feather</h2>
             <p>After a great many years, we have produced countless fantastic performances, each even better than the last!</p>

@@ -1,26 +1,26 @@
 /* Title */
-.void-title {
+.panel-title {
     padding-top: 70px;
     height: 90vh;
 }
-.void-title .container {
+.panel-title .container {
     flex-direction: column;
     background-color: rgba(21,21,23,0.7);
 }
-.void-title .container h2 {
+.panel-title .container h2 {
     align-self: center;
     font-size: 3rem;
     text-align: center;
 }
-.void-title .container p {
+.panel-title .container p {
     text-align: center;
 }
 
 /* Shows */
-.section-shows {
+.panel-shows {
     flex-direction: column;
 }
-.section-shows p {
+.panel-shows p {
     align-self: start;
 }
 #pinned-shows {
@@ -45,7 +45,7 @@
 #pinned-shows .item-poster {
     height: 20rem;
 }
-.section-shows .shows-item {
+.panel-shows .shows-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,22 +54,22 @@
     padding: 1rem 1.5rem 0 1.5rem;
     cursor: pointer;
 }
-.section-shows .show-item:hover {
+.panel-shows .show-item:hover {
     filter: brightness(110%);
 }
-.section-shows .shows-item .item-poster {
+.panel-shows .shows-item .item-poster {
     height: 15rem;
 }
 #shows-grid .shows-item .item-poster {
     max-width: 10.9375rem;
 }
-.section-shows .shows-item .item-title {
+.panel-shows .shows-item .item-title {
     margin: 0;
     align-self: center;
     font-size: 1rem;
     text-align: center;
 }
-.section-shows .shows-item .item-year {
+.panel-shows .shows-item .item-year {
     margin: 0;
     align-self: center;
     font-size: 0.8rem;
@@ -86,7 +86,7 @@
     overflow: hidden;
     transition: max-height 0.15s
 }
-.section-shows .more-positioner {
+.panel-shows .more-positioner {
     width: 100%;
     margin-top: 0.5rem;
     display: flex;
@@ -143,7 +143,7 @@
             #more-shows {
                 margin-top: 0;
             }
-            .section-shows .shows-item .item-poster {
+            .panel-shows .shows-item .item-poster {
                 height: 12rem;
             }
             #shows-grid {

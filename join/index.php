@@ -24,7 +24,7 @@
     <?php $page = 'Join'; include $_SERVER['DOCUMENT_ROOT'] . '/assets/php/header.php'; ?>
     <main id="pageJoin" class="parallax">
         <figure class="backdrop backdrop-title"></figure>
-        <article id="title" class="void void-title">
+        <article id="title" class="void panel-title">
             <section class="container">
                 <h2>Join Albury Gang Show</h2>
                 <p>Gang Show exists to provide challenging & demanding opportunities for members of the Scout and Guide Associations, to receive
@@ -35,7 +35,7 @@
             </section>
         </article>
 
-        <article class="section section-roles">
+        <article class="section panel-roles">
             <h2>Where can you be involved?</h2>
             <img draggable="false" alt="I WANT YOU TO JOIN THE ALBURY GANG SHOW!" src="/assets/images/pageHome/join_sam.webp" id="samImage" onclick="samPlay()">
             <audio src="/assets/audio/join_sam.mp3" id="samAudio"></audio>

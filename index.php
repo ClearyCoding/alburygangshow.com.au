@@ -24,7 +24,7 @@
     <?php $page = 'Home'; include $_SERVER['DOCUMENT_ROOT'] . '/assets/php/header.php'; ?>
     <main id="pageHome" class="parallax">
         <figure class="backdrop backdrop-billboard"></figure>
-        <article id="billboard" class="void void-billboard">
+        <article id="billboard" class="void panel-billboard">
             <h4 id="countdown-prefix">Only</h4>
             <section class="container" id="container-countdown">
                 <h2 id="countdown">--:--:--:--</h2>
@@ -64,7 +64,7 @@
             </a>
         </article>
 
-        <article class="section section-about">
+        <article class="section panel-about">
             <div class="anchor" id="about"></div>
             <section class="crate-text">
                 <h2>Who Are We?</h2>
@@ -85,7 +85,7 @@
         </article>
 
         <figure class="backdrop backdrop-join"></figure>
-        <article class="void void-join">
+        <article class="void panel-join">
             <section class="container">
                 <div class="anchor" id="join"></div>
                 <img draggable="false" alt="I WANT YOU TO JOIN THE ALBURY GANG SHOW!" src="/assets/images/pageHome/join_sam.webp" id="samImage" onclick="samPlay()">
@@ -123,7 +123,7 @@
             </section>
         </article>
 
-        <article class="section section-history">
+        <article class="section panel-history">
             <div class="anchor" id="history"></div>
             <figure class="crate-images">
                 <img draggable="false" src="/assets/images/pageHome/history.webp" alt="AGS Performance 1967">
@@ -144,7 +144,7 @@
 
         </article>
 
-        <article class="section section-tickets">
+        <article class="section panel-tickets">
             <div class="anchor" id="tickets"></div>
             <figure class="crate-images">
                 <img alt="Promotional Photo" src="/assets/images/pageHome/tickets.jpg"/>
@@ -167,7 +167,7 @@
         </article>
 
         <figure class="backdrop backdrop-merch"></figure>
-        <article class="void void-merch">
+        <article class="void panel-merch">
             <section class="container">
                 <div class="anchor" id="merch"></div>
                 <section class="crate-text">
@@ -188,7 +188,7 @@
             </section>
         </article>
 
-        <article class="section section-faq">
+        <article class="section panel-faq">
             <div class="anchor" id="faq"></div>
             <figure class="crate-images">
                 <img draggable="false" src="/assets/images/pageHome/faq.webp" alt="If you remember these images, you are an AGS veteran!">
@@ -272,7 +272,7 @@
         </article>
 
         <figure class="backdrop backdrop-members"></figure>
-        <article class="void void-members">
+        <article class="void panel-members">
             <section class="container">
                 <div class="anchor" id="members"></div>
                 <figure class="crate-images">
@@ -290,7 +290,7 @@
             </section>
         </article>
 
-        <article class="section section-links">
+        <article class="section panel-links">
             <div class="anchor" id="links"></div>
             <h2>Where do our gangsters come from?</h2>
             <h3>
@@ -464,7 +464,7 @@
         <figure class="backdrop backdrop-void"></figure>
         <article class="void"></article>
 
-        <article class="section section-sponsors">
+        <article class="section panel-sponsors">
             <div class="anchor" id="sponsors"></div>
             <h2>Our Supporters</h2>
             <h3>The Albury Gang Show would cease to exist if not for our fantastic and generous supporters!</h3>
@@ -487,7 +487,7 @@
         </article>
 
         <figure class="backdrop backdrop-crew"></figure>
-        <article class="void void-crew">
+        <article class="void panel-crew">
             <section class="container">
                 <div class="anchor" id="crew"></div>
                 <h2>Our Crew</h2>
@@ -529,7 +529,7 @@
             </section>
         </article>
 
-        <article class="section section-contact">
+        <article class="section panel-contact">
             <div class="anchor" id="contact"></div>
                 <section class="crate-text">
                     <section class="crate-emails">

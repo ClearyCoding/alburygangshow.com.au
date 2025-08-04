@@ -1,9 +1,9 @@
 /* Billboard */
-.void-billboard {
+.panel-billboard {
     padding-top: 70px;
     height: 85vh;
 }
-.void-billboard h4 {
+.panel-billboard h4 {
     text-align: center;
     align-self: center;
     margin: 12px;
@@ -70,14 +70,14 @@
     text-align: center;
     font-family: Digital7, FiraSans, Arial, sans-serif;;
 }
-.void-billboard .splash-positioner {
+.panel-billboard .splash-positioner {
     position: absolute;
     bottom:  20px;
     right: 20px;
     transform: rotate(-20deg);
     z-index: 100;
 }
-.void-billboard .splash-restrainer {
+.panel-billboard .splash-restrainer {
     position: absolute;
     white-space: nowrap;
 }
@@ -92,7 +92,7 @@
     animation: infinite splashPulse 2s;
     z-index: 100;
 }
-.void-billboard .pulser {
+.panel-billboard .pulser {
     background: black;
     border-radius: 50%;
     margin: 30px 10px;
@@ -107,7 +107,7 @@
     transform: scale(1);
     animation: pulse 2s infinite;
 }
-.void-billboard .pulser img {
+.panel-billboard .pulser img {
     height: 1.875rem;
 }
 @keyframes splashPulse {
@@ -139,13 +139,13 @@
     }
 }
 @media (max-width: 767px) {
-    .void-billboard {
+    .panel-billboard {
         height: 90vh;
     }
     #countdown {
         font-size: 3rem;
     }
-    .void-billboard h3 {
+    .panel-billboard h3 {
         font-size: 1.5rem;
     }
     #countdown-units h4 {
@@ -175,47 +175,47 @@
 }
 
 /* About */
-.section-about h2 {
+.panel-about h2 {
     font-family: MurderousDesire, FiraSans, Arial, sans-serif;;
 }
-.section-about .crate-text {
+.panel-about .crate-text {
     width: 55%;
 }
-.section-about .crate-images {
+.panel-about .crate-images {
     width: 40%;
     display: flex;
     flex-direction: column;
 }
-.section-about .crate-images img {
+.panel-about .crate-images img {
     border-radius: 15px;
     border: #171717 3px solid;
 }
-.section-about .crate-images .about-image1 {
+.panel-about .crate-images .about-image1 {
     width: 70%;
 }
-.section-about .crate-images .about-image2 {
+.panel-about .crate-images .about-image2 {
     width: 80%;
     align-self: end;
 }
 @media (max-width: 1024px) {
-    .section-about .crate-images .about-image1 {
+    .panel-about .crate-images .about-image1 {
         height: 100%;
         width: 100%;
     }
-    .section-about .crate-images .about-image2 {
+    .panel-about .crate-images .about-image2 {
         display: none;
     }
     @media (max-width: 767px) {
-        .section-about .crate-text {
+        .panel-about .crate-text {
             width: 100%;
         }
-        .section-about .crate-images {
+        .panel-about .crate-images {
             justify-content: space-between;
             width: 90%;
             height: auto;
         }
         @media (max-width: 480px) {
-            .section-about .crate-images {
+            .panel-about .crate-images {
                 display: none;
             }
         }
@@ -223,68 +223,68 @@
 }
 
 /* History */
-.section-history h2 {
+.panel-history h2 {
     font-family: Aurella, FiraSans, Arial, sans-serif;
 }
-.section-history .crate-images {
+.panel-history .crate-images {
     width: 40%;
 }
-.section-history .crate-images img {
+.panel-history .crate-images img {
     width: 100%;
     border-radius: 15px;
     border: #171717 3px solid;
     filter: brightness(120%);
 }
-.section-history .crate-text {
+.panel-history .crate-text {
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 55%;
 }
 @media (max-width: 767px) {
-    .section-history .crate-images {
+    .panel-history .crate-images {
         width: 90%;
         margin-bottom: 1rem;
     }
-    .section-history .crate-text {
+    .panel-history .crate-text {
         width: 100%;
     }
 }
 
 /* Merch */
-.void-merch .crate-text h2 {
+.panel-merch .crate-text h2 {
     font-family: Grinched, FiraSans, Arial, sans-serif;;
 }
-.void-merch .container {
+.panel-merch .container {
     align-items: center;
 }
-.void-merch .crate-text {
+.panel-merch .crate-text {
     width: 50%;
     height: 90%;
     display: flex;
     flex-direction: column;
 }
-.void-merch .crate-text .button {
+.panel-merch .crate-text .button {
     margin-top: 1rem;
 }
-.void-merch .crate-images {
+.panel-merch .crate-images {
     width: 45%;
     height: 90%;
 }
-.void-merch .crate-images img {
+.panel-merch .crate-images img {
     max-width: 100%;
     border-radius: 15px;
     border: #171717 3px solid;
 }
 @media (max-width: 767px) {
-    .void-merch .crate-text {
+    .panel-merch .crate-text {
         width: 100%;
         order: 2;
     }
-    .void-merch .crate-text .button {
+    .panel-merch .crate-text .button {
         align-self: center;
     }
-    .void-merch .crate-images {
+    .panel-merch .crate-images {
         width: 85%;
         height: auto;
         margin-bottom: 1rem;
@@ -293,38 +293,38 @@
 }
 
 /* Tickets */
-.section-tickets .crate-text h2 {
+.panel-tickets .crate-text h2 {
     font-family: YouMurderer, FiraSans, Arial, sans-serif;;
 }
-.section-tickets {
+.panel-tickets {
     justify-content: space-around;
 }
-.section-tickets .crate-text {
+.panel-tickets .crate-text {
     width: 45%;
     height: 90%;
     display: flex;
     flex-direction: column;
 }
-.section-tickets .crate-text .button {
+.panel-tickets .crate-text .button {
     margin-top: 1rem;
 }
-.section-tickets .crate-images {
+.panel-tickets .crate-images {
     width: 40%;
     height: 90%;
 }
-.section-tickets .crate-images img {
+.panel-tickets .crate-images img {
     max-width: 100%;
     border-radius: 15px;
     border: #171717 3px solid;
 }
 @media (max-width: 767px) {
-    .section-tickets .crate-text {
+    .panel-tickets .crate-text {
         width: 100%;
     }
-    .section-tickets .crate-text .button {
+    .panel-tickets .crate-text .button {
         align-self: center;
     }
-    .section-tickets .crate-images {
+    .panel-tickets .crate-images {
         justify-content: space-between;
         align-items: center;
         display: flex;
@@ -333,44 +333,44 @@
         height: auto;
         margin-bottom: 1rem;
     }
-    .section-tickets .crate-images figcaption {
+    .panel-tickets .crate-images figcaption {
         font-size: 0.875rem;
     }
 }
 
 
 /* FAQ */
-.section-faq h2 {
+.panel-faq h2 {
     font-family: Secrets, FiraSans, Arial, sans-serif;
 }
-.section-faq .crate-images {
+.panel-faq .crate-images {
     display: flex;
     align-items: center;
     justify-content: right;
     width: 40%;
     margin-right: 1rem;
 }
-.section-faq .crate-images img {
+.panel-faq .crate-images img {
     width: 100%;
 }
-.section-faq .crate-text {
+.panel-faq .crate-text {
     width: 55%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
-.section-faq .crate-list {
+.panel-faq .crate-list {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.section-faq .crate-list .question {
+.panel-faq .crate-list .question {
     width: 80%;
 }
-.section-faq .crate-list .question-title {
+.panel-faq .crate-list .question-title {
     width: 100%;
     display: inline-block;
     padding: 1.25rem 0;
@@ -380,15 +380,15 @@
     text-decoration: underline;
     cursor: pointer;
 }
-.section-faq .crate-list .question-arrow {
+.panel-faq .crate-list .question-arrow {
     display: inline-block;
     transform: scale(1, 0.8) rotate(-90deg);;
     transition: all 0.15s ease-out;
 }
-.section-faq .crate-list .question-toggle:checked ~ .question-title .question-arrow {
+.panel-faq .crate-list .question-toggle:checked ~ .question-title .question-arrow {
     transform: rotate(0deg);
 }
-.section-faq .crate-list .question p {
+.panel-faq .crate-list .question p {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s;
@@ -396,57 +396,57 @@
     color: white;
     font-size: 1.25rem;
 }
-.section-faq .crate-list .question p a {
+.panel-faq .crate-list .question p a {
     color: white;
 }
-.section-faq .crate-list .question-toggle {
+.panel-faq .crate-list .question-toggle {
     display: none;
 }
-.section-faq .crate-list .question-toggle:checked ~ p {
+.panel-faq .crate-list .question-toggle:checked ~ p {
     max-height: 1000px;
 }
-.section-faq .crate-text h5,
-.section-faq .crate-text h5 a {
+.panel-faq .crate-text h5,
+.panel-faq .crate-text h5 a {
     color: darkgray;
     font-weight: normal;
     padding-top: 20px;
 }
 @media (max-width: 1024px) {
-    .section-faq .crate-list .question-title {
+    .panel-faq .crate-list .question-title {
         font-size: 1rem;
     }
-    .section-faq .crate-list .question p {
+    .panel-faq .crate-list .question p {
         font-size: 0.9rem;
     }
-    .section-faq .crate-text {
+    .panel-faq .crate-text {
         width: 60%;
     }
-    .section-faq .crate-images {
+    .panel-faq .crate-images {
         padding-top: 10px;
         align-self: center;
     }
-    .section-faq .crate-list .question {
+    .panel-faq .crate-list .question {
         width: 100%;
     }
-    .section-faq .crate-list .question-title {
+    .panel-faq .crate-list .question-title {
         padding: 0.75rem 0;
     }
-    .section-faq .crate-list .question p {
+    .panel-faq .crate-list .question p {
         margin: 0 0 5px 0
     }
     @media (max-width: 767px) {
-        .section-faq .crate-images {
+        .panel-faq .crate-images {
             min-height: 120px;
             width: 100%;
             display: flex;
             order: 2;
             margin: 0;
         }
-        .section-faq .crate-text {
+        .panel-faq .crate-text {
             width: 100%
         }
         @media (max-width: 480px) {
-            .section-faq .crate-images {
+            .panel-faq .crate-images {
                 display: none;
             }
         }
@@ -454,7 +454,7 @@
 }
 
 /* Join */
-.void-join .crate-text  h2 {
+.panel-join .crate-text  h2 {
     font-family: Lovable, FiraSans, Arial, sans-serif;;
 }
 #samImage {
@@ -464,72 +464,72 @@
     left: 0;
     bottom: 0;
 }
-.void-join .crate-text {
+.panel-join .crate-text {
     width: 50%;
     height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.void-join .crate-text  p a {
+.panel-join .crate-text  p a {
     color: darkgray;
 }
-.void-join .crate-images {
+.panel-join .crate-images {
     width: 45%;
     height: 90%;
     align-self: center;
 }
-.void-join .crate-images img {
+.panel-join .crate-images img {
     width: 100%;
     border-radius: 15px;
     border: #171717 3px solid;
 }
-.void-join .crate-buttons {
+.panel-join .crate-buttons {
     display: flex;
     justify-content: space-around;
     width: 100%;
     box-sizing: border-box;
     padding: 0 40px;
 }
-.void-join .crate-buttons p {
+.panel-join .crate-buttons p {
     color: white;
     text-align: center;
     font-weight: 900;
 }
-.void-join .crate-text .join-context {
+.panel-join .crate-text .join-context {
     text-align: center;
     margin: 1rem 2rem;
 }
 @media (max-width: 1200px) {
-    .void-join .crate-buttons .button {
+    .panel-join .crate-buttons .button {
         font-size: 1rem;
     }
     @media (max-width: 1024px) {
-        .void-join .crate-text  h2 {
+        .panel-join .crate-text  h2 {
             font-size: 1.75rem;
         }
-        .void-join .crate-text  p {
+        .panel-join .crate-text  p {
             font-size: 1rem;
         }
-        .void-join .crate-buttons {
+        .panel-join .crate-buttons {
             padding: 0 25px;
             flex-direction: column;
             align-items: center;
         }
-        .void-join .crate-buttons .button{
+        .panel-join .crate-buttons .button{
             width: 300px;
         }
         @media (max-width: 767px) {
-            .void-join .crate-text  {
+            .panel-join .crate-text  {
                 width: 100%;
             }
-            .void-join .crate-images {
+            .panel-join .crate-images {
                 display: none;
             }
-            .void-join .crate-buttons {
+            .panel-join .crate-buttons {
                 flex-direction: column;
             }
-            .void-join .crate-buttons .button {
+            .panel-join .crate-buttons .button {
                 width: 80%;
             }
         }
@@ -537,40 +537,40 @@
 }
 
 /* Members */
-.void-members .container {
+.panel-members .container {
     align-items: center;
 }
-.void-members h2 {
+.panel-members h2 {
     font-family: WhoopAss, FiraSans, Arial, sans-serif;
     font-weight: 500;
 }
-.void-members .crate-images {
+.panel-members .crate-images {
     width: 45%;
     height: 90%;
 }
-.void-members .crate-images img {
+.panel-members .crate-images img {
     max-width: 100%;
     border-radius: 15px;
     border: #171717 3px solid;
 }
-.void-members .crate-text {
+.panel-members .crate-text {
     width: 50%;
     height: 90%;
     display: flex;
     flex-direction: column;
 }
-.void-members .crate-text .button {
+.panel-members .crate-text .button {
     width: 13.75rem;
 }
 @media (max-width: 767px) {
-    .void-members .crate-text {
+    .panel-members .crate-text {
         width: 100%;
         order: 2;
     }
-    .void-members .crate-text .button {
+    .panel-members .crate-text .button {
         align-self: center;
     }
-    .void-members .crate-images {
+    .panel-members .crate-images {
         width: 80%;
         height: auto;
         margin-bottom: 1rem;
@@ -579,25 +579,25 @@
 }
 
 /* Links */
-.section-links {
+.panel-links {
     justify-content: center;
     flex-direction: column;
 }
-.section-links h2 {
+.panel-links h2 {
     font-family: TopSecret, FiraSans, Arial, sans-serif;
 }
-.section-links .carousel {
+.panel-links .carousel {
     margin-top: 1.5rem;
     align-items: start;
 }
-.section-links .carousel h3 {
+.panel-links .carousel h3 {
     rotate: -90deg;
     align-self: center;
     text-align: center;
     box-sizing: border-box;
     width: 10rem;
 }
-.section-links .carousel a {
+.panel-links .carousel a {
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -606,60 +606,60 @@
     width: 10rem;
     margin: 1rem 1rem;
 }
-.section-links .carousel a h6 {
+.panel-links .carousel a h6 {
     margin: 1rem 0 0 0;
     text-align: center;
     font-weight: 500;
 }
-.section-links .carousel a img {
+.panel-links .carousel a img {
     height: 7rem;
 }
-.section-links .container  {
+.panel-links .container  {
     flex-direction: column;
 }
-.section-links .crate-list {
+.panel-links .crate-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
     width: 80%;
     margin-bottom: 2.5rem;
 }
-.section-links .crate-list h6 {
+.panel-links .crate-list h6 {
     font-weight: 700;
     color: white;
     text-align: center;
     margin: 0.5rem 0;
 }
 @media (max-width: 1024px) {
-    .section-links .crate-list {
+    .panel-links .crate-list {
         grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
         width: 100%;
     }
-    .section-links .crate-list h6 {
+    .panel-links .crate-list h6 {
         margin: 0.3rem 0;
     }
     @media (max-width: 767px) {
-        .section-links .crate-list {
+        .panel-links .crate-list {
             grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
         }
-        .section-links .crate-list h6 {
+        .panel-links .crate-list h6 {
             margin: 0.5rem 0;
         }
-        .section-links .carousel a {
+        .panel-links .carousel a {
             width: 7rem;
             margin: 0.7rem 0.7rem;
         }
-        .section-links .carousel a img {
+        .panel-links .carousel a img {
             height: 5rem;
             margin: 0.7rem 0 0 0;
         }
         @media (max-width: 480px) {
-            .section-links .crate-list {
+            .panel-links .crate-list {
                 display: flex;
                 justify-content: space-around;
                 flex-direction: row;
                 flex-wrap: wrap;
             }
-            .section-links .crate-list  h6 {
+            .panel-links .crate-list  h6 {
                 margin: 0.5rem;
                 display: inline-block;
             }
@@ -668,165 +668,165 @@
 }
 
 /* Sponsors */
-.section-sponsors {
+.panel-sponsors {
     justify-content: center;
     flex-direction: column;
 }
-.section-sponsors h2 {
+.panel-sponsors h2 {
     font-family: RockBoulder, FiraSans, Arial, sans-serif;
 }
-.section-sponsors .carousel {
+.panel-sponsors .carousel {
     margin-top: 2rem;
 }
-.section-sponsors .carousel a {
+.panel-sponsors .carousel a {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 15rem;
 }
-.section-sponsors .carousel a img {
+.panel-sponsors .carousel a img {
     width: 90%;
 }
 @media (max-width: 767px) {
-    .section-sponsors .carousel {
+    .panel-sponsors .carousel {
         margin-top: 1.5rem;
     }
-    .section-sponsors .carousel a {
+    .panel-sponsors .carousel a {
         width: 12rem;
     }
 }
 
 /* Crew */
-.void-crew h2 {
+.panel-crew h2 {
     font-family: Eraser, FiraSans, Arial, sans-serif;
 }
-.void-crew .container {
+.panel-crew .container {
     flex-direction: column;
     width: 85%;
     align-items: center;
 }
-.void-crew .crew-context {
+.panel-crew .crew-context {
     align-self: center;
     margin-top: 1rem
 }
-.void-crew .crate-list {
+.panel-crew .crate-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
-.void-crew .crate-list  figure {
+.panel-crew .crate-list  figure {
     margin: 0.5rem;
 }
-.void-crew .crate-list h3 {
+.panel-crew .crate-list h3 {
     text-align: center;
     color: white;
 }
-.void-crew .crate-list h6 {
+.panel-crew .crate-list h6 {
     text-align: center;
     margin: 5px 0;
 }
 
 /* Contacts */
-.section-contact {
+.panel-contact {
     min-height: auto;
 }
-.section-contact .crate-text {
+.panel-contact .crate-text {
     width: 65%;
     display: flex;
     justify-content: space-around;
 }
-.section-contact .crate-emails {
+.panel-contact .crate-emails {
     width: 50%;
 }
-.section-contact .crate-emails h2 {
+.panel-contact .crate-emails h2 {
     margin: 0 0 30px 0;
     text-align: start;
     font-family: Mistery, FiraSans, Arial, sans-serif;
 }
-.section-contact .crate-emails h3,
-.section-contact .crate-socials h3 {
+.panel-contact .crate-emails h3,
+.panel-contact .crate-socials h3 {
     margin: 30px 0 15px 0;
 }
-.section-contact .crate-socials h3 {
+.panel-contact .crate-socials h3 {
     text-align: center;
 }
-.section-contact .crate-emails a:hover,
-.section-contact .crate-socials a:hover {
+.panel-contact .crate-emails a:hover,
+.panel-contact .crate-socials a:hover {
     color: #c2c2c2;
 }
-.section-contact .crate-emails a,
-.section-contact .crate-socials a {
+.panel-contact .crate-emails a,
+.panel-contact .crate-socials a {
     color: white;
     font-size: 1.125rem;
     margin: 0;
 }
-.section-contact .crate-socials {
+.panel-contact .crate-socials {
     width: 45%;
     padding-top: 84px;
 }
-.section-contact .crate-socials h3 {
+.panel-contact .crate-socials h3 {
     margin-top: 0;
 }
-.section-contact .crate-socials figure {
+.panel-contact .crate-socials figure {
     display: flex;
     width: 100%;
     justify-content: center;
 }
-.section-contact .crate-socials figure img {
+.panel-contact .crate-socials figure img {
     height: 3.125rem;
     padding: 0 15px;
 }
-.section-contact .crate-socials figure img:hover {
+.panel-contact .crate-socials figure img:hover {
     filter: brightness(70%);
 }
-.section-contact .crate-images {
+.panel-contact .crate-images {
     width: 35%;
     display: flex;
     flex-direction: column;
     align-items: end;
 }
-.section-contact .crate-images .contact-image1 {
+.panel-contact .crate-images .contact-image1 {
     width: 80%;
     border-radius: 15px;
     border: #171717 3px solid;
     align-self: start;
 }
-.section-contact .crate-images .contact-image2{
+.panel-contact .crate-images .contact-image2{
     width: 80%;
     border-radius: 15px;
     border: #171717 3px solid;
     align-self: end;
 }
 @media (max-width: 1200px) {
-    .section-contact .crate-images {
+    .panel-contact .crate-images {
         width: 30%;
     }
-    .section-contact .crate-text {
+    .panel-contact .crate-text {
         width: 70%;
     }
     @media (max-width: 1024px) {
-        .section-contact .crate-text {
+        .panel-contact .crate-text {
             width: 100%;
             text-align: center;
         }
-        .section-contact .crate-emails,
-        .section-contact .crate-socials{
+        .panel-contact .crate-emails,
+        .panel-contact .crate-socials{
             width: 100%;
         }
-        .section-contact .crate-socials {
+        .panel-contact .crate-socials {
             padding-top: 66px;
         }
-        .section-contact .crate-images {
+        .panel-contact .crate-images {
             display: none;
         }
         @media (max-width: 767px) {
-            .section-contact .crate-emails h2 {
+            .panel-contact .crate-emails h2 {
                 text-align: center;
             }
-            .section-contact .crate-text {
+            .panel-contact .crate-text {
                 flex-direction: column;
                 align-items: start;
             }
-            .section-contact .crate-socials {
+            .panel-contact .crate-socials {
                 padding-top: 2rem;
             }
         }

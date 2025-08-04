@@ -1,23 +1,23 @@
 /* Title */
-.void-title {
+.panel-title {
     padding-top: 70px;
     height: 90vh;
 }
-.void-title .container {
+.panel-title .container {
     flex-direction: column;
     background-color: rgba(21,21,23,0.7);
 }
-.void-title .container h2 {
+.panel-title .container h2 {
     align-self: center;
     font-size: 3rem;
     text-align: center;
 }
-.void-title .container p {
+.panel-title .container p {
     text-align: center;
 }
 
 /* Roles */
-.section-roles {
+.panel-roles {
     flex-direction: column;
     justify-content: space-around;
     position: relative;
@@ -30,21 +30,21 @@
     right: 0;
     bottom: 0;
 }
-.section-roles .crate-roles {
+.panel-roles .crate-roles {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
-.section-roles .crate-roles .role {
+.panel-roles .crate-roles .role {
     width: 30rem;
 }
-.section-roles .crate-roles .role h3 {
+.panel-roles .crate-roles .role h3 {
     text-align: center;
     font-size: 2rem;
 }
-.section-roles .crate-roles .role h4 {
+.panel-roles .crate-roles .role h4 {
     text-align: center;
     font-size: 1.5rem;
 }
