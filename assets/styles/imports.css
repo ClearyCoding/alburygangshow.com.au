@@ -76,15 +76,15 @@
     background-image: url("/assets/images/backdrops/pageHome-join.webp");
     filter: blur(1px);
 }
-#pageHome .backdrop-merch {
+#pageHome .backdrop-posters {
     background-image: url("/assets/images/backdrops/pageHome-merch.webp");
     filter: blur(1px) brightness(80%);
 }
-#pageHome .backdrop-tickets {
+#pageHome .backdrop-merch {
     background-image: url("/assets/images/backdrops/pageHome-tickets.webp");
     filter: blur(1px) brightness(80%);
 }
-#pageHome .backdrop-local_groups {
+#pageHome .backdrop-members {
     background-image: url("/assets/images/backdrops/pageHome-local_groups.webp");
     filter: blur(1px);
 }

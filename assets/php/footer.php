@@ -21,7 +21,7 @@
             hesitate to contact <a href="mailto:webmaster@alburygangshow.com.au">the webmaster</a>.
         </p>
     </section>
-    <h6 class="footer-version">alburygangshow.com.au v2.1.6</h6>
+    <h6 class="footer-version">alburygangshow.com.au v2.1.7</h6>
     <h6 class="footer-copyright">© 2025 Albury Gang Show</h6>
     <h6 class="footer-credit">Website by <a href="mailto:alexjacleary@gmail.com" target="_blank">Alexander Cleary</a></h6>
 </footer>

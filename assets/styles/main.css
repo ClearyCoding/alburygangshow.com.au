@@ -48,7 +48,6 @@ figure {
     z-index: 0;
 }
 .section {
-    position: relative;
     background: linear-gradient(#171717, #212123, #171717);
     min-height: 500px;
     padding: 30px 40px;
@@ -70,7 +69,6 @@ figure {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative;
 }
 @media (max-width: 480px) {
     .void {

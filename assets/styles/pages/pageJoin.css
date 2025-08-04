@@ -20,6 +20,7 @@
 .section-roles {
     flex-direction: column;
     justify-content: space-around;
+    position: relative;
 }
 #samImage {
     height: 6rem;

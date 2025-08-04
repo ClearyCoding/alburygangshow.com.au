@@ -139,12 +139,39 @@
             </section>
         </article>
 
+        <figure class="backdrop backdrop-posters"></figure>
+        <article class="void">
+
+        </article>
+
+        <article class="section section-tickets">
+            <div class="anchor" id="tickets"></div>
+            <figure class="crate-images">
+                <img alt="Promotional Photo" src="/assets/images/pageHome/tickets.jpg"/>
+            </figure>
+            <section class="crate-text">
+                <h2>Tickets</h2>
+                <p>
+                    The 2026 Show currently under development.
+                    The dates and times for the next show will be:
+                </p>
+                <time>- 7:30pm - Friday the 12th of June 2026</time>
+                <time>- 1:30pm - Saturday the 13th of June 2026</time>
+                <time>- 7:30pm - Saturday the 13th of June 2026</time>
+                <p>
+                    All of our performances are held at
+                    <a href="https://www.alburyentertainmentcentre.com.au/">The Albury Entertainment Center</a>, 525 Swift Street, Albury NSW.
+                </p>
+                <!--<a href="https://www.alburyentertainmentcentre.com.au/" target="_blank" class="button">Book Now! &#8594</a>-->
+            </section>
+        </article>
+
         <figure class="backdrop backdrop-merch"></figure>
         <article class="void void-merch">
             <section class="container">
                 <div class="anchor" id="merch"></div>
                 <section class="crate-text">
-                    <h2>2025 Show DvDs</h2>
+                    <h2>Performance DVDs</h2>
                     <p>
                         Your chance to relive all of your favourite moments from Albury Gang Show from the comfort of your own home!
                     </p>
@@ -232,96 +259,66 @@
                         </p>
                     </div>
                     <div class="question">
-                    <input class="question-toggle" type="checkbox" id="faq-question4-toggle" />
-                    <label class="question-title" for="faq-question4-toggle">
-                        <span class="question-arrow">&#9660</span>
-                        Help! I am trapped in the Internet!
-                    </label>
-                    <p>>:)</p>
-                </div>
+                        <input class="question-toggle" type="checkbox" id="faq-question4-toggle" />
+                        <label class="question-title" for="faq-question4-toggle">
+                            <span class="question-arrow">&#9660</span>
+                            Help! I am trapped in the Internet!
+                        </label>
+                        <p>>:)</p>
+                    </div>
                 </section>
                 <h5>If you have any further questions, don't hesitate to <a href="#contact">contact us</a>!</h5>
             </section>
         </article>
 
-        <figure class="backdrop backdrop-tickets"></figure>
-        <article class="void void-tickets">
+        <figure class="backdrop backdrop-members"></figure>
+        <article class="void void-members">
             <section class="container">
-                <div class="anchor" id="tickets"></div>
-                <section class="crate-text">
-                    <h2>Tickets</h2>
-                    <p>
-                        The 2026 Show currently under development.
-                        The dates and times for the next show will be:
-                    </p>
-                    <time>- 7:30pm - Friday the 12th of June 2026</time>
-                    <time>- 1:30pm - Saturday the 13th of June 2026</time>
-                    <time>- 7:30pm - Saturday the 13th of June 2026</time>
-                    <p>
-                        All of our performances are held at
-                        <a href="https://www.alburyentertainmentcentre.com.au/">The Albury Entertainment Center</a>, 525 Swift Street, Albury NSW.
-                    </p>
-                    <!--<a href="https://www.alburyentertainmentcentre.com.au/" target="_blank" class="button">Book Now! &#8594</a>-->
-                </section>
+                <div class="anchor" id="members"></div>
                 <figure class="crate-images">
-                    <img alt="Promotional Photo" src="/assets/images/pageHome/tickets.jpg"/>
+                    <img draggable="false" src="/assets/images/pageHome/members.webp" alt="Cast Rehearsing">
                 </figure>
-            </section>
-        </article>
-
-        <article class="section section-members">
-            <div class="anchor" id="members"></div>
-            <figure class="crate-images">
-                <img draggable="false" src="/assets/images/pageHome/members.webp" alt="Cast Rehearsing">
-            </figure>
-            <section class="crate-text">
-                <h2>Cast & Crew Portal</h2>
-                <p>
-                    Latest information, updates and resources are posted on the Cast & Crew Facebook group.
-                    If you are currently a member of the cast or crew or are a parent of a current cast member,
-                    join the latest group to stay in the loop!
-                </p>
-                <a href="https://www.facebook.com/groups/2025ags" target="_blank" class="button">2025 Portal &#8594</a>
-            </section>
-        </article>
-
-        <figure class="backdrop backdrop-local_groups"></figure>
-        <article class="void void-local_groups">
-            <section class="container">
-                <div class="anchor" id="local_groups"></div>
-                <h2>Where do our gangsters come from?</h2>
-                <h3>
-                    We have members from throughout the local area,
-                    these are just a few of the scout and guide groups where our cast & crew are from!
-                </h3>
-                <section class="crate-list">
-                    <h6>1st Albury</h6>
-                    <h6>2nd Albury</h6>
-                    <h6>1st Beechworth</h6>
-                    <h6>1st Benalla</h6>
-                    <h6>1st Lavington</h6>
-                    <h6>1st Mt Beauty</h6>
-                    <h6>3rd Wodonga</h6>
-                    <h6>1st Yackandandah</h6>
-                    <h6>1st Yarrunga</h6>
-                    <h6>Albury Gang Show Fellowship</h6>
-                    <h6>Albury Guides</h6>
-                    <h6>Bundara Rovers</h6>
-                    <h6>Ettamogah Venturers</h6>
-                    <h6>North Albury Guides</h6>
-                    <h6>Twin Rivers Olave Fellowship</h6>
-                    <h6>Upper Murray Venturers</h6>
-                    <h6>Wodonga Guides</h6>
+                <section class="crate-text">
+                    <h2>Cast & Crew Portal</h2>
+                    <p>
+                        Latest information, updates and resources are posted on the Cast & Crew Facebook group.
+                        If you are currently a member of the cast or crew or are a parent of a current cast member,
+                        join the latest group to stay in the loop!
+                    </p>
+                    <a href="https://www.facebook.com/groups/2025ags" target="_blank" class="button">2025 Portal &#8594</a>
                 </section>
             </section>
         </article>
 
         <article class="section section-links">
             <div class="anchor" id="links"></div>
-            <h2>Other Shows</h2>
+            <h2>Where do our gangsters come from?</h2>
+            <h3>
+                We have members from throughout the local area,
+                these are just a few of the scout and guide groups where our cast & crew are from!
+            </h3>
+            <section class="crate-list">
+                <h6>1st Albury</h6>
+                <h6>2nd Albury</h6>
+                <h6>1st Beechworth</h6>
+                <h6>1st Benalla</h6>
+                <h6>1st Lavington</h6>
+                <h6>1st Mt Beauty</h6>
+                <h6>3rd Wodonga</h6>
+                <h6>1st Yackandandah</h6>
+                <h6>1st Yarrunga</h6>
+                <h6>Albury Gang Show Fellowship</h6>
+                <h6>Albury Guides</h6>
+                <h6>Bundara Rovers</h6>
+                <h6>Ettamogah Venturers</h6>
+                <h6>North Albury Guides</h6>
+                <h6>Twin Rivers Olave Fellowship</h6>
+                <h6>Upper Murray Venturers</h6>
+                <h6>Wodonga Guides</h6>
+            </section>
             <h3>
                 Live too far away to join Albury Gang Show? Fear NOT! There are plenty of fantastic scout & guide driven
-                performances throughout Australia and New Zealand!
+                performances throughout Australia and New Zealand:
             </h3>
             <section class="carousel" data-speed="7">
                 <h3>Victoria</h3>
