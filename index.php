@@ -148,6 +148,9 @@
                     <p>
                         Your chance to relive all of your favourite moments from Albury Gang Show from the comfort of your own home!
                     </p>
+                    <p>
+                        Please send all completed order forms to <a href="mailto:info@alburygangshow.com.au">info@alburygangshow.com.au</a>
+                    </p>
                     <a href="/assets/forms/2025/2025_dvd.pdf" class="button" target="_blank">
                         Order Form
                     </a>
@@ -292,16 +295,15 @@
                     these are just a few of the scout and guide groups where our cast & crew are from!
                 </h3>
                 <section class="crate-list">
-                    <h6>1st Albury Rovers</h6>
-                    <h6>1st Albury Scouts</h6>
-                    <h6>2nd Albury Scouts</h6>
-                    <h6>1st Beechworth Scouts</h6>
-                    <h6>1st Benalla Scouts</h6>
-                    <h6>1st Lavington Scouts</h6>
-                    <h6>1st Mt Beauty Scouts</h6>
-                    <h6>3rd Wodonga Scouts</h6>
-                    <h6>1st Yackandandah Scouts</h6>
-                    <h6>1st Yarrunga Scouts</h6>
+                    <h6>1st Albury</h6>
+                    <h6>2nd Albury</h6>
+                    <h6>1st Beechworth</h6>
+                    <h6>1st Benalla</h6>
+                    <h6>1st Lavington</h6>
+                    <h6>1st Mt Beauty</h6>
+                    <h6>3rd Wodonga</h6>
+                    <h6>1st Yackandandah</h6>
+                    <h6>1st Yarrunga</h6>
                     <h6>Albury Gang Show Fellowship</h6>
                     <h6>Albury Guides</h6>
                     <h6>Bundara Rovers</h6>
