@@ -348,7 +348,7 @@
                 </a>
 
                 <h3>A.C.T</h3>
-                <a href="https://sites.google.com/scoutsact.com.au/canberra-gang-show/home" target="_blank">
+                <a href="https://www.facebook.com/canberragangshow/" target="_blank">
                     <img draggable="false" alt="Canberra Gang Show" src="/assets/images/pageHome/links/canberra.webp">
                     <h6>Canberra Gang Show</h6>
                 </a>
