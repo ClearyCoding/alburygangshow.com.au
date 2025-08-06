@@ -22,8 +22,8 @@ if ($page === 'History') {
     $navbar = [
         ['title' => 'About', 'link' => '/#about'],
         ['title' => 'Join', 'link' => '/#join'],
-        ['title' => 'History', 'link' => '/#history'],
         ['title' => 'Tickets', 'link' => '/#tickets'],
+        ['title' => 'DVDs', 'link' => '/#merch'],
         ['title' => 'FAQ', 'link' => '/#faq'],
         ['title' => 'Contact', 'link' => '/#contact'],
     ];
