@@ -70,6 +70,7 @@ figure {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 @media (max-width: 480px) {
     .void {
