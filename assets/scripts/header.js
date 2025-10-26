@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let lastScrollTop = 0;
     let startScrollPosition = null;
     const header = document.querySelector("#header");
+    const cascadeToggle = document.querySelector("#cascade-toggle");
     const scrollablePages = document.querySelectorAll(".parallax");
 
 
@@ -9,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         header.style.height = "0";
         header.style.opacity = "0";
         header.style.pointerEvents = "none";
+        cascadeToggle.checked = false;
     }
     function headerDown() {
         header.style.height = "70px";
