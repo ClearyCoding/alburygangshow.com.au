@@ -10,13 +10,13 @@ const eventList = [
         count: true,
         date: 'June 19, 2025 10:45:00',
         context: `For more information, check out the <a href='#join'>join</a> section!`
-    },
+    },*/
     {
         text: 'Until Rehearsals Start!',
         count: true,
-        date: 'June 21, 2025 19:30:00',
+        date: 'February 10, 2026 19:30:00',
         context: `For more information, check out the <a href='#join'>join</a> section!`
-    },*/
+    },
     {
         text: 'Until Opening Curtains!',
         count: true,
