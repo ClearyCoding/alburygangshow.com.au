@@ -105,7 +105,7 @@
                         only to finish the show begging for a bigger role the next year!
                     </p>
                     <section class="crate-buttons">
-                        <p>Applications will reopen closer to the 2026 season commencement - Date TBA</p>
+                        <p>Applications will reopen closer to the 2026 season commencement - Check out our <a href="/#contact" style="color: white">socials</a> in the meantime!</p>
                         <!--<a href="/assets/forms/2025/Application_Info_Pack_2025.pdf" class="button" target="_blank">
                             2025 Info. Pack
                         </a>
