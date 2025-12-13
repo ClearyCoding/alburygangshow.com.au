@@ -10,6 +10,7 @@ const splashList = [
     {text: 'Encore!', weight: 1.5},
     {text: 'The Show Must Go On!', weight: 1},
     {text: 'Sing Louder!', weight: 1},
+    {text: 'Learn Your Words!', weight: 1},
     {text: 'Better than (insert show name)!', weight: 1},
     {text: 'Free Range Cast!', weight: 1},
     {text: 'This is a splash text, reload the page!', weight: 3},
@@ -74,6 +75,8 @@ const splashList = [
     {text: 'A  Lizard forced me to add this...', weight: 0.01},
     {text: 'This splash will never appear on the website. Isn\'t that weird?', weight: 0},
     {text: 'Radically Cool', weight: 0.05},
+    {text: 'Be a Watermelon!', weight: 0.05},
+    {text: 'Yackandandah ≠ Yarrawonga', weight: 0.05},
 ]
 specialSplashList = [
     {
