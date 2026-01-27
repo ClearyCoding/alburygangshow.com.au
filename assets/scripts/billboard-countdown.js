@@ -14,7 +14,7 @@ const eventList = [
     {
         text: 'Until Rehearsals Start!',
         count: true,
-        date: 'February 10, 2026 19:30:00',
+        date: 'February 10, 2026 19:00:00',
         context: `Rehearsals Start 10th February! Check out the <a href='#join'>join</a> section!`
     },
     {
